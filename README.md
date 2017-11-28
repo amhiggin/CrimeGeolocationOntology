@@ -7,3 +7,8 @@ An OWL ontology application for querying crime geolocation information in Irelan
 ## Composition
 * Ordnance Survey Ireland (OSI) Geohive Dataset: http://data.geohive.ie
 * Irish 'Crimes at Garda Stations' Dataset: https://data.gov.ie/dataset/crimes-at-garda-stations-level-2010-2016
+
+## Dependencies
+* JRE 1.8.0_101
+* Apache Jena 2.5.4
+* ANSI Eclipse plugin: https://mihai-nita.net/2013/06/03/eclipse-plugin-ansi-in-console/
