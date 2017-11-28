@@ -13,7 +13,7 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 
 public class OntologyApplication {
 	// TODO @Amber update with final ontology name
-	public static String ontologyName = "crime_geolocation_ontology.owl";
+	public static String ontologyName = "test.owl";
 	public static com.hp.hpl.jena.ontology.OntModel ontologyModel = null;
 	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
@@ -27,14 +27,19 @@ public class OntologyApplication {
 		try {
 			print("Reading ontology model into the application...");
 			ontologyModel = ReadOntologyModel.loadAllClassesOnt(ontologyName);
-		} catch (FileNotFoundException e) {
-			print(OntologyConstants.ERROR_READING_FILE);
+		} catch (Exception e) {
+			if(e instanceof FileNotFoundException){
+				print(OntologyConstants.ERROR_READING_FILE);
+			} else {
+				print("Couldn't read ontology model - exiting...");
+			}
 			return;
 		}
 
 		// successfully read the ontology model
 		running = true;
-		queries = ReadOntologyModel.loadAllQueries(ontologyModel);
+		ReadOntologyModel.populateListOfStringQueriesFromFile();
+		queries = ReadOntologyModel.loadAllQueriesFromStringList(ontologyModel);
 		questionsToAskOntology = ReadOntologyModel.populateListOfQuestionsToDisplay();
 
 		while (running) {
@@ -60,7 +65,11 @@ public class OntologyApplication {
 			if (results != null) {
 				outputResultsToConsole(results);
 			} else {
-				print("Couldn't process the results of the query.");
+				if(running == true){
+					print("Couldn't process the results of the query.");
+				} else {
+					break;
+				}
 			}
 		}
 		inputScanner.close();

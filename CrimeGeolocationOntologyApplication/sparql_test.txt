@@ -1,0 +1,1 @@
+SELECT DISTINCT ?class WHERE {  ?s a ?class . } LIMIT 25 OFFSET 0
