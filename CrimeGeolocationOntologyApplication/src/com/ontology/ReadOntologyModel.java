@@ -10,14 +10,7 @@ import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
-import com.hp.hpl.jena.query.QuerySolution;
-import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
 
 public class ReadOntologyModel {
 
@@ -48,26 +41,15 @@ public class ReadOntologyModel {
 	}
 
 	public static List<Query> loadAllQueries(OntModel ontologyModel) {
+		List<Query> listOfQueries = new ArrayList<Query>();
 		for (String queryString : queriesAsStrings) {
 			Query query = QueryFactory.create(queryString);
-			try (QueryExecution qexec = QueryExecutionFactory.create(query, ontologyModel)) {
-				ResultSet results = qexec.execSelect();
-				for (; results.hasNext();) {
-					QuerySolution soln = results.nextSolution();
-					RDFNode x = soln.get("varName"); // Get a result variable by
-					// name.
-					Resource r = soln.getResource("VarR"); // Get a result
-					// variable - must
-					// be a resource
-					Literal l = soln.getLiteral("VarL"); // Get a result
-					// variable - must
-					// be a literal
-				}
-			}
+			listOfQueries.add(query);
 		}
+		return listOfQueries;
 	}
 
-	public static List<String> populateListOfQuestions() {
+	public static List<String> populateListOfQuestionsToDisplay() {
 		List<String> questions = new ArrayList<>();
 		questions.add(OntologyConstants.FIRST_QUESTION);
 		questions.add(OntologyConstants.SECOND_QUESTION);

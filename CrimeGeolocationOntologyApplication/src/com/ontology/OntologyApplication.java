@@ -6,6 +6,13 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.rdf.model.Resource;
 
 public class OntologyApplication {
 	// TODO @Amber update with final ontology name
@@ -31,7 +38,7 @@ public class OntologyApplication {
 		// successfully read the ontology model
 		running = true;
 		queries = ReadOntologyModel.loadAllQueries(ontology);
-		questionsToAskOntology = ReadOntologyModel.populateListOfQuestions();
+		questionsToAskOntology = ReadOntologyModel.populateListOfQuestionsToDisplay();
 
 		while (running) {
 			try {
@@ -96,11 +103,18 @@ public class OntologyApplication {
 
 	public static ResultSet executeSparqlQuery(Query query) {
 		if (query == null) {
-			print("Query is null: cannot execute");
+			print("Query is null: cannot execute.");
 			return null;
 		}
-		// else execute the query
-		// FIXME @Amber
+		try (QueryExecution qexec = QueryExecutionFactory.create(query, ontology)) {
+			ResultSet results = qexec.execSelect();
+			for (; results.hasNext();) {
+				QuerySolution soln = results.nextSolution();
+				RDFNode x = soln.get("varName");
+				Resource r = soln.getResource("VarR");
+				Literal l = soln.getLiteral("VarL");
+			}
+		}
 	}
 
 	public static void outputResultsToConsole(Results results) {
