@@ -9,6 +9,7 @@ public class OntologyApplication {
 	// TODO @Amber update with final ontology name
 	public static String ontologyName = "crime_geolocation_ontology.owl";
 	public static com.hp.hpl.jena.ontology.OntModel ontology = null;
+	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
 	public static boolean running;
 	private static List<Query> queries = new ArrayList<Query>();
@@ -24,6 +25,7 @@ public class OntologyApplication {
 		// successfully read the ontology model
 		running = true;
 		queries = ReadOntologyModel.loadAllQueries(ontology);
+		questionsToAskOntology = ReadOntologyModel.populateListOfQuestions();
 
 		while (running) {
 			try {
@@ -40,10 +42,9 @@ public class OntologyApplication {
 		print(OntologyConstants.INFO_ABOUT_ONTOLOGY);
 		Scanner inputScanner = null;
 		while (running) {
-			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, ReadOntologyModel.queriesAsStrings.get(0),
-					ReadOntologyModel.queriesAsStrings.get(1), ReadOntologyModel.queriesAsStrings.get(2),
-					ReadOntologyModel.queriesAsStrings.get(3), ReadOntologyModel.queriesAsStrings.get(4),
-					ReadOntologyModel.queriesAsStrings.get(5)));
+			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
+					questionsToAskOntology.get(1), questionsToAskOntology.get(2), questionsToAskOntology.get(3),
+					questionsToAskOntology.get(4), questionsToAskOntology.get(5)));
 			inputScanner = new Scanner(System.in);
 			String input = inputScanner.nextLine();
 			executeQueryBasedOnInput(input);

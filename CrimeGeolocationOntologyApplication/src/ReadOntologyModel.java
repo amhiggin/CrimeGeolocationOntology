@@ -60,3 +60,17 @@ public class ReadOntologyModel {
 			}
 		}
 	}
+
+	public static List<String> populateListOfQuestions() {
+		List<String> questions = new ArrayList<>();
+		questions.add(OntologyConstants.FIRST_QUESTION);
+		questions.add(OntologyConstants.SECOND_QUESTION);
+		questions.add(OntologyConstants.THIRD_QUESTION);
+		questions.add(OntologyConstants.FOURTH_QUESTION);
+		questions.add(OntologyConstants.FIFTH_QUESTION);
+		questions.add(OntologyConstants.SIXTH_QUESTION);
+
+		return questions;
+	}
+
+}

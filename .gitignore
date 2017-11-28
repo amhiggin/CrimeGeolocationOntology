@@ -23,3 +23,13 @@
 .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_2
 *.fnm
 .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_1.tis
+.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
+.metadata/.plugins/org.eclipse.core.resources/.history/f1/102f946473d400171fbc8cb7aaefcb78
+*.dat
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+*.snap
+.metadata/.plugins/org.eclipse.core.resources/.history/e2/c0992fa473d400171fbc8cb7aaefcb78
+.metadata/.plugins/org.eclipse.core.resources/.history/c4/d09cd87473d400171fbc8cb7aaefcb78
+.metadata/.plugins/org.eclipse.core.resources/.history/c3/b0eba72173d400171fbc8cb7aaefcb78
+.metadata/.plugins/org.eclipse.core.resources/.history/c5/4064a7af73d400171fbc8cb7aaefcb78
+*.xml
