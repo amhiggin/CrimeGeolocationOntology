@@ -8,16 +8,13 @@ import java.util.Scanner;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.query.ResultSetFormatter;
 
 public class OntologyApplication {
 	// TODO @Amber update with final ontology name
 	public static String ontologyName = "crime_geolocation_ontology.owl";
-	public static com.hp.hpl.jena.ontology.OntModel ontology = null;
+	public static com.hp.hpl.jena.ontology.OntModel ontologyModel = null;
 	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
 	public static boolean running;
@@ -29,7 +26,7 @@ public class OntologyApplication {
 
 		try {
 			print("Reading ontology model into the application...");
-			ontology = ReadOntologyModel.loadAllClassesOnt(ontologyName);
+			ontologyModel = ReadOntologyModel.loadAllClassesOnt(ontologyName);
 		} catch (FileNotFoundException e) {
 			print(OntologyConstants.ERROR_READING_FILE);
 			return;
@@ -37,7 +34,7 @@ public class OntologyApplication {
 
 		// successfully read the ontology model
 		running = true;
-		queries = ReadOntologyModel.loadAllQueries(ontology);
+		queries = ReadOntologyModel.loadAllQueries(ontologyModel);
 		questionsToAskOntology = ReadOntologyModel.populateListOfQuestionsToDisplay();
 
 		while (running) {
@@ -106,19 +103,14 @@ public class OntologyApplication {
 			print("Query is null: cannot execute.");
 			return null;
 		}
-		try (QueryExecution qexec = QueryExecutionFactory.create(query, ontology)) {
-			ResultSet results = qexec.execSelect();
-			for (; results.hasNext();) {
-				QuerySolution soln = results.nextSolution();
-				RDFNode x = soln.get("varName");
-				Resource r = soln.getResource("VarR");
-				Literal l = soln.getLiteral("VarL");
-			}
-		}
+		QueryExecution qexec = QueryExecutionFactory.create(query, ontologyModel);
+		ResultSet results = qexec.execSelect();
+		qexec.close();
+		return results;
 	}
 
-	public static void outputResultsToConsole(Results results) {
-		// TODO @Amber implement
+	public static void outputResultsToConsole(ResultSet results) {
+		ResultSetFormatter.out(System.out, results);
 	}
 
 	public static void print(String message) {
