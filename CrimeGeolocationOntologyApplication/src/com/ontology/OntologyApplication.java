@@ -40,24 +40,29 @@ public class OntologyApplication {
 				e.printStackTrace();
 			}
 		}
+		print(OntologyConstants.THANK_YOU);
 
 	}
 
 	public static void presentOptionsToUser() {
-		Scanner inputScanner = null;
+		Scanner inputScanner = new Scanner(System.in);
 		while (running) {
 			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
 					questionsToAskOntology.get(1), questionsToAskOntology.get(2), questionsToAskOntology.get(3),
 					questionsToAskOntology.get(4), questionsToAskOntology.get(5)));
 			print(OntologyConstants.PRESS_X_TO_EXIT);
-			inputScanner = new Scanner(System.in);
 			String input = inputScanner.nextLine();
-			executeQueryBasedOnUserInput(input);
+			ResultSet results = executeQueryBasedOnUserInput(input);
+			if (results != null) {
+				outputResultsToConsole(results);
+			} else {
+				print("Couldn't process the results of the query.");
+			}
 		}
 		inputScanner.close();
 	}
 
-	private static void executeQueryBasedOnUserInput(String input) {
+	private static ResultSet executeQueryBasedOnUserInput(String input) {
 		Query query = null;
 		switch (input) {
 		case "1":
@@ -81,21 +86,25 @@ public class OntologyApplication {
 		case "x":
 			print("'x' entered. Exiting application.");
 			running = false;
-			return;
+			return null;
 		default:
 			print("Invalid input: " + input);
-			return;
+			return null;
 		}
-		executeSparqlQuery(query);
+		return executeSparqlQuery(query);
 	}
 
-	public static void executeSparqlQuery(Query query) {
+	public static ResultSet executeSparqlQuery(Query query) {
 		if (query == null) {
 			print("Query is null: cannot execute");
-			return;
+			return null;
 		}
 		// else execute the query
 		// FIXME @Amber
+	}
+
+	public static void outputResultsToConsole(Results results) {
+		// TODO @Amber implement
 	}
 
 	public static void print(String message) {
