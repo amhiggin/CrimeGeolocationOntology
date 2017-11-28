@@ -1,5 +1,5 @@
 # CrimeGeolocationOntology
-An OWL ontology application for querying crime geolocation information in Ireland between 2004-2016.
+An OWL ontology application for querying crime geolocation information in Ireland between 2004-2016. Built using Apache Jena, OWL API and Protégé.
 
 ## Composition
 * Ordnance Survey Ireland (OSI) Geohive Dataset: http://data.geohive.ie
