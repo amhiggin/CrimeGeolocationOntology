@@ -13,12 +13,12 @@ public class OntologyConstants {
 			+ "ask.\n1) %s\n2) %s\n3) %s\n4) %s\n5) %s\n6) %s";
 
 	// TODO @Amber populate these when we know what the questions are
-	public static final String FIRST_QUESTION = "";
-	public static final String SECOND_QUESTION = "";
-	public static final String THIRD_QUESTION = "";
-	public static final String FOURTH_QUESTION = "";
-	public static final String SIXTH_QUESTION = "";
-	public static final String FIFTH_QUESTION = "";
+	public static final String FIRST_QUESTION = "How many stations are there in County Donegal?";
+	public static final String SECOND_QUESTION = "What is the most common type of crime in Kerry between 2004-2016: damage to the person, or damage to property?";
+	public static final String THIRD_QUESTION = "On average, how many crimes are committed in Dublin per year?";
+	public static final String FOURTH_QUESTION = "In which year did County Roscommon have its highest crime rate?";
+	public static final String FIFTH_QUESTION = "Which county saw the biggest decline in burglaries over the period 2004-2016?";
+	public static final String SIXTH_QUESTION = "Which county had the lowest number of frauds in 2008?";
 
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some

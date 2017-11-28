@@ -29,16 +29,16 @@ public class ReadOntologyModel {
 
 		while (RootClasses.hasNext()) {
 			String RootclassSTR = RootClasses.next().toString();
-			System.out.println("ROOTCLASS: " + RootclassSTR);
+			print("ROOTCLASS: " + RootclassSTR);
 			OntClass query = model.getOntClass(RootclassSTR);
 
 			for (Iterator<?> i = query.listSubClasses(); i.hasNext();) {
 				OntClass c = (OntClass) i.next();
-				System.out.println("                SubClass: " + c);
+				print("                SubClass: " + c);
 			}
 		}
 		if (model != null) {
-			System.out.println("Successfully loaded ontology model");
+			print("Successfully loaded ontology model");
 		}
 		return model;
 	}
@@ -51,12 +51,12 @@ public class ReadOntologyModel {
 		       queriesAsStrings.add(line);
 		    }
 		} catch (Exception e){
-			System.out.println(OntologyConstants.ERROR_READING_FILE);
+			print(OntologyConstants.ERROR_READING_FILE);
 		}
 	}
 
 	public static List<Query> loadAllQueriesFromStringList(OntModel ontologyModel) {
-		System.out.println("Loading the queries..");
+		print("Loading the queries..");
 		List<Query> listOfQueries = new ArrayList<Query>();
 		for (String queryString : queriesAsStrings) {
 			Query query = QueryFactory.create(queryString);
@@ -76,4 +76,7 @@ public class ReadOntologyModel {
 		return questions;
 	}
 	
+	public static void print(String message) {
+		System.out.println(OntologyConstants.GREEN_BOLD + message + OntologyConstants.RESET);
+	}
 }
