@@ -1,3 +1,4 @@
+package com.ontology;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,14 +46,15 @@ public class OntologyApplication {
 			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
 					questionsToAskOntology.get(1), questionsToAskOntology.get(2), questionsToAskOntology.get(3),
 					questionsToAskOntology.get(4), questionsToAskOntology.get(5)));
+			print(OntologyConstants.PRESS_X_TO_EXIT);
 			inputScanner = new Scanner(System.in);
 			String input = inputScanner.nextLine();
-			executeQueryBasedOnInput(input);
+			executeQueryBasedOnUserInput(input);
 		}
 		inputScanner.close();
 	}
 
-	private static void executeQueryBasedOnInput(String input) {
+	private static void executeQueryBasedOnUserInput(String input) {
 		Query query = null;
 		switch (input) {
 		case "1":
@@ -73,6 +75,10 @@ public class OntologyApplication {
 		case "6":
 			query = queries.get(5);
 			break;
+		case "x":
+			print("'x' entered. Exiting application.");
+			running = false;
+			return;
 		default:
 			print("Invalid input: " + input);
 			return;
@@ -85,6 +91,8 @@ public class OntologyApplication {
 			print("Query is null: cannot execute");
 			return;
 		}
+		// else execute the queries
+		// FIXME @Amber
 	}
 
 	public static void print(String message) {
