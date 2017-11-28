@@ -123,6 +123,7 @@ public class OntologyApplication {
 	}
 
 	public static void print(String message) {
+		System.out.println(OntologyConstants.BLACK_BACKGROUND + OntologyConstants.GREEN_BOLD + message + OntologyConstants.RESET);
 	}
 
 }
