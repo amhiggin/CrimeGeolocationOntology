@@ -1,4 +1,5 @@
 package com.ontology;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +17,14 @@ public class OntologyApplication {
 	private static List<Query> queries = new ArrayList<Query>();
 
 	public static void main(String args[]) {
+		print(OntologyConstants.WELCOME_MESSAGE);
+		print(OntologyConstants.INFO_ABOUT_ONTOLOGY);
+
 		try {
+			print("Reading ontology model into the application...");
 			ontology = ReadOntologyModel.loadAllClassesOnt(ontologyName);
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			print(OntologyConstants.ERROR_READING_FILE);
 			return;
 		}
 
@@ -39,8 +44,6 @@ public class OntologyApplication {
 	}
 
 	public static void presentOptionsToUser() {
-		print(OntologyConstants.WELCOME_MESSAGE);
-		print(OntologyConstants.INFO_ABOUT_ONTOLOGY);
 		Scanner inputScanner = null;
 		while (running) {
 			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
@@ -91,7 +94,7 @@ public class OntologyApplication {
 			print("Query is null: cannot execute");
 			return;
 		}
-		// else execute the queries
+		// else execute the query
 		// FIXME @Amber
 	}
 

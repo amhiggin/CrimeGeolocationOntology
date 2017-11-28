@@ -1,4 +1,5 @@
 package com.ontology;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class ReadOntologyModel {
 
 	public static List<String> queriesAsStrings = new ArrayList<String>();
 
+	// Heavily based off sample code provided in the Jena Tutorials, CS7IS1
 	public static OntModel loadAllClassesOnt(String localSource) throws FileNotFoundException {
 		OntModel model = com.hp.hpl.jena.rdf.model.ModelFactory.createOntologyModel(OntModelSpec.OWL_LITE_MEM, null);
 		model.read(new FileInputStream(localSource), null);
@@ -37,7 +39,9 @@ public class ReadOntologyModel {
 				OntClass c = (OntClass) i.next();
 				System.out.println("                SubClass: " + c);
 			}
-
+		}
+		if (model != null) {
+			System.out.println("Successfully loaded ontology model");
 		}
 		return model;
 	}
