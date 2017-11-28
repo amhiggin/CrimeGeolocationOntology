@@ -1,0 +1,4 @@
+*.lock
+.metadata/.log
+*.gen
+.metadata/.mylyn/.tasks.xml.zip
