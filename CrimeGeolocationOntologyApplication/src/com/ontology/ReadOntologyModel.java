@@ -77,6 +77,6 @@ public class ReadOntologyModel {
 	}
 	
 	public static void print(String message) {
-		System.out.println(OntologyConstants.GREEN_BOLD + message + OntologyConstants.RESET);
+		System.out.println(OntologyConstants.BLACK_BACKGROUND + OntologyConstants.GREEN_BOLD + message);
 	}
 }

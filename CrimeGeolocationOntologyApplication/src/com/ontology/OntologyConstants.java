@@ -1,5 +1,8 @@
 package com.ontology;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OntologyConstants {
 	public static String WELCOME_MESSAGE = "Welcome to the Crime Geolocation Ontology for Ireland";
 	public static String INFO_ABOUT_ONTOLOGY = "This is an ontology spanning the Geohive Geolocation Data Ontology, "
@@ -11,6 +14,7 @@ public class OntologyConstants {
 	// This should be used with String.format(PRESENT_USER_OPTIONS, args)
 	public static String PRESENT_USER_OPTIONS = "What would you like to ask? Select the number of the question to "
 			+ "ask.\n1) %s\n2) %s\n3) %s\n4) %s\n5) %s\n6) %s";
+	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
 
 	// TODO @Amber populate these when we know what the questions are
 	public static final String FIRST_QUESTION = "How many stations are there in County Donegal?";
@@ -19,7 +23,22 @@ public class OntologyConstants {
 	public static final String FOURTH_QUESTION = "In which year did County Roscommon have its highest crime rate?";
 	public static final String FIFTH_QUESTION = "Which county saw the biggest decline in burglaries over the period 2004-2016?";
 	public static final String SIXTH_QUESTION = "Which county had the lowest number of frauds in 2008?";
-
+	
+	public static List<String> ALL_CRIMES = new ArrayList<String>() {{
+	    add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
+	    add("Dangerous or Negligent Acts");
+	    add("Kidnapping and Related Offences");
+	    add("Robbery, Extortion and Hijacking Offences");
+	    add("Burglary and Related Offences");
+	    add("Theft and Related Offences");
+	    add("Fraud, Deception and Related Offences");
+	    add("Controlled Drug Offences");
+	    add("Weapons and Explosives Offences");
+	    add("Damage to Property and to the Environment");
+	    add("Public Order and other Social Code Offences");
+	    add("Offences against Government, Justice Procedures and Organisation of Crime");
+	}};
+	
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some
 	 * colours in our UI! I can chat with everyone about what colours the text

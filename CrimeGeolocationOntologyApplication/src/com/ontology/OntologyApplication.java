@@ -21,8 +21,10 @@ public class OntologyApplication {
 	private static List<Query> queries = new ArrayList<Query>();
 
 	public static void main(String args[]) {
+		// Setup UI
 		print(OntologyConstants.WELCOME_MESSAGE);
 		print(OntologyConstants.INFO_ABOUT_ONTOLOGY);
+		print(OntologyConstants.SECTION_BREAK);
 
 		try {
 			print("Reading ontology model into the application...");
@@ -56,6 +58,7 @@ public class OntologyApplication {
 	public static void presentOptionsToUser() {
 		Scanner inputScanner = new Scanner(System.in);
 		while (running) {
+			print(OntologyConstants.SECTION_BREAK);
 			print(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
 					questionsToAskOntology.get(1), questionsToAskOntology.get(2), questionsToAskOntology.get(3),
 					questionsToAskOntology.get(4), questionsToAskOntology.get(5)));
@@ -123,7 +126,7 @@ public class OntologyApplication {
 	}
 
 	public static void print(String message) {
-		System.out.println(OntologyConstants.BLACK_BACKGROUND + OntologyConstants.GREEN_BOLD + message + OntologyConstants.RESET);
+		System.out.println(OntologyConstants.BLACK_BACKGROUND + OntologyConstants.GREEN_BOLD + message);
 	}
 
 }
