@@ -66,7 +66,7 @@ public class OntologyConstants {
 		add("Westmeath");
 		add("Wexford");
 		add("Wicklow");
-	}
+	}};
 
 	public static List<String> ALL_DIVISIONS = new ArrayList<String>() {{
 		add("Limerick Division");
@@ -97,7 +97,7 @@ public class OntologyConstants {
 		add("Wexford Division");
 		add("Tipperary Division");
 		add("Kilkenny/Carlow Division");
-	}
+	}};
 
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some
@@ -178,4 +178,5 @@ public class OntologyConstants {
 	public static final String PURPLE_BACKGROUND_BRIGHT = "\033[0;105m"; // PURPLE
 	public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m"; // CYAN
 	public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m"; // WHITE
-	}
+
+}
