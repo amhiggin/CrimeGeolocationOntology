@@ -23,51 +23,82 @@ public class OntologyConstants {
 	public static final String FOURTH_QUESTION = "In which year did County Roscommon have its highest crime rate?";
 	public static final String FIFTH_QUESTION = "Which county saw the biggest decline in burglaries over the period 2004-2016?";
 	public static final String SIXTH_QUESTION = "Which county had the lowest number of frauds in 2008?";
-	
+
 	public static List<String> ALL_CRIMES = new ArrayList<String>() {{
-	    add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
-	    add("Dangerous or Negligent Acts");
-	    add("Kidnapping and Related Offences");
-	    add("Robbery, Extortion and Hijacking Offences");
-	    add("Burglary and Related Offences");
-	    add("Theft and Related Offences");
-	    add("Fraud, Deception and Related Offences");
-	    add("Controlled Drug Offences");
-	    add("Weapons and Explosives Offences");
-	    add("Damage to Property and to the Environment");
-	    add("Public Order and other Social Code Offences");
-	    add("Offences against Government, Justice Procedures and Organisation of Crime");
+		add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
+		add("Dangerous or Negligent Acts");
+		add("Kidnapping and Related Offences");
+		add("Robbery, Extortion and Hijacking Offences");
+		add("Burglary and Related Offences");
+		add("Theft and Related Offences");
+		add("Fraud, Deception and Related Offences");
+		add("Controlled Drug Offences");
+		add("Weapons and Explosives Offences");
+		add("Damage to Property and to the Environment");
+		add("Public Order and other Social Code Offences");
+		add("Offences against Government, Justice Procedures and Organisation of Crime");
 	}};
-	
+
 	public static List<String> ALL_COUNTIES = new ArrayList<String>() {{
-				add("Carlow");
-				add("Cavan");
-				add("Clare");
-				add("Cork");
-				add("Donegal");
-				add("Dublin");
-				add("Galway");
-				add("Kerry");
-				add("Kildare");
-				add("Kilkenny");
-				add("Laois");
-				add("Leitrim");
-				add("Limerick");
-				add("Longford");
-				add("Louth");
-				add("Mayo");
-				add("Meath");
-				add("Monaghan");
-				add("Offaly");
-				add("Roscommon");
-				add("Sligo");
-				add("Tipperary");
-				add("Waterford");
-				add("Westmeath");
-				add("Wexford");
-				add("Wicklow");
+		add("Carlow");
+		add("Cavan");
+		add("Clare");
+		add("Cork");
+		add("Donegal");
+		add("Dublin");
+		add("Galway");
+		add("Kerry");
+		add("Kildare");
+		add("Kilkenny");
+		add("Laois");
+		add("Leitrim");
+		add("Limerick");
+		add("Longford");
+		add("Louth");
+		add("Mayo");
+		add("Meath");
+		add("Monaghan");
+		add("Offaly");
+		add("Roscommon");
+		add("Sligo");
+		add("Tipperary");
+		add("Waterford");
+		add("Westmeath");
+		add("Wexford");
+		add("Wicklow");
 	}
-	
+
+	public static List<String> ALL_DIVISIONS = new ArrayList<String>() {{
+		add("Limerick Division");
+		add("Cork City Division");
+		add("Cork West Division");
+		add("Cork North Division");
+		add("Kerry Division");
+		add("Donegal Division");
+		add("Sligo/Leitrim Division");
+		add("Cavan/Monaghan Division");
+		add("Louth Division");
+		add("Galway Division");
+		add("Mayo Division");
+		add("Clare Division");
+		add("Roscommon/Longford Division");
+		add("Laois/Offaly Division");
+		add("Wicklow Division");
+		add("Meath Division");
+		add("Westmeath Division");
+		add("Kildare Division");
+		add("D.M.R. Northern Division");
+		add("D.M.R. Western Division");
+		add("D.M.R. Southern Division");
+		add("D.M.R. South Central Division");
+		add("D.M.R. North Central Division");
+		add("D.M.R. Eastern Division");
+		add("Waterford Division");
+		add("Wexford Division");
+		add("Tipperary Division");
+		add("Kilkenny/Carlow Division");
+	}
+
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some
 	 * colours in our UI! I can chat with everyone about what colours the text
@@ -147,4 +178,4 @@ public class OntologyConstants {
 	public static final String PURPLE_BACKGROUND_BRIGHT = "\033[0;105m"; // PURPLE
 	public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m"; // CYAN
 	public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m"; // WHITE
-}
+	}
