@@ -16,7 +16,7 @@ public class OntologyConstants {
 			+ "ask.\n1) %s\n2) %s\n3) %s\n4) %s\n5) %s\n6) %s";
 	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
 
-	// TODO @Amber populate these when we know what the questions are
+	// TODO @Amber populate these when we know what the final questions are
 	public static final String FIRST_QUESTION = "How many stations are there in County Donegal?";
 	public static final String SECOND_QUESTION = "What is the most common type of crime in Kerry between 2004-2016: damage to the person, or damage to property?";
 	public static final String THIRD_QUESTION = "On average, how many crimes are committed in Dublin per year?";
@@ -38,6 +38,35 @@ public class OntologyConstants {
 	    add("Public Order and other Social Code Offences");
 	    add("Offences against Government, Justice Procedures and Organisation of Crime");
 	}};
+	
+	public static List<String> ALL_COUNTIES = new ArrayList<String>() {{
+				add("Carlow");
+				add("Cavan");
+				add("Clare");
+				add("Cork");
+				add("Donegal");
+				add("Dublin");
+				add("Galway");
+				add("Kerry");
+				add("Kildare");
+				add("Kilkenny");
+				add("Laois");
+				add("Leitrim");
+				add("Limerick");
+				add("Longford");
+				add("Louth");
+				add("Mayo");
+				add("Meath");
+				add("Monaghan");
+				add("Offaly");
+				add("Roscommon");
+				add("Sligo");
+				add("Tipperary");
+				add("Waterford");
+				add("Westmeath");
+				add("Wexford");
+				add("Wicklow");
+	}
 	
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some
