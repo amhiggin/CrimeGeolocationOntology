@@ -42,27 +42,23 @@ public class ReadOntologyModel {
 		}
 		return model;
 	}
-	
-	public static void populateListOfStringQueriesFromFile(){
+
+	public static List<String> populateListOfStringQueriesFromFile() {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(sparqlQueryFilename));
-		    String line;
-		    while ((line = br.readLine()) != null) {
-		       queriesAsStrings.add(line);
-		    }
-		} catch (Exception e){
+			String line;
+			while ((line = br.readLine()) != null) {
+				queriesAsStrings.add(line);
+			}
+		} catch (Exception e) {
 			print(OntologyConstants.ERROR_READING_FILE);
 		}
+		return queriesAsStrings;
 	}
 
-	public static List<Query> loadAllQueriesFromStringList(OntModel ontologyModel) {
-		print("Loading the queries..");
-		List<Query> listOfQueries = new ArrayList<Query>();
-		for (String queryString : queriesAsStrings) {
-			Query query = QueryFactory.create(queryString);
-			listOfQueries.add(query);
-		}
-		return listOfQueries;
+	public static Query convertStringToQuery(String queryString, OntModel ontologyModel) {
+		Query query = QueryFactory.create(queryString);
+		return query;
 	}
 
 	public static List<String> populateListOfQuestionsToDisplay() {
@@ -75,7 +71,7 @@ public class ReadOntologyModel {
 		questions.add(OntologyConstants.SIXTH_QUESTION);
 		return questions;
 	}
-	
+
 	public static void print(String message) {
 		System.out.println(OntologyConstants.BLACK_BACKGROUND + OntologyConstants.GREEN_BOLD + message);
 	}

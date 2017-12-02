@@ -4,106 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OntologyConstants {
-	public static String WELCOME_MESSAGE = "Welcome to the Crime Geolocation Ontology for Ireland";
-	public static String INFO_ABOUT_ONTOLOGY = "This is an ontology spanning the Geohive Geolocation Data Ontology, "
-			+ "and the 'Crimes at Garda Stations' dataset, both Irish datasets available on the web.";
-	public static String PRESS_X_TO_EXIT = "Otherwise enter 'x' to exit the application.";
-	public static String ERROR_READING_FILE = "An error occurred when trying to load the required file.";
-	public static String THANK_YOU = "Thank you for using the Crime Geolocation Ontology for Ireland!";
-
-	// This should be used with String.format(PRESENT_USER_OPTIONS, args)
-	public static String PRESENT_USER_OPTIONS = "What would you like to ask? Select the number of the question to "
-			+ "ask.\n1) %s\n2) %s\n3) %s\n4) %s\n5) %s\n6) %s";
-	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
-
-	// TODO @Amber populate these when we know what the final questions are
-	public static final String FIRST_QUESTION = "How many stations are there in County Donegal?";
-	public static final String SECOND_QUESTION = "What is the most common type of crime in Kerry between 2004-2016: damage to the person, or damage to property?";
-	public static final String THIRD_QUESTION = "On average, how many crimes are committed in Dublin per year?";
-	public static final String FOURTH_QUESTION = "In which year did County Roscommon have its highest crime rate?";
-	public static final String FIFTH_QUESTION = "Which county saw the biggest decline in burglaries over the period 2004-2016?";
-	public static final String SIXTH_QUESTION = "Which county had the lowest number of frauds in 2008?";
-
-	public static List<String> ALL_CRIMES = new ArrayList<String>() {{
-		add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
-		add("Dangerous or Negligent Acts");
-		add("Kidnapping and Related Offences");
-		add("Robbery, Extortion and Hijacking Offences");
-		add("Burglary and Related Offences");
-		add("Theft and Related Offences");
-		add("Fraud, Deception and Related Offences");
-		add("Controlled Drug Offences");
-		add("Weapons and Explosives Offences");
-		add("Damage to Property and to the Environment");
-		add("Public Order and other Social Code Offences");
-		add("Offences against Government, Justice Procedures and Organisation of Crime");
-	}};
-
-	public static List<String> ALL_COUNTIES = new ArrayList<String>() {{
-		add("Carlow");
-		add("Cavan");
-		add("Clare");
-		add("Cork");
-		add("Donegal");
-		add("Dublin");
-		add("Galway");
-		add("Kerry");
-		add("Kildare");
-		add("Kilkenny");
-		add("Laois");
-		add("Leitrim");
-		add("Limerick");
-		add("Longford");
-		add("Louth");
-		add("Mayo");
-		add("Meath");
-		add("Monaghan");
-		add("Offaly");
-		add("Roscommon");
-		add("Sligo");
-		add("Tipperary");
-		add("Waterford");
-		add("Westmeath");
-		add("Wexford");
-		add("Wicklow");
-	}};
-
-	public static List<String> ALL_DIVISIONS = new ArrayList<String>() {{
-		add("Limerick Division");
-		add("Cork City Division");
-		add("Cork West Division");
-		add("Cork North Division");
-		add("Kerry Division");
-		add("Donegal Division");
-		add("Sligo/Leitrim Division");
-		add("Cavan/Monaghan Division");
-		add("Louth Division");
-		add("Galway Division");
-		add("Mayo Division");
-		add("Clare Division");
-		add("Roscommon/Longford Division");
-		add("Laois/Offaly Division");
-		add("Wicklow Division");
-		add("Meath Division");
-		add("Westmeath Division");
-		add("Kildare Division");
-		add("D.M.R. Northern Division");
-		add("D.M.R. Western Division");
-		add("D.M.R. Southern Division");
-		add("D.M.R. South Central Division");
-		add("D.M.R. North Central Division");
-		add("D.M.R. Eastern Division");
-		add("Waterford Division");
-		add("Wexford Division");
-		add("Tipperary Division");
-		add("Kilkenny/Carlow Division");
-	}};
-
 	/*
 	 * I thought since we aren't doing a GUI, that it might be nice to have some
-	 * colours in our UI! I can chat with everyone about what colours the text
-	 * should be in our next meeting :) NOTE: use RESET at the end of the string
-	 * after giving it the colour.
+	 * colours in the UI! NOTE: use RESET at the end of the string after giving
+	 * it the colour.
 	 */
 
 	// Reset
@@ -178,5 +82,121 @@ public class OntologyConstants {
 	public static final String PURPLE_BACKGROUND_BRIGHT = "\033[0;105m"; // PURPLE
 	public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m"; // CYAN
 	public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m"; // WHITE
+
+	public static String WELCOME_MESSAGE = "Welcome to the Crime Geolocation Ontology for Ireland";
+	public static String INFO_ABOUT_ONTOLOGY = "This is an ontology spanning the Geohive Geolocation Data Ontology, "
+			+ "and the 'Crimes at Garda Stations' dataset, both Irish datasets available on the web.";
+	public static String PRESS_X_TO_EXIT = "Otherwise enter 'x' to exit the application.";
+	public static String ERROR_READING_FILE = RED + "An error occurred when trying to load the required file." + RESET;
+	public static String THANK_YOU = "Thank you for using the Crime Geolocation Ontology for Ireland!";
+
+	// This should be used with String.format(PRESENT_USER_OPTIONS, args).
+	// PRINTS IN PURPLE
+	public static String PRESENT_USER_OPTIONS = "What would you like to ask? Select the number of the question to "
+			+ "ask. \n\t1) %s\n\t2) %s\n\t3) %s\n\t4) %s\n\t5) %s\n\t6) %s";
+	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
+
+	// TODO @Amber populate these when we know what the final questions are
+	public static final String FIRST_QUESTION = CYAN + "How many stations are there in a specified county?" + RESET;
+	public static final String SECOND_QUESTION = CYAN
+			+ "What is the most common type of crime in a specified county in a specified year: damage to the person, or damage to property?"
+			+ RESET;
+	public static final String THIRD_QUESTION = CYAN
+			+ "On average, how many crimes are committed in a specified county per year?" + RESET;
+	public static final String FOURTH_QUESTION = CYAN
+			+ "In which year did a specified county have its highest crime rate?" + RESET;
+	// FIXME: figure out how to do the time ranges
+	public static final String FIFTH_QUESTION = CYAN
+			+ "Which county saw the biggest rise in a specific crime type over the period 2004-2016?" + RESET;
+	public static final String SIXTH_QUESTION = CYAN
+			+ "Which county had the lowest number of a specific crime in a given year?" + RESET;
+
+	public static List<String> ALL_CRIMES = new ArrayList<String>() {
+		{
+			add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
+			add("Dangerous or Negligent Acts");
+			add("Kidnapping and Related Offences");
+			add("Robbery, Extortion and Hijacking Offences");
+			add("Burglary and Related Offences");
+			add("Theft and Related Offences");
+			add("Fraud, Deception and Related Offences");
+			add("Controlled Drug Offences");
+			add("Weapons and Explosives Offences");
+			add("Damage to Property and to the Environment");
+			add("Public Order and other Social Code Offences");
+			add("Offences against Government, Justice Procedures and Organisation of Crime");
+		}
+	};
+
+	public static void printAllCrimes() {
+		System.out.println(GREEN_BOLD + "The crimes you can select for questions 5 and 6: " + RESET);
+		for (String crime : ALL_CRIMES) {
+			System.out.println("\t" + PURPLE + crime + RESET);
+		}
+	}
+
+	public static List<String> ALL_COUNTIES = new ArrayList<String>() {
+		{
+			add("Carlow");
+			add("Cavan");
+			add("Clare");
+			add("Cork");
+			add("Donegal");
+			add("Dublin");
+			add("Galway");
+			add("Kerry");
+			add("Kildare");
+			add("Kilkenny");
+			add("Laois");
+			add("Leitrim");
+			add("Limerick");
+			add("Longford");
+			add("Louth");
+			add("Mayo");
+			add("Meath");
+			add("Monaghan");
+			add("Offaly");
+			add("Roscommon");
+			add("Sligo");
+			add("Tipperary");
+			add("Waterford");
+			add("Westmeath");
+			add("Wexford");
+			add("Wicklow");
+		}
+	};
+
+	public static List<String> ALL_DIVISIONS = new ArrayList<String>() {
+		{
+			add("Limerick Division");
+			add("Cork City Division");
+			add("Cork West Division");
+			add("Cork North Division");
+			add("Kerry Division");
+			add("Donegal Division");
+			add("Sligo/Leitrim Division");
+			add("Cavan/Monaghan Division");
+			add("Louth Division");
+			add("Galway Division");
+			add("Mayo Division");
+			add("Clare Division");
+			add("Roscommon/Longford Division");
+			add("Laois/Offaly Division");
+			add("Wicklow Division");
+			add("Meath Division");
+			add("Westmeath Division");
+			add("Kildare Division");
+			add("D.M.R. Northern Division");
+			add("D.M.R. Western Division");
+			add("D.M.R. Southern Division");
+			add("D.M.R. South Central Division");
+			add("D.M.R. North Central Division");
+			add("D.M.R. Eastern Division");
+			add("Waterford Division");
+			add("Wexford Division");
+			add("Tipperary Division");
+			add("Kilkenny/Carlow Division");
+		}
+	};
 
 }
