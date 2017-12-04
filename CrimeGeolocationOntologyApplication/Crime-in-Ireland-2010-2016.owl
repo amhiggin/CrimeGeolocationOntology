@@ -1,0 +1,164 @@
+@prefix : <http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016> .
+
+<http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016> rdf:type owl:Ontology ;
+                                                                                  rdfs:label "Crime-in-Ireland-2010-2016" ;
+                                                                                  rdfs:comment "An ontology describing all crimes commited in Ireland between 2010 and 2016, and the geolocations for each of the Garda stations these crimes took place in. Further information regarding the location of these stations are provided, such as divisons, towns and cities." ;
+                                                                                  owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasCoordinates
+:hasCoordinates rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasStation ;
+                rdfs:domain :Station .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasCrimeTotal
+:hasCrimeTotal rdf:type owl:ObjectProperty ;
+               rdfs:domain :Crime .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasCrimeType
+:hasCrimeType rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasCrimes ;
+              rdfs:domain :Crime .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasCrimes
+:hasCrimes rdf:type owl:ObjectProperty ;
+           rdfs:domain :CrimeType .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasDivision
+:hasDivision rdf:type owl:ObjectProperty ;
+             rdfs:domain :Region .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasDivisionName
+:hasDivisionName rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Division .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasRegion
+:hasRegion rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty ;
+           rdfs:domain :Region .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasRegionType
+:hasRegionType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Region .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasStation
+:hasStation rdf:type owl:ObjectProperty ;
+            rdfs:domain :Coordinates .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasStationName
+:hasStationName rdf:type owl:ObjectProperty ;
+                rdfs:domain :Station .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#hasStations
+:hasStations rdf:type owl:ObjectProperty ;
+             owl:inverseOf :inDivision ;
+             rdfs:domain :Division .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#inDivision
+:inDivision rdf:type owl:ObjectProperty ;
+            rdfs:domain :Station .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#inRegion
+:inRegion rdf:type owl:ObjectProperty ;
+          rdfs:domain :Station .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#inYear
+:inYear rdf:type owl:ObjectProperty ;
+        rdfs:domain :Crime .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#isCrimeType
+:isCrimeType rdf:type owl:ObjectProperty ;
+             rdfs:domain :CrimeType .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#occuredInRegion
+:occuredInRegion rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Crime .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#xCoordinate
+:xCoordinate rdf:type owl:ObjectProperty ;
+             rdfs:domain :Coordinates .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#yCoordinate
+:yCoordinate rdf:type owl:ObjectProperty ;
+             rdfs:domain :Coordinates .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Coordinates
+:Coordinates rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#County
+:County rdf:type owl:Class ;
+        rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Crime
+:Crime rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#CrimeType
+:CrimeType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Division
+:Division rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Region
+:Region rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Station
+:Station rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Town/City
+<http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2010-2016#Town/City> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :Region .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Crime
+                :CrimeType
+                :Division
+                :Region
+                :Station
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
