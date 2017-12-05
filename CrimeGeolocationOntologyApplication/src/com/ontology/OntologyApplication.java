@@ -34,7 +34,7 @@ public class OntologyApplication {
 				printRedText(OntologyConstants.ERROR_READING_FILE);
 			} else {
 				printRedText("Couldn't read ontology model - exiting...");
-				e.printStackTrace();
+				printRedText("Exception Message: " + e.getMessage());
 			}
 			return;
 		}
@@ -48,7 +48,7 @@ public class OntologyApplication {
 			try {
 				presentOptionsToUser();
 			} catch (Exception e) {
-				e.printStackTrace();
+				printRedText("Exception occurred: " + e.getMessage());
 			}
 		}
 		printGreenText(OntologyConstants.THANK_YOU);
@@ -168,6 +168,7 @@ public class OntologyApplication {
 			printRedText("Invalid input: " + selectedQuery);
 			return null;
 		}
+		printGreenText(String.format("queryString is now %s", queryString));
 		return executeSparqlQuery(queryString);
 	}
 
@@ -184,6 +185,7 @@ public class OntologyApplication {
 			qexec.close();
 		} catch (Exception e) {
 			printRedText(String.format("Unable to execute the query: %s", queryString));
+			printRedText("Exception Message: " + e.getMessage());
 		}
 		return results;
 	}
