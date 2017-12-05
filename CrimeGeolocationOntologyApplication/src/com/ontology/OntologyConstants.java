@@ -129,7 +129,8 @@ public class OntologyConstants {
 	};
 
 	public static void printAllCrimes() {
-		System.out.println(GREEN_BOLD + "The crimes you can select for questions 5 and 6: " + RESET);
+		System.out.println(
+				GREEN_BOLD + "The crimes you can select for questions 5 and 6 (easiest to just copy+paste): " + RESET);
 		for (String crime : ALL_CRIMES) {
 			System.out.println("\t" + PURPLE + crime + RESET);
 		}

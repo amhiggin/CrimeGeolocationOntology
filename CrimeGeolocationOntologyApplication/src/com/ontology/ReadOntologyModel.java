@@ -16,7 +16,7 @@ import com.hp.hpl.jena.query.QueryFactory;
 
 public class ReadOntologyModel {
 
-	public static String sparqlQueryFilename = "sparql_test.txt";
+	public static String sparqlQueryFilename = "queries.txt";
 	public static List<String> queriesAsStrings = new ArrayList<String>();
 
 	// Heavily based off sample code provided in the Jena Tutorials, CS7IS1
