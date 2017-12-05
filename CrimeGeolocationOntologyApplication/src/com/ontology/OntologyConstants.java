@@ -107,7 +107,7 @@ public class OntologyConstants {
 			+ "In which year did a specified county have its highest crime rate?" + RESET;
 	// FIXME: figure out how to do the time ranges
 	public static final String FIFTH_QUESTION = CYAN
-			+ "Which county saw the biggest rise in a specific crime type over the period 2004-2016?" + RESET;
+			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
 	public static final String SIXTH_QUESTION = CYAN
 			+ "Which county had the lowest number of a specific crime in a given year?" + RESET;
 
