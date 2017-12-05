@@ -94,6 +94,7 @@ public class OntologyApplication {
 				queryString = String.format(queryString, county);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s", county));
 			}
 			break;
 		case "2":
@@ -104,10 +105,11 @@ public class OntologyApplication {
 			county = inputScanner.nextLine();
 			System.out.println("Enter the year of interest: ");
 			timePeriod = inputScanner.nextLine();
-			if (OntologyConstants.ALL_COUNTIES.contains(county) && (checkValidYearEntered(timePeriod))) {
+			if ((checkValidYearEntered(timePeriod)) && OntologyConstants.ALL_COUNTIES.contains(county)) {
 				queryString = String.format(queryString, county, timePeriod);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s, %s", county, timePeriod));
 			}
 			break;
 		case "3":
@@ -120,6 +122,7 @@ public class OntologyApplication {
 				queryString = String.format(queryString, county);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s", county));
 			}
 			break;
 		case "4":
@@ -132,6 +135,7 @@ public class OntologyApplication {
 				queryString = String.format(queryString, county);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s", county));
 			}
 			break;
 		case "5":
@@ -144,6 +148,7 @@ public class OntologyApplication {
 				queryString = String.format(queryString, specificCrime);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s", specificCrime));
 			}
 			break;
 		case "6":
@@ -154,10 +159,11 @@ public class OntologyApplication {
 			specificCrime = inputScanner.nextLine();
 			System.out.println("Enter the year of interest: ");
 			timePeriod = inputScanner.nextLine();
-			if (OntologyConstants.ALL_CRIMES.contains(specificCrime) && (checkValidYearEntered(timePeriod))) {
+			if ((checkValidYearEntered(timePeriod) && OntologyConstants.ALL_CRIMES.contains(specificCrime))) {
 				queryString = String.format(queryString, specificCrime, timePeriod);
 			} else {
 				queryString = null;
+				printRedText(String.format("Invalid data entered: %s, %s", specificCrime, timePeriod));
 			}
 			break;
 		case "x":
@@ -168,7 +174,6 @@ public class OntologyApplication {
 			printRedText("Invalid input: " + selectedQuery);
 			return null;
 		}
-		printGreenText(String.format("queryString is now %s", queryString));
 		return executeSparqlQuery(queryString);
 	}
 
@@ -177,6 +182,7 @@ public class OntologyApplication {
 			printRedText("Query is null: cannot execute.");
 			return null;
 		}
+		printGreenText(String.format("Query to execute is: %s", queryString));
 		ResultSet results = null;
 		try {
 			Query executableQuery = ReadOntologyModel.convertStringToQuery(queryString, ontologyModel);
@@ -195,6 +201,7 @@ public class OntologyApplication {
 		if (year >= 2004 && year <= 2016) {
 			return true;
 		}
+		printRedText("Invalid year entered: " + Integer.toString(year));
 		return false;
 	}
 
