@@ -13,7 +13,7 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 
 public class OntologyApplication {
 	// TODO @Amber update with final ontology name
-	public static String ontologyName = "test.owl";
+	public static String ontologyName = "Crime-in-Ireland-2010-2016.owl";
 	public static com.hp.hpl.jena.ontology.OntModel ontologyModel = null;
 	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
@@ -34,6 +34,7 @@ public class OntologyApplication {
 				printRedText(OntologyConstants.ERROR_READING_FILE);
 			} else {
 				printRedText("Couldn't read ontology model - exiting...");
+				e.printStackTrace();
 			}
 			return;
 		}

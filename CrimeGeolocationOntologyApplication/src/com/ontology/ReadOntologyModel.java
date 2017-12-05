@@ -22,8 +22,8 @@ public class ReadOntologyModel {
 	// Heavily based off sample code provided in the Jena Tutorials, CS7IS1
 	// TODO remove unnecessary printlns after debugging
 	public static OntModel loadAllClassesOnt(String localSource) throws FileNotFoundException {
-		OntModel model = com.hp.hpl.jena.rdf.model.ModelFactory.createOntologyModel(OntModelSpec.OWL_LITE_MEM, null);
-		model.read(new FileInputStream(localSource), null);
+		OntModel model = com.hp.hpl.jena.rdf.model.ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
+		model.read(new FileInputStream(localSource), null); // , "RDF/XML");
 
 		Iterator<?> RootClasses = model.listHierarchyRootClasses();
 
