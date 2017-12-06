@@ -62,17 +62,33 @@ public class OntologyApplication {
 			printNeutralText(String.format(OntologyConstants.PRESENT_USER_OPTIONS, questionsToAskOntology.get(0),
 					questionsToAskOntology.get(1), questionsToAskOntology.get(2), questionsToAskOntology.get(3),
 					questionsToAskOntology.get(4), questionsToAskOntology.get(5)));
-			OntologyConstants.printAllCrimes();
+			printGreenText(OntologyConstants.OPTIONS_TO_DISPLAY_LISTS);
 			printGreenText(OntologyConstants.PRESS_X_TO_EXIT);
 			String input = inputScanner.nextLine();
-			ResultSet results = executeQueryBasedOnUserInput(input, inputScanner);
-			if (results != null) {
-				outputResultsToConsole(results);
-			} else {
-				if (running == true) {
-					printRedText("Couldn't process the results of the query.");
+			switch (input) {
+			case "legal towns":
+				OntologyConstants.printAllLegalTownsAndCities();
+				break;
+			case "counties":
+				OntologyConstants.printAllCounties();
+				break;
+			case "crimes":
+				OntologyConstants.printAllCrimes();
+				break;
+			case "x":
+				printGreenText("'x' entered. Exiting application.");
+				running = false;
+				return;
+			default:
+				ResultSet results = executeQueryBasedOnUserInput(input, inputScanner);
+				if (results != null) {
+					outputResultsToConsole(results);
 				} else {
-					break;
+					if (running == true) {
+						printRedText("Couldn't process the results of the query.");
+					} else {
+						break;
+					}
 				}
 			}
 		}
@@ -83,7 +99,7 @@ public class OntologyApplication {
 	// String.formatting is happening in the queries
 	private static ResultSet executeQueryBasedOnUserInput(String selectedQuery, Scanner inputScanner) {
 		String queryString = null;
-		String county = null, specificCrime = null, timePeriod = null;
+		String county = null, specificCrime = null, timePeriod = null, legalTownOrCity = null;
 		switch (selectedQuery) {
 		case "1":
 			// "How many stations are there in a specified county?";
@@ -126,16 +142,16 @@ public class OntologyApplication {
 			}
 			break;
 		case "4":
-			// "In which year did a specified county have its highest crime
-			// rate?";
+			// "In which year did a specified Legal Town/City have its highest
+			// crime rate?" + RESET;
 			queryString = queriesAsStrings.get(3);
-			System.out.println("Enter the county: ");
-			county = inputScanner.nextLine();
-			if (OntologyConstants.ALL_COUNTIES.contains(county)) {
-				queryString = String.format(queryString, county);
+			System.out.println("Enter the Legal Town/City: ");
+			legalTownOrCity = inputScanner.nextLine();
+			if (OntologyConstants.ALL_LEGAL_TOWNS_AND_CITIES.contains(legalTownOrCity)) {
+				queryString = String.format(queryString, legalTownOrCity);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s", county));
+				printRedText(String.format("Invalid data entered: %s", legalTownOrCity));
 			}
 			break;
 		case "5":
@@ -152,8 +168,8 @@ public class OntologyApplication {
 			}
 			break;
 		case "6":
-			// "Which county had the lowest number of a specific crime in a
-			// given year?";
+			// "Which Legal Town/City had the lowest number of a specific crime
+			// in a given year?";
 			queryString = queriesAsStrings.get(5);
 			System.out.println("Enter the crime (e.g. burglary, fraud): ");
 			specificCrime = inputScanner.nextLine();
@@ -166,10 +182,6 @@ public class OntologyApplication {
 				printRedText(String.format("Invalid data entered: %s, %s", specificCrime, timePeriod));
 			}
 			break;
-		case "x":
-			printGreenText("'x' entered. Exiting application.");
-			running = false;
-			return null;
 		default:
 			printRedText("Invalid input: " + selectedQuery);
 			return null;
