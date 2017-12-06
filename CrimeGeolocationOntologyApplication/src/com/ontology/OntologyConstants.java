@@ -94,6 +94,7 @@ public class OntologyConstants {
 	// PRINTS IN PURPLE
 	public static String PRESENT_USER_OPTIONS = "What would you like to ask? Select the number of the question to "
 			+ "ask. \n\t1) %s\n\t2) %s\n\t3) %s\n\t4) %s\n\t5) %s\n\t6) %s";
+	public static String OPTIONS_TO_DISPLAY_LISTS = "Enter:\n\t- 'legal towns' to display a list of all legal towns and cities\n\t- 'crimes' to display a list of crimes for which records exist\n\t- 'counties' to display a list of all counties";
 	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
 
 	// TODO @Amber populate these when we know what the final questions are
@@ -104,27 +105,27 @@ public class OntologyConstants {
 	public static final String THIRD_QUESTION = CYAN
 			+ "On average, how many crimes are committed in a specified county per year?" + RESET;
 	public static final String FOURTH_QUESTION = CYAN
-			+ "In which year did a specified county have its highest crime rate?" + RESET;
+			+ "In which year did a specified Legal Town/City have its highest crime rate?" + RESET;
 	// FIXME: figure out how to do the time ranges
 	public static final String FIFTH_QUESTION = CYAN
 			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
 	public static final String SIXTH_QUESTION = CYAN
-			+ "Which county had the lowest number of a specific crime in a given year?" + RESET;
+			+ "Which Legal Town/City had the lowest number of a specific crime in a given year?" + RESET;
 
 	public static List<String> ALL_CRIMES = new ArrayList<String>() {
 		{
 			add("Attempts or Threats to Murder, Assaults, Harassments and Related Offences");
-			add("Dangerous or Negligent Acts");
-			add("Kidnapping and Related Offences");
-			add("Robbery, Extortion and Hijacking Offences");
 			add("Burglary and Related Offences");
-			add("Theft and Related Offences");
-			add("Fraud, Deception and Related Offences");
 			add("Controlled Drug Offences");
-			add("Weapons and Explosives Offences");
 			add("Damage to Property and to the Environment");
-			add("Public Order and other Social Code Offences");
+			add("Dangerous or Negligent Acts");
+			add("Fraud, Deception and Related Offences");
+			add("Kidnapping and Related Offences");
 			add("Offences against Government, Justice Procedures and Organisation of Crime");
+			add("Public Order and other Social Code Offences");
+			add("Robbery, Extortion and Hijacking Offences");
+			add("Theft and Related Offences");
+			add("Weapons and Explosives Offences");
 		}
 	};
 
@@ -167,126 +168,142 @@ public class OntologyConstants {
 		}
 	};
 
+	public static void printAllCounties() {
+		System.out.println(GREEN_BOLD
+				+ "The counties you can select for questions 1, 2 and 3 (easiest to just copy+paste): " + RESET);
+		for (String county : ALL_COUNTIES) {
+			System.out.println("\t" + PURPLE + county + RESET);
+		}
+	}
+
 	public static List<String> ALL_DIVISIONS = new ArrayList<String>() {
 		{
-			add("Limerick Division");
-			add("Cork City Division");
-			add("Cork West Division");
-			add("Cork North Division");
-			add("Kerry Division");
-			add("Donegal Division");
-			add("Sligo/Leitrim Division");
 			add("Cavan/Monaghan Division");
-			add("Louth Division");
-			add("Galway Division");
-			add("Mayo Division");
 			add("Clare Division");
-			add("Roscommon/Longford Division");
-			add("Laois/Offaly Division");
-			add("Wicklow Division");
-			add("Meath Division");
-			add("Westmeath Division");
-			add("Kildare Division");
-			add("D.M.R. Northern Division");
-			add("D.M.R. Western Division");
-			add("D.M.R. Southern Division");
-			add("D.M.R. South Central Division");
-			add("D.M.R. North Central Division");
+			add("Cork City Division");
+			add("Cork North Division");
+			add("Cork West Division");
 			add("D.M.R. Eastern Division");
-			add("Waterford Division");
-			add("Wexford Division");
-			add("Tipperary Division");
+			add("D.M.R. North Central Division");
+			add("D.M.R. Northern Division");
+			add("D.M.R. South Central Division");
+			add("D.M.R. Southern Division");
+			add("D.M.R. Western Division");
+			add("Donegal Division");
+			add("Galway Division");
+			add("Kerry Division");
+			add("Kildare Division");
 			add("Kilkenny/Carlow Division");
+			add("Laois/Offaly Division");
+			add("Limerick Division");
+			add("Louth Division");
+			add("Mayo Division");
+			add("Meath Division");
+			add("Roscommon/Longford Division");
+			add("Sligo/Leitrim Division");
+			add("Tipperary Division");
+			add("Waterford Division");
+			add("Westmeath Division");
+			add("Wexford Division");
+			add("Wicklow Division");
 		}
 	};
 
 	public static List<String> ALL_LEGAL_TOWNS_AND_CITIES = new ArrayList<String>() {
 		{
-			add("Trim Legal Town");
-			add("Bray Legal Town");
-			add("Midleton Legal Town");
-			add("Bandon Legal Town");
-			add("Longford Legal Town");
-			add("Ballina Legal Town");
-			add("Letterkenny Legal Town");
-			add("Kinsale Legal Town");
-			add("Birr Legal Town");
-			add("Wexford Legal Town");
-			add("Monaghan Legal Town");
-			add("Clonmel Legal Town");
-			add("Tipperary Legal Town");
-			add("Carrick-On-Suir Legal Town");
-			add("Shannon Legal Town");
-			add("Buncrana Legal Town");
-			add("Sligo Legal Town");
-			add("Loughrea Legal Town");
-			add("Arklow Legal Town");
-			add("Fermoy Legal Town");
-			add("Edenderry Legal Town");
-			add("Balbriggan Legal Town");
-			add("Drogheda Legal Town");
-			add("Tullamore Legal Town");
-			add("Kilkenny Legal Town");
-			add("Templemore Legal Town");
-			add("Muinebeag Legal Town");
-			add("Ballyshannon Legal Town");
-			add("Nenagh Legal Town");
-			add("Ballinasloe Legal Town");
-			add("Kilrush Legal Town");
-			add("Navan (An Uaimh) Legal Town");
-			add("Bundoran Legal Town");
-			add("Droichead Nua Legal Town");
-			add("Tuam Legal Town");
-			add("Lismore Legal Town");
-			add("Belturbet Legal Town");
-			add("Cashel Legal Town");
-			add("Cootehill Legal Town");
-			add("New Ross Legal Town");
-			add("Thurles Legal Town");
-			add("Carlow Legal Town");
-			add("Youghal Legal Town");
-			add("Listowel Legal Town");
-			add("Athlone Legal Town");
-			add("Mountmellick Legal Town");
-			add("Macroom Legal Town");
-			add("Kilkee Legal Town");
-			add("Killarney Legal Town");
-			add("Dundalk Legal Town");
-			add("Skibbereen Legal Town");
-			add("Naas Legal Town");
-			add("Dungarvan Legal Town");
-			add("Ennis Legal Town");
 			add("Ardee Legal Town");
-			add("Castleblayney Legal Town");
-			add("Tramore Legal Town");
-			add("Cavan Legal Town");
+			add("Arklow Legal Town");
+			add("Athlone Legal Town");
+			add("Athy Legal Town");
+			add("Balbriggan Legal Town");
+			add("Ballina Legal Town");
+			add("Ballinasloe Legal Town");
 			add("Ballybay Legal Town");
+			add("Ballyshannon Legal Town");
+			add("Bandon Legal Town");
+			add("Bantry Legal Town");
+			add("Belturbet Legal Town");
+			add("Birr Legal Town");
+			add("Boyle Legal Town");
+			add("Bray Legal Town");
+			add("Buncrana Legal Town");
+			add("Bundoran Legal Town");
+			add("Carlow Legal Town");
+			add("Carrick-On-Suir Legal Town");
+			add("Carrickmacross Legal Town");
+			add("Cashel Legal Town");
+			add("Castlebar Legal Town");
+			add("Castleblayney Legal Town");
+			add("Cavan Legal Town");
+			add("Clonakilty Legal Town");
+			add("Clones Legal Town");
+			add("Clonmel Legal Town");
+			add("Cobh Legal Town");
+			add("Cootehill Legal Town");
+			add("Cork City");
+			add("Drogheda Legal Town");
+			add("Droichead Nua Legal Town");
+			add("Dublin City");
+			add("Dundalk Legal Town");
+			add("Dungarvan Legal Town");
+			add("Edenderry Legal Town");
+			add("Ennis Legal Town");
 			add("Enniscorthy Legal Town");
-			add("Passage West Legal Town");
-			add("Leixlip Legal Town");
+			add("Fermoy Legal Town");
+			add("Galway City");
 			add("Gorey Legal Town");
 			add("Granard Legal Town");
-			add("Mallow Legal Town");
-			add("Cobh Legal Town");
-			add("Tralee Legal Town");
-			add("Westport Legal Town");
-			add("Clonakilty Legal Town");
-			add("Portlaoighise Legal Town");
-			add("Castlebar Legal Town");
-			add("Clones Legal Town");
-			add("Mullingar Legal Town");
-			add("Carrickmacross Legal Town");
 			add("Greystones Legal Town");
-			add("Boyle Legal Town");
-			add("Wicklow Legal Town");
-			add("Bantry Legal Town");
-			add("Athy Legal Town");
-			add("Cork City");
-			add("Dublin City");
-			add("Galway City");
-			add("Waterford City");
+			add("Kilkee Legal Town");
+			add("Kilkenny Legal Town");
+			add("Killarney Legal Town");
+			add("Kilrush Legal Town");
+			add("Kinsale Legal Town");
+			add("Leixlip Legal Town");
+			add("Letterkenny Legal Town");
 			add("Limerick City");
+			add("Lismore Legal Town");
+			add("Listowel Legal Town");
+			add("Longford Legal Town");
+			add("Loughrea Legal Town");
+			add("Macroom Legal Town");
+			add("Mallow Legal Town");
+			add("Midleton Legal Town");
+			add("Monaghan Legal Town");
+			add("Mountmellick Legal Town");
+			add("Muinebeag Legal Town");
+			add("Mullingar Legal Town");
+			add("Naas Legal Town");
+			add("Navan (An Uaimh) Legal Town");
+			add("Nenagh Legal Town");
+			add("New Ross Legal Town");
+			add("Passage West Legal Town");
+			add("Portlaoighise Legal Town");
+			add("Shannon Legal Town");
+			add("Skibbereen Legal Town");
+			add("Sligo Legal Town");
+			add("Templemore Legal Town");
+			add("Thurles Legal Town");
+			add("Tipperary Legal Town");
+			add("Tralee Legal Town");
+			add("Tramore Legal Town");
+			add("Trim Legal Town");
+			add("Tuam Legal Town");
+			add("Tullamore Legal Town");
+			add("Waterford City");
+			add("Westport Legal Town");
+			add("Wexford Legal Town");
+			add("Wicklow Legal Town");
+			add("Youghal Legal Town");
 		}
 	};
+
+	public static void printAllLegalTownsAndCities() {
+		System.out.println(GREEN_BOLD
+				+ "The legal towns/cities you can select for question 4 (easiest to just copy+paste): " + RESET);
+		for (String townOrCity : ALL_LEGAL_TOWNS_AND_CITIES) {
+			System.out.println("\t" + PURPLE + townOrCity + RESET);
+		}
+	}
 
 }
