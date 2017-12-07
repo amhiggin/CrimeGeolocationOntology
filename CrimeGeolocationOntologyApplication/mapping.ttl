@@ -8,7 +8,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Coordinates/{LATITUDE},{LONGITUDE}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates/{LATITUDE},{LONGITUDE}";
         rr:class ex:Coordinates;
     ];
 	rr:predicateObjectMap [
@@ -29,7 +29,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/County/{COUNTY}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County/{COUNTY}";
         rr:class ex:County;
     ];
 
@@ -48,7 +48,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/ElectoralDivision/{ELECTORAL DIVISIONS}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivision/{ELECTORAL DIVISIONS}";
         rr:class ex:ElectoralDivision;
     ];
 
@@ -67,7 +67,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Division/{DIVISIONS}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division/{DIVISIONS}";
         rr:class ex:Division;
     ];
 
@@ -86,7 +86,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Station/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station/{ID}";
         rr:class ex:Station;
     ];
 
@@ -113,7 +113,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/CrimeClassification/{PERSON}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/{PERSON}";
         rr:class ex:CrimeClassification;
     ];
 
@@ -127,7 +127,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/CrimeClassification/{PROPERTY}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/{PROPERTY}";
         rr:class ex:CrimeClassification;
     ];
 
@@ -141,14 +141,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
