@@ -69,6 +69,9 @@ public class OntologyApplication {
 			case "electoral divisions":
 				OntologyConstants.printAllElectoralDivisions();
 				break;
+			case "garda divisions":
+				OntologyConstants.printAllGardaDivisions();
+				break;
 			case "counties":
 				OntologyConstants.printAllCounties();
 				break;
@@ -97,10 +100,10 @@ public class OntologyApplication {
 
 	private static ResultSet executeQueryBasedOnUserInput(String selectedQuery, Scanner inputScanner) {
 		String queryString = null;
-		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null;
+		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null, gardaDivision = null;
 		switch (selectedQuery) {
 		case "1":
-			// "How many stations are there in a specified county?";
+			// "What stations are there in a specified county?";
 			queryString = queriesAsStrings.get(0);
 			System.out.println("Enter the county: ");
 			county = inputScanner.nextLine();
@@ -127,16 +130,15 @@ public class OntologyApplication {
 			}
 			break;
 		case "3":
-			// "On average, how many crimes are committed in a specified county
-			// per year?";
+			// "What electoral divisions are in a specified garda division?"
 			queryString = queriesAsStrings.get(2);
-			System.out.println("Enter the county: ");
-			county = inputScanner.nextLine();
-			if (OntologyConstants.ALL_COUNTIES.contains(county)) {
-				queryString = String.format(queryString, county);
+			System.out.println("Enter the garda division: ");
+			gardaDivision = inputScanner.nextLine();
+			if (OntologyConstants.ALL_DIVISIONS.contains(gardaDivision)) {
+				queryString = String.format(queryString, gardaDivision);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s", county));
+				printRedText(String.format("Invalid data entered: %s", gardaDivision));
 			}
 			break;
 		case "4":
