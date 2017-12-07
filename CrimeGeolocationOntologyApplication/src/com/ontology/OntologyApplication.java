@@ -12,8 +12,8 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 
 public class OntologyApplication {
-	// TODO @Amber update with final ontology name
-	public static String ontologyName = "Crime-in-Ireland-2004-2016.owl";
+
+	public static String ontologyName = "mapping.owl"; // Crime-in-Ireland-2004-2016.owl";
 	public static com.hp.hpl.jena.ontology.OntModel ontologyModel = null;
 	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
@@ -95,8 +95,6 @@ public class OntologyApplication {
 		inputScanner.close();
 	}
 
-	// FIXME: when the model is completed, review the order in which the
-	// String.formatting is happening in the queries
 	private static ResultSet executeQueryBasedOnUserInput(String selectedQuery, Scanner inputScanner) {
 		String queryString = null;
 		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null;
