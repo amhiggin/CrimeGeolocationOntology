@@ -264,7 +264,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of attempts or threats to murder, assaults, harassments and related offences</rdfs:comment>
         <rdfs:label>Attempts or threats to murder, assaults, harassments and related offences</rdfs:label>
     </owl:Class>
@@ -274,7 +273,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of burglary and related offences</rdfs:comment>
         <rdfs:label>Burglary and related offences</rdfs:label>
     </owl:Class>
@@ -284,7 +282,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of controlled drug offences</rdfs:comment>
         <rdfs:label>Controlled drug offences</rdfs:label>
     </owl:Class>
@@ -303,7 +300,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
         <rdfs:comment>The County represented by a region</rdfs:comment>
         <rdfs:label>County</rdfs:label>
     </owl:Class>
@@ -331,7 +327,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of damage to property and to the environment</rdfs:comment>
         <rdfs:label>Damage to property and to the environment</rdfs:label>
     </owl:Class>
@@ -341,7 +336,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of dangerous or negligent acts</rdfs:comment>
         <rdfs:label>Dangerous or negligent acts</rdfs:label>
     </owl:Class>
@@ -369,7 +363,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of fraud, deception and related offences</rdfs:comment>
         <rdfs:label>Fraud, deception and related offences</rdfs:label>
     </owl:Class>
@@ -379,7 +372,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of kidnapping and related offences</rdfs:comment>
         <rdfs:label>Kidnapping and related offences</rdfs:label>
     </owl:Class>
@@ -389,7 +381,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of offences against government, justice procedures and organisation of crime</rdfs:comment>
         <rdfs:label>Offences against government, justice procedures and organisation of crime</rdfs:label>
     </owl:Class>
@@ -399,7 +390,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of public order and other social code offences</rdfs:comment>
         <rdfs:label>Public order and other social code offences</rdfs:label>
     </owl:Class>
@@ -409,7 +399,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of robbery, extortion and hijacking offences</rdfs:comment>
         <rdfs:label>Robbery, extortion and hijacking offences</rdfs:label>
     </owl:Class>
@@ -428,7 +417,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of theft and related offences</rdfs:comment>
         <rdfs:label>Theft and related offences</rdfs:label>
     </owl:Class>
@@ -438,7 +426,6 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
         <rdfs:comment>Crimes that fall into the category of weapons and explosives offences</rdfs:comment>
         <rdfs:label>Weapons and Explosives Offences</rdfs:label>
     </owl:Class>
@@ -459,13 +446,20 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences"/>
         </owl:members>
