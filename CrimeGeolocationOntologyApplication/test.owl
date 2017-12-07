@@ -1,58 +1,560 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
+<rdf:RDF xmlns:Crime-in-Ireland-2004-2016="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#"
+     xml:base="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<!DOCTYPE rdf:RDF [
-  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
-  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
-  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
-  <!ENTITY ns_transport "file://www.ibm.com/WSRR/Transport#">
-  <!ENTITY wsrr "http://www.ibm.com/xmlns/prod/serviceregistry/6/1/model#">
-]>
+    
 
-<rdf:RDF
-  xmlns:xsd="&xsd;"
-  xmlns:rdf="&rdf;"
-  xmlns:rdfs="&rdfs;"
-  xmlns:owl="&owl;"
-  xmlns:ns_transport="&ns_transport;"
-  xmlns:wsrr="&wsrr;"
->
 
-  <owl:Ontology rdf:about="&ns_transport;TransportOntology">
-    <owl:imports rdf:resource="http://www.ibm.com/xmlns/prod/serviceregistry/6/1/model"/> 
-    <wsrr:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transport</wsrr:prefix>
-    <rdfs:label>A transport classification system.</rdfs:label>
-    <rdfs:comment>Cars and buses and some superclasses.</rdfs:comment>
-  </owl:Ontology>
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCoordinates -->
 
-  <owl:Class rdf:about="&ns_transport;Transport">
-    <rdfs:label>Transport</rdfs:label>
-    <rdfs:comment>Top-level root class for transport.</rdfs:comment>
-  </owl:Class>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCoordinates">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCoordinates"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The geographic coordinates of a specific Garda station</rdfs:comment>
+        <rdfs:label>hasCoordinates</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-  <owl:Class rdf:about="&ns_transport;LandTransport">
-    <rdfs:subClassOf rdf:resource="&ns_transport;Transport"/>
-    <rdfs:label>Land Transport.</rdfs:label>
-    <rdfs:comment>Middle-level land transport class.</rdfs:comment>
-  </owl:Class>
 
-  <owl:Class rdf:about="&ns_transport;AirTransport">
-    <rdfs:subClassOf rdf:resource="&ns_transport;Transport"/>
-    <rdfs:label>Air Transport.</rdfs:label>
-    <rdfs:comment>Middle-level air transport class.</rdfs:comment>
-  </owl:Class>
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimeType -->
 
-  <owl:Class rdf:about="&ns_transport;Bus">
-    <rdfs:subClassOf rdf:resource="&ns_transport;LandTransport"/>
-    <rdfs:label>Bus.</rdfs:label>
-    <rdfs:comment>Bottom-level bus class.</rdfs:comment>
-  </owl:Class>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimeType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification"/>
+        <rdfs:comment>The type of crime associated with this object</rdfs:comment>
+        <rdfs:label>hasCrimeType</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-  <owl:Class rdf:about="&ns_transport;Car">
-    <rdfs:subClassOf rdf:resource="&ns_transport;LandTransport"/>
-    <rdfs:label>Car.</rdfs:label>
-    <rdfs:comment>Bottom-level car class.</rdfs:comment>
-  </owl:Class>
 
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The crimes associated with a given crime classification</rdfs:comment>
+        <rdfs:label>hasCrimes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasIntersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasIntersection">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasIntersection"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
+        <rdfs:comment>A property that points to electoral divisions that resides within a County or visa versa</rdfs:comment>
+        <rdfs:label>hasIntersection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Gives the Garda station that a given coordinate object applies to</rdfs:comment>
+        <rdfs:label>hasStation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inDivision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The Garda stations tha fall under a given Garda division</rdfs:comment>
+        <rdfs:label>hasStations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inDivision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inDivision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inDivision"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The division in which a Garda station resides</rdfs:comment>
+        <rdfs:label>inDivision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#occuredInStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#occuredInStation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#occuredInStation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The Garda station in which a group of Crimes was processed</rdfs:comment>
+        <rdfs:label>occuredInStation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimeTotal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasCrimeTotal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The crimes associated with a given crime classification</rdfs:comment>
+        <rdfs:label>hasCrimeTotal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasDivisionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasDivisionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name given to a given Garda division</rdfs:comment>
+        <rdfs:label>hasDivisionName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name given to a county or an electoral division</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStationName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name given to a specific Garda station</rdfs:comment>
+        <rdfs:label>hasStationName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The year in which a group of crimes occured</rdfs:comment>
+        <rdfs:label>inYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#isClassification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#isClassification">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The classifaction given to a specific crime by the CrimeClassification class</rdfs:comment>
+        <rdfs:label>isClassification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#xCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#xCoordinate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The geographical coordinate of a Garda station in the x direction</rdfs:comment>
+        <rdfs:label>xCoordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#yCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#yCoordinate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The geographical coordinate of a Garda station in the y direction</rdfs:comment>
+        <rdfs:label>yCoordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of attempts or threats to murder, assaults, harassments and related offences</rdfs:comment>
+        <rdfs:label>Attempts or threats to murder, assaults, harassments and related offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of burglary and related offences</rdfs:comment>
+        <rdfs:label>Burglary and related offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of controlled drug offences</rdfs:comment>
+        <rdfs:label>Controlled drug offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates">
+        <rdfs:comment>The coordinates of a given Garda Station</rdfs:comment>
+        <rdfs:label>Coordinates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
+        <rdfs:comment>The County represented by a region</rdfs:comment>
+        <rdfs:label>County</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime">
+        <rdfs:comment>An instance of this class provides the number of a specific crime that is processed at a given Garda station in a given year</rdfs:comment>
+        <rdfs:label>Crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification">
+        <rdfs:comment>Represents the classification of crimes. These classifications include crimes against people and crimes against possesions</rdfs:comment>
+        <rdfs:label>Crime Classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of damage to property and to the environment</rdfs:comment>
+        <rdfs:label>Damage to property and to the environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of dangerous or negligent acts</rdfs:comment>
+        <rdfs:label>Dangerous or negligent acts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division">
+        <rdfs:comment>Represents a division that  is made up of a given group of Garda stations</rdfs:comment>
+        <rdfs:label>Division</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions">
+        <rdfs:comment>The City and Legal town represented by a region</rdfs:comment>
+        <rdfs:label>Electoral Divisions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of fraud, deception and related offences</rdfs:comment>
+        <rdfs:label>Fraud, deception and related offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of kidnapping and related offences</rdfs:comment>
+        <rdfs:label>Kidnapping and related offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of offences against government, justice procedures and organisation of crime</rdfs:comment>
+        <rdfs:label>Offences against government, justice procedures and organisation of crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of public order and other social code offences</rdfs:comment>
+        <rdfs:label>Public order and other social code offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of robbery, extortion and hijacking offences</rdfs:comment>
+        <rdfs:label>Robbery, extortion and hijacking offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station">
+        <rdfs:comment>Reresents a single Garda station and its location</rdfs:comment>
+        <rdfs:label>Station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of theft and related offences</rdfs:comment>
+        <rdfs:label>Theft and related offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime"/>
+        <rdfs:comment>Crimes that fall into the category of weapons and explosives offences</rdfs:comment>
+        <rdfs:label>Weapons and Explosives Offences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#BurglaryAndRelatedOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ControlledDrugOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DamageToPropertyAndToTheEnvironment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#DangerousOrNegligentActs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#FraudDeceptionAndRelatedOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#KidnappingAndRelatedOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#PublicOrderAndOtherSocialCodeOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#RobberyExtortionAndHijackingOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#TheftAndRelatedOffences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#WeaponsAndExplosivesOffences"/>
+        </owl:members>
+    </rdf:Description>
+
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.48348382,-9.37226138 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.48348382,-9.37226138">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Baltimore</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.48348382</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.37226138</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.52871616,-9.54135767 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.52871616,-9.54135767">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Schull</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.52871616</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.54135767</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.54858782,-9.26413329 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.54858782,-9.26413329">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Skibbereen</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.54858782</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.26413329</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.55911245,-9.46078114 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.55911245,-9.46078114">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Ballydehob</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.55911245</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.46078114</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.57756682,-9.03150268 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.57756682,-9.03150268">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Rosscarbery</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.57756682</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.03150268</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.62054425,-9.52396119 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.62054425,-9.52396119">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Durrus</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.62054425</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-9.52396119</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.example.com/Coordinates/51.62494883,-8.88890895 -->
+
+    <owl:NamedIndividual rdf:about="http://data.example.com/Coordinates/51.62494883,-8.88890895">
+        <rdf:type rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Coordinates"/>
+        <Crime-in-Ireland-2004-2016:hasStation>Clonakilty</Crime-in-Ireland-2004-2016:hasStation>
+        <Crime-in-Ireland-2004-2016:xCoordinate>51.62494883</Crime-in-Ireland-2004-2016:xCoordinate>
+        <Crime-in-Ireland-2004-2016:yCoordinate>-8.88890895</Crime-in-Ireland-2004-2016:yCoordinate>
+    </owl:NamedIndividual>
+    
 
 </rdf:RDF>

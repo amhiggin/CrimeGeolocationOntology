@@ -29,6 +29,8 @@ public class ReadOntologyModel {
 
 		while (RootClasses.hasNext()) {
 			String RootclassSTR = RootClasses.next().toString();
+			if (RootclassSTR.indexOf("semanticweb") == -1)
+				break;
 			print("ROOTCLASS: " + RootclassSTR);
 			OntClass query = model.getOntClass(RootclassSTR);
 
