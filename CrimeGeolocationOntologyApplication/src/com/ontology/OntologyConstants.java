@@ -94,7 +94,7 @@ public class OntologyConstants {
 	// PRINTS IN PURPLE
 	public static String PRESENT_USER_OPTIONS = "What would you like to ask? Select the number of the question to "
 			+ "ask. \n\t1) %s\n\t2) %s\n\t3) %s\n\t4) %s\n\t5) %s\n\t6) %s";
-	public static String OPTIONS_TO_DISPLAY_LISTS = "Enter:\n\t- 'legal towns' to display a list of all legal towns and cities\n\t- 'crimes' to display a list of crimes for which records exist\n\t- 'counties' to display a list of all counties";
+	public static String OPTIONS_TO_DISPLAY_LISTS = "Enter:\n\t- 'electoral divisions' to display a list of some Irish electoral divisions\n\t- 'crimes' to display a list of crimes for which records exist\n\t- 'counties' to display a list of all counties";
 	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
 
 	// TODO @Amber populate these when we know what the final questions are
