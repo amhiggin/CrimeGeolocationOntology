@@ -105,12 +105,12 @@ public class OntologyConstants {
 	public static final String THIRD_QUESTION = CYAN
 			+ "On average, how many crimes are committed in a specified county per year?" + RESET;
 	public static final String FOURTH_QUESTION = CYAN
-			+ "In which year did a specified Legal Town/City have its highest crime rate?" + RESET;
+			+ "In which year did a specified Electoral Division have its highest crime rate?" + RESET;
 	// FIXME: figure out how to do the time ranges
 	public static final String FIFTH_QUESTION = CYAN
 			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
 	public static final String SIXTH_QUESTION = CYAN
-			+ "Which Legal Town/City had the lowest number of a specific crime in a given year?" + RESET;
+			+ "Which Electoral Division had the lowest number of a specific crime in a given year?" + RESET;
 
 	public static List<String> ALL_CRIMES = new ArrayList<String>() {
 		{
