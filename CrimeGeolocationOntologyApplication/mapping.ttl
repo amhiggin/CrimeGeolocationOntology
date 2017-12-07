@@ -141,7 +141,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences";
         rr:class ex:Crime;
     ];
 
@@ -157,14 +157,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -173,14 +173,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -189,14 +189,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Property"
         ]
     ]
 .
@@ -205,14 +205,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Property"
         ]
     ]
 .
@@ -221,14 +221,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Property"
         ]
     ]
 .
@@ -237,14 +237,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -253,14 +253,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -269,46 +269,46 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
 
-<#DamageToPropertyTriplesMap>
+<#DamageToPropertyAndEnvTriplesMap>
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Property"
         ]
     ]
 .
 
-<#PubicOrderAndOtherSocialOffencesTriplesMap>
+<#PublicOrderAndOtherSocialOffencesTriplesMap>
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -317,14 +317,14 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime";
         rr:class ex:Crime;
     ];
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#CrimeClassification/Damage%20to%20Person"
         ]
     ]
 .
@@ -333,7 +333,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2004/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -355,7 +355,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 .
@@ -364,7 +364,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime2004/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -386,7 +386,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime"
         ]
     ];
 .
@@ -396,7 +396,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2005/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -423,7 +423,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 .
@@ -432,7 +432,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2006/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -444,7 +444,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -464,7 +464,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2007/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -476,7 +476,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -496,7 +496,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2008/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -508,7 +508,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -528,7 +528,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2009/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -540,7 +540,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -560,7 +560,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2010/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -572,7 +572,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -592,7 +592,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2011/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -604,7 +604,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -627,7 +627,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -648,7 +648,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -681,7 +681,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -702,7 +702,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -735,7 +735,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -756,7 +756,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -790,7 +790,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -811,7 +811,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -841,7 +841,7 @@
     rr:logicalTable [ rr:tableName "garda_stations" ];
 
     rr:subjectMap [
-        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences2016/{ID}";
         rr:class ex:Crime;
     ];
 
@@ -853,7 +853,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
         ]
     ];
 
@@ -876,7 +876,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -895,7 +895,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -927,7 +927,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -948,7 +948,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -981,7 +981,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -1002,7 +1002,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1036,7 +1036,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -1057,7 +1057,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1091,7 +1091,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -1111,7 +1111,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1145,7 +1145,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -1166,7 +1166,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1200,7 +1200,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -1221,7 +1221,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1255,7 +1255,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -1276,7 +1276,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1310,7 +1310,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -1331,7 +1331,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1364,7 +1364,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -1385,7 +1385,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1418,7 +1418,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -1439,7 +1439,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1473,7 +1473,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -1493,7 +1493,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1526,7 +1526,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs 2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -1547,7 +1547,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DangerousOrNegligentActs"
         ]
     ];
 
@@ -1583,7 +1583,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -1603,7 +1603,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1637,7 +1637,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -1658,7 +1658,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1691,7 +1691,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -1712,7 +1712,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1746,7 +1746,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -1767,7 +1767,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1801,7 +1801,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -1822,7 +1822,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1856,7 +1856,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -1877,7 +1877,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1911,7 +1911,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -1932,7 +1932,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -1966,7 +1966,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -1987,7 +1987,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2021,7 +2021,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -2042,7 +2042,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2075,7 +2075,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -2096,7 +2096,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2129,7 +2129,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -2150,7 +2150,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2184,7 +2184,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -2205,7 +2205,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2238,7 +2238,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -2259,7 +2259,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/KidnappingAndRelatedOffences"
         ]
     ];
 
@@ -2293,7 +2293,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -2313,7 +2313,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2347,7 +2347,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -2368,7 +2368,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2401,7 +2401,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -2422,7 +2422,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2456,7 +2456,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -2477,7 +2477,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2511,7 +2511,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -2532,7 +2532,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2566,7 +2566,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -2586,7 +2586,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2620,7 +2620,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -2641,7 +2641,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2675,7 +2675,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -2696,7 +2696,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2730,7 +2730,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -2750,7 +2750,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2783,7 +2783,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -2804,7 +2804,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2837,7 +2837,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -2858,7 +2858,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2892,7 +2892,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -2913,7 +2913,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -2946,7 +2946,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -2967,7 +2967,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/RobberyExtortionAndHijackingOffences"
         ]
     ];
 
@@ -3003,7 +3003,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -3024,7 +3024,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3058,7 +3058,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -3079,7 +3079,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3112,7 +3112,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -3132,7 +3132,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3166,7 +3166,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -3187,7 +3187,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3221,7 +3221,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -3242,7 +3242,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3276,7 +3276,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -3296,7 +3296,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3330,7 +3330,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -3350,7 +3350,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3384,7 +3384,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -3405,7 +3405,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3439,7 +3439,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -3460,7 +3460,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3493,7 +3493,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -3514,7 +3514,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3547,7 +3547,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -3567,7 +3567,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3601,7 +3601,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -3622,7 +3622,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3655,7 +3655,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -3676,7 +3676,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/BurglaryAndRelatedOffences"
         ]
     ];
 
@@ -3711,7 +3711,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -3731,7 +3731,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -3765,7 +3765,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -3786,7 +3786,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -3819,7 +3819,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -3840,7 +3840,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -3874,7 +3874,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -3895,7 +3895,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -3929,7 +3929,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -3950,7 +3950,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -3984,7 +3984,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -4004,7 +4004,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4038,7 +4038,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -4059,7 +4059,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4093,7 +4093,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -4114,7 +4114,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4148,7 +4148,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -4168,7 +4168,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4201,7 +4201,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -4222,7 +4222,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4255,7 +4255,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -4276,7 +4276,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4310,7 +4310,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -4331,7 +4331,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4364,7 +4364,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -4385,7 +4385,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/TheftAndRelatedOffences"
         ]
     ];
 
@@ -4421,7 +4421,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -4442,7 +4442,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4476,7 +4476,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -4497,7 +4497,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4530,7 +4530,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -4551,7 +4551,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4585,7 +4585,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -4605,7 +4605,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4639,7 +4639,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -4659,7 +4659,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4693,7 +4693,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -4713,7 +4713,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4746,7 +4746,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -4767,7 +4767,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4801,7 +4801,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -4822,7 +4822,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4856,7 +4856,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -4877,7 +4877,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4910,7 +4910,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -4931,7 +4931,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -4964,7 +4964,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -4985,7 +4985,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -5019,7 +5019,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -5040,7 +5040,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -5073,7 +5073,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -5094,7 +5094,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/FraudDeceptionAndRelatedOffences"
         ]
     ];
 
@@ -5130,7 +5130,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -5150,7 +5150,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5184,7 +5184,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -5205,7 +5205,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5239,7 +5239,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -5260,7 +5260,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5295,7 +5295,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -5315,7 +5315,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5350,7 +5350,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -5369,7 +5369,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5404,7 +5404,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -5425,7 +5425,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5460,7 +5460,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -5480,7 +5480,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5515,7 +5515,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -5536,7 +5536,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5571,7 +5571,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -5592,7 +5592,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5626,7 +5626,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -5647,7 +5647,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5681,7 +5681,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -5702,7 +5702,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5737,7 +5737,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -5758,7 +5758,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5792,7 +5792,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -5813,7 +5813,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/ControlledDrugOffences"
         ]
     ];
 
@@ -5850,7 +5850,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -5871,7 +5871,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -5906,7 +5906,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -5927,7 +5927,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -5960,7 +5960,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -5981,7 +5981,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6015,7 +6015,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -6036,7 +6036,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6070,7 +6070,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -6091,7 +6091,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6125,7 +6125,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -6145,7 +6145,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6179,7 +6179,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -6200,7 +6200,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6234,7 +6234,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -6254,7 +6254,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6288,7 +6288,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -6309,7 +6309,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6342,7 +6342,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -6363,7 +6363,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6396,7 +6396,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -6417,7 +6417,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6451,7 +6451,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -6472,7 +6472,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6505,7 +6505,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -6525,7 +6525,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/WeaponsAndExplosivesOffences"
         ]
     ];
 
@@ -6561,7 +6561,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -6582,7 +6582,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6616,7 +6616,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -6637,7 +6637,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6670,7 +6670,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -6691,7 +6691,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6725,7 +6725,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -6746,7 +6746,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6780,7 +6780,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -6800,7 +6800,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6834,7 +6834,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -6855,7 +6855,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6889,7 +6889,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -6910,7 +6910,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6944,7 +6944,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -6964,7 +6964,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -6998,7 +6998,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -7019,7 +7019,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -7052,7 +7052,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -7073,7 +7073,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -7106,7 +7106,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -7127,7 +7127,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -7161,7 +7161,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -7182,7 +7182,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -7215,7 +7215,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -7236,7 +7236,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/DamageToPropertyAndToTheEnvironment"
         ]
     ];
 
@@ -7271,7 +7271,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -7292,7 +7292,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7326,7 +7326,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -7347,7 +7347,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7380,7 +7380,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -7400,7 +7400,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7434,7 +7434,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -7455,7 +7455,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7489,7 +7489,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -7510,7 +7510,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7544,7 +7544,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -7565,7 +7565,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7599,7 +7599,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -7620,7 +7620,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7654,7 +7654,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -7675,7 +7675,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7709,7 +7709,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -7730,7 +7730,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7763,7 +7763,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -7784,7 +7784,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7817,7 +7817,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -7838,7 +7838,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7872,7 +7872,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -7892,7 +7892,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7925,7 +7925,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -7945,7 +7945,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/PublicOrderAndOtherSocialCodeOffences"
         ]
     ];
 
@@ -7981,7 +7981,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2004/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2004/{ID}";
 
         rr:class ex:Crime;
 
@@ -8002,7 +8002,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8036,7 +8036,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2005/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2005/{ID}";
 
         rr:class ex:Crime;
 
@@ -8057,7 +8057,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8090,7 +8090,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2006/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2006/{ID}";
 
         rr:class ex:Crime;
 
@@ -8111,7 +8111,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8145,7 +8145,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2007/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2007/{ID}";
 
         rr:class ex:Crime;
 
@@ -8166,7 +8166,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8200,7 +8200,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2008/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2008/{ID}";
 
         rr:class ex:Crime;
 
@@ -8221,7 +8221,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8255,7 +8255,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2009/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2009/{ID}";
 
         rr:class ex:Crime;
 
@@ -8276,7 +8276,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8310,7 +8310,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2010/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2010/{ID}";
 
         rr:class ex:Crime;
 
@@ -8331,7 +8331,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8365,7 +8365,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2011/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2011/{ID}";
 
         rr:class ex:Crime;
 
@@ -8386,7 +8386,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8420,7 +8420,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2012/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2012/{ID}";
 
         rr:class ex:Crime;
 
@@ -8441,7 +8441,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8474,7 +8474,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2013/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2013/{ID}";
 
         rr:class ex:Crime;
 
@@ -8495,7 +8495,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8528,7 +8528,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2014/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2014/{ID}";
 
         rr:class ex:Crime;
 
@@ -8549,7 +8549,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8583,7 +8583,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2015/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2015/{ID}";
 
         rr:class ex:Crime;
 
@@ -8604,7 +8604,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
@@ -8637,7 +8637,7 @@
 
     rr:subjectMap [
 
-        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2016/{ID}";
+        rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS2016/{ID}";
 
         rr:class ex:Crime;
 
@@ -8657,7 +8657,7 @@
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
         rr:objectMap [
-            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrimeS"
         ]
     ];
 
