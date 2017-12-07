@@ -1,0 +1,8684 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<#CoordinateTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Coordinates/{LATITUDE},{LONGITUDE}";
+        rr:class ex:Coordinates;
+    ];
+	rr:predicateObjectMap [
+        rr:predicate ex:xCoordinate;
+        rr:objectMap [ rr:column "LATITUDE" ];
+    ];
+	rr:predicateObjectMap [
+        rr:predicate ex:yCoordinate;
+        rr:objectMap [ rr:column "LONGITUDE" ];
+    ];
+	rr:predicateObjectMap [
+        rr:predicate ex:hasStation;
+        rr:objectMap [ rr:column "STATION" ];
+    ]
+.
+
+<#CountyTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/County/{COUNTY}";
+        rr:class ex:County;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasName;
+        rr:objectMap [rr:column "COUNTY"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasIntersection;
+        rr:objectMap [ rr:column "ELECTORAL DIVISIONS"]
+    ]
+.
+
+<#ElectoralDivisionsTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/ElectoralDivision/{ELECTORAL DIVISIONS}";
+        rr:class ex:ElectoralDivision;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasName;
+        rr:objectMap [rr:column "ELECTORAL DIVISIONS"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasIntersection;
+        rr:objectMap [rr:column "COUNTY"]
+    ]
+.
+
+<#DivisionTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Division/{DIVISIONS}";
+        rr:class ex:Division;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasDivisionName;
+        rr:objectMap [ rr:column "DIVISIONS" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasStations;
+        rr:objectMap [ rr:column "STATION" ]
+    ]
+.
+
+<#StationTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Station/{ID}";
+        rr:class ex:Station;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasStationName;
+        rr:objectMap [ rr:column "STATION"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasDivision;
+        rr:objectMap [ rr:column "DIVISIONS"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCoordinates;
+        rr:objectMap [
+            rr:parentTriplesMap <#CoordinateTriplesMap>;
+            rr:joinCondition [ rr:child "ID"; rr:parent "ID"]
+        ]
+    ]
+.
+
+<#CrimeClassificationPersonTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/CrimeClassification/{PERSON}";
+        rr:class ex:CrimeClassification;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isClassification;
+        rr:objectMap [ rr:constant "Damage to Person"]
+    ]
+.
+
+<#CrimeClassificationPropertyTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/CrimeClassification/{PROPERTY}";
+        rr:class ex:CrimeClassification;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isClassification;
+        rr:objectMap [ rr:constant "Damage to Property"]
+    ]
+.
+
+<#AttemptsOrThreatsToMurderTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#DangerousOrNegligentActsTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#KidnappingAndRelatedOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#RobberyExtortionAndHijackingOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+        ]
+    ]
+.
+
+<#BurglaryAndRelatedOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+        ]
+    ]
+.
+
+<#TheftAndRelatedOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+        ]
+    ]
+.
+
+<#FraudDeceptionAndRelatedOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#ControlledDrugOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#WeaponsAndExplosivesOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#DamageToPropertyTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Property"
+        ]
+    ]
+.
+
+<#PubicOrderAndOtherSocialOffencesTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#OffencesAgainstGovernmentTriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/CrimeClassification/Damage%20to%20Person"
+        ]
+    ]
+.
+
+<#Crime1TriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2004/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2004" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2004" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+.
+
+<#Crime2TriplesMap>
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME2004/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2004" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2004" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIME"
+        ]
+    ];
+.
+
+<#Crime3TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2005/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2005" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [ rr:constant "Damage to Person" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2005" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+.
+<#Crime4TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2006/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2006" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2006" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime5TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2007/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2007" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2007" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime6TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2008/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2008" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2008" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime7TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2009/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2009" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2009" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime8TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2010/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2010" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2010" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime9TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2011/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2011" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2011" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime10TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime11TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime12TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime13TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+.
+
+<#Crime14TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+    rr:subjectMap [
+        rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES2016/{ID}";
+        rr:class ex:Crime;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeTotal;
+        rr:objectMap [ rr:column "ATTEMPTS OR THREATS TO MURDER, ASSAULTS, HARASSMENTS AND RELATED OFFENCES 2016*" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ATTEMPTSORTHREATSTOMURDER,ASSAULTS,HARASSMENTSANDRELATEDOFFENCES"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inYear;
+        rr:objectMap [ rr:constant "2016" ]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:occuredInStation;
+        rr:objectMap [ rr:column "STATION"]
+    ]
+.
+
+<#Crime15TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2004" ]
+
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime16TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime17TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime18TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime19TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2008" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime20TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime21TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime22TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime23TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime24TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime25TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime26TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2015" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime27TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS 2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DANGEROUS OR NEGLIGENT ACTS 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DANGEROUSORNEGLIGENTACTS"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime28TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2004" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime29TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime30TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime31TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime32TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime33TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime34TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime35TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime36TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime37TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime38TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime39TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime40TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "KIDNAPPING AND RELATED OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/KIDNAPPINGANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+.
+
+
+<#Crime41TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2004" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime42TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime43TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime44TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime45TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime46TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2009" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime47TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime48TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime49TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2012" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime50TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime51TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime52TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime53TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "ROBBERY, EXTORTION AND HIJACKING OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/ROBBERY,EXTORTIONANDHIJACKINGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime54TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime55TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime56TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2006" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime57TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime58TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime59TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2009" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime60TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2010" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime61TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime62TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime63TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime64TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2014" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime65TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime66TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "BURGLARY AND RELATED OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/BURGLARYANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+<#Crime67TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2004" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime68TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime69TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime70TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime71TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime72TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2009" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime73TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime74TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime75TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2012" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime76TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime77TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime78TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime79TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "THEFT AND RELATED OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/THEFTANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime80TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime81TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime82TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime83TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2007" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime84TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2008" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime85TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2009" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime86TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime87TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime88TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime89TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime90TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime91TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime92TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "FRAUD, DECEPTION AND RELATED OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/FRAUD,DECEPTIONANDRELATEDOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime93TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2004" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime94TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime95TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime96TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2007" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime97TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2008" ]
+
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime98TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime99TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2010" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime100TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime101TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime102TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime103TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime104TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime105TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "CONTROLLED DRUG OFFENCES 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/CONTROLLEDDRUGOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime106TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime107TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime108TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime109TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime110TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime111TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2009" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime112TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime113TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2011" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime114TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime115TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime116TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime117TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime118TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "WEAPONS AND EXPLOSIVES OFFENCES 2016*" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/WEAPONSANDEXPLOSIVESOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime119TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime120TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime121TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime122TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime123TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2008" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime124TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime125TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime126TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2011" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime127TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime128TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime129TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime130TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime131TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "DAMAGE TO PROPERTY AND TO THE ENVIRONMENT 2016*" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/DAMAGETOPROPERTYANDTOTHEENVIRONMENT"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+<#Crime132TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime133TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime134TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2006" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime135TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime136TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime137TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime138TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime139TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime140TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime141TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime142TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime143TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2015" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime144TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "PUBLIC ORDER AND OTHER SOCIAL CODE OFFENCES 2016*" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/PUBLICORDERANDOTHERSOCIALCODEOFFENCES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+
+
+<#Crime145TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2004/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2004" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime146TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2005/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2005" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime147TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2006/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2006" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime148TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2007/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2007" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime149TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2008/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2008" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime150TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2009/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2009" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime151TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2010/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2010" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime152TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2011/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2011" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime153TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2012/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2012" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime154TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2013/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2013" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime155TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2014/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2014" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+
+<#Crime156TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2015/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2015" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
+<#Crime157TriplesMap>
+
+    rr:logicalTable [ rr:tableName "garda_stations" ];
+
+
+
+    rr:subjectMap [
+
+        rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES2016/{ID}";
+
+        rr:class ex:Crime;
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:hasCrimeTotal;
+
+        rr:objectMap [ rr:column "OFFENCES AGAINST GOVERNMENT, JUSTICE PROCEDURES AND ORGANISATION OF CRIME 2016*" ]
+
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCrimeType;
+        rr:objectMap [
+            rr:template "http://data.example.com/Crime/OFFENCESAGAINSTGOVERNMENT,JUSTICEPROCEDURESANDORGANISATIONOFCRIMES"
+        ]
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:inYear;
+
+        rr:objectMap [ rr:constant "2016" ]
+
+    ];
+
+
+
+    rr:predicateObjectMap [
+
+        rr:predicate ex:occuredInStation;
+
+        rr:objectMap [ rr:column "STATION"]
+
+    ]
+
+.
