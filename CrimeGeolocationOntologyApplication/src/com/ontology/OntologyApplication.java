@@ -66,8 +66,8 @@ public class OntologyApplication {
 			printGreenText(OntologyConstants.PRESS_X_TO_EXIT);
 			String input = inputScanner.nextLine();
 			switch (input) {
-			case "legal towns":
-				OntologyConstants.printAllLegalTownsAndCities();
+			case "electoral divisions":
+				OntologyConstants.printAllElectoralDivisions();
 				break;
 			case "counties":
 				OntologyConstants.printAllCounties();
@@ -99,7 +99,7 @@ public class OntologyApplication {
 	// String.formatting is happening in the queries
 	private static ResultSet executeQueryBasedOnUserInput(String selectedQuery, Scanner inputScanner) {
 		String queryString = null;
-		String county = null, specificCrime = null, timePeriod = null, legalTownOrCity = null;
+		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null;
 		switch (selectedQuery) {
 		case "1":
 			// "How many stations are there in a specified county?";
@@ -142,16 +142,16 @@ public class OntologyApplication {
 			}
 			break;
 		case "4":
-			// "In which year did a specified Legal Town/City have its highest
-			// crime rate?" + RESET;
+			// "In which year did a specified Electoral Division have its
+			// highest crime rate?"
 			queryString = queriesAsStrings.get(3);
-			System.out.println("Enter the Legal Town/City: ");
-			legalTownOrCity = inputScanner.nextLine();
-			if (OntologyConstants.ALL_LEGAL_TOWNS_AND_CITIES.contains(legalTownOrCity)) {
-				queryString = String.format(queryString, legalTownOrCity);
+			System.out.println("Enter the Electoral Division: ");
+			electoralDivision = inputScanner.nextLine();
+			if (OntologyConstants.ALL_ELECTORAL_DIVISIONS.contains(electoralDivision)) {
+				queryString = String.format(queryString, electoralDivision);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s", legalTownOrCity));
+				printRedText(String.format("Invalid data entered: %s", electoralDivision));
 			}
 			break;
 		case "5":
@@ -168,8 +168,8 @@ public class OntologyApplication {
 			}
 			break;
 		case "6":
-			// "Which Legal Town/City had the lowest number of a specific crime
-			// in a given year?";
+			// "Which Electoral Division had the lowest number of a specific
+			// crime in a given year?";
 			queryString = queriesAsStrings.get(5);
 			System.out.println("Enter the crime (e.g. burglary, fraud): ");
 			specificCrime = inputScanner.nextLine();

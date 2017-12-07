@@ -209,6 +209,18 @@ public class OntologyConstants {
 		}
 	};
 
+	public static List<String> ALL_ELECTORAL_DIVISIONS = new ArrayList<String>() {
+		{
+		}
+	};
+
+	/*
+	 * Originally, the team considered doing some work with Legal Towns and
+	 * cities. However, it was soon realised that very few garda stations fall
+	 * within a legal town or city (approx. 10%), and so the query results
+	 * wouldn't be very interesting. Instead, Electoral Divisions were chosen as
+	 * a second region to query for crime statistics.
+	 */
 	public static List<String> ALL_LEGAL_TOWNS_AND_CITIES = new ArrayList<String>() {
 		{
 			add("Ardee Legal Town");
@@ -298,11 +310,22 @@ public class OntologyConstants {
 		}
 	};
 
+	/*
+	 * See note above about 'Legal Towns and Cities'
+	 */
 	public static void printAllLegalTownsAndCities() {
 		System.out.println(GREEN_BOLD
 				+ "The legal towns/cities you can select for question 4 (easiest to just copy+paste): " + RESET);
 		for (String townOrCity : ALL_LEGAL_TOWNS_AND_CITIES) {
 			System.out.println("\t" + PURPLE + townOrCity + RESET);
+		}
+	}
+
+	public static void printAllElectoralDivisions() {
+		System.out.println(GREEN_BOLD
+				+ "The electoral divisions you can select for question 4 (easiest to just copy+paste): " + RESET);
+		for (String electoralDivision : ALL_ELECTORAL_DIVISIONS) {
+			System.out.println("\t" + PURPLE + electoralDivision + RESET);
 		}
 	}
 
