@@ -107,7 +107,7 @@ public class OntologyConstants {
 	public static final String FOURTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "What are the crimes of which instances in a specified county were over a specified threshold?";
 	public static final String FIFTH_QUESTION = PURPLE_BOLD_BRIGHT
-			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
+			+ "In a specified county, which station and in what year saw the highest recorded number of occurrences of a specified crime type?" + RESET;
 	public static final String SIXTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "Which stations (and for what crimes) in a specified county, in a specified year, had fewer than a specified number of crimes?" + RESET;
 

@@ -156,16 +156,22 @@ public class OntologyApplication {
 			}
 			break;
 		case "5":
-			// "Which county saw the biggest rise in a specific crime type
-			// over the period 2004-2016?";
-			queryString = queriesAsStrings.get(4);
+			// "In a specified county, which station and in what year saw the highest recorded number of occurrences of a specified crime type?"
+			
 			System.out.println("Enter the crime: ");
 			specificCrime = inputScanner.nextLine();
-			if (OntologyConstants.ALL_CRIMES.contains(specificCrime)) {
-				queryString = String.format(queryString, specificCrime);
+			System.out.println("Enter the county: ");
+			county = inputScanner.nextLine();
+			
+			
+			String crimeString = getCrimeStringFormatted(specificCrime);
+			queryString = queriesAsStrings.get(4);			
+			
+			if (OntologyConstants.ALL_COUNTIES.contains(county) && OntologyConstants.ALL_CRIMES.contains(specificCrime)) {
+				queryString = String.format(queryString, crimeString, county);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s", specificCrime));
+				printRedText(String.format("Invalid data entered: %s, %s", specificCrime, county));
 			}
 			break;
 		case "6":
@@ -189,6 +195,50 @@ public class OntologyApplication {
 			return null;
 		}
 		return executeSparqlQuery(queryString);
+	}
+
+	private static String getCrimeStringFormatted(String specificCrime) {
+		String crimeString = "";
+		
+		switch (specificCrime) {
+		case "Attempts or Threats to Murder, Assaults, Harassments and Related Offences":
+			 crimeString = "AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences";
+			break;
+		case "Burglary and Related Offences":
+			crimeString = "BurglaryAndRelatedOffences";
+			break;
+		case "Controlled Drug Offences":
+			crimeString = "ControlledDrugOffences";
+			break;
+		case "Damage to Property and to the Environment":
+			crimeString = "DamageToPropertyAndToTheEnvironment";
+			break;
+		case "Dangerous or Negligent Acts":
+			crimeString = "DangerousOrNegligentActs";
+			break;
+		case "Fraud, Deception and Related Offences":
+			crimeString = "FraudDeceptionAndRelatedOffences";
+			break;
+		case "Kidnapping and Related Offences":
+			crimeString = "KidnappingAndRelatedOffences";
+			break;
+		case "Offences against Government, Justice Procedures and Organisation of Crime":
+			crimeString = "OffencesAgainstGovernmentJusticeProceduresAndOrganisationOfCrime";
+			break;
+		case "Public Order and other Social Code Offences":
+			crimeString = "PublicOrderAndOtherSocialCodeOffences";
+			break;
+		case "Robbery, Extortion and Hijacking Offences":
+			crimeString = "RobberyExtortionAndHijackingOffences";
+			break;
+		case "Theft and Related Offences":
+			crimeString = "TheftAndRelatedOffences";
+			break;
+		case "Weapons and Explosives Offences":
+			crimeString = "WeaponsAndExplosivesOffences";
+			break;
+		}
+		return crimeString;
 	}
 
 	public static ResultSet executeSparqlQuery(String queryString) {
