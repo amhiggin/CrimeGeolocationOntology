@@ -417,7 +417,9 @@
 
     rr:predicateObjectMap [
         rr:predicate ex:hasCrimeType;
-        rr:objectMap [ rr:constant "Damage to Person" ]
+        rr:objectMap [
+            rr:template "http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Crime/AttemptsOrThreatsToMurderAssaultsHarassmentsAndRelatedOffences"
+        ]
     ];
 
     rr:predicateObjectMap [
