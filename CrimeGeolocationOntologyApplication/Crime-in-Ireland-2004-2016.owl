@@ -104,16 +104,28 @@
     <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inDivision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Division"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#hasStations"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
         <rdfs:comment>The Garda stations tha fall under a given Garda division</rdfs:comment>
         <rdfs:label>hasStations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inCounty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inCounty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inCounty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#County"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The county in which a Garda station resides</rdfs:comment>
+        <rdfs:label>inCounty</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -131,6 +143,23 @@
         </rdfs:range>
         <rdfs:comment>The division in which a Garda station resides</rdfs:comment>
         <rdfs:label>inDivision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inElectoralDivision -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inElectoralDivision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#Station"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#inElectoralDivision"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/diarm/ontologies/2017/11/Crime-in-Ireland-2004-2016#ElectoralDivisions"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The electoral division in which a Garda station resides</rdfs:comment>
+        <rdfs:label>inElectoralDivision</rdfs:label>
     </owl:ObjectProperty>
     
 
