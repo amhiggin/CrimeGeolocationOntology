@@ -100,7 +100,7 @@ public class OntologyConstants {
 	// TODO @Amber populate these when we know what the final questions are
 	public static final String FIRST_QUESTION = CYAN + "What stations are there in a specified county?" + RESET;
 	public static final String SECOND_QUESTION = CYAN
-			+ "What is the most common type of crime in a specified county in a specified year: damage to the person, or damage to property?"
+			+ "What is the most common type of crime in a specified county in a specified year?"
 			+ RESET;
 	public static final String THIRD_QUESTION = CYAN + "What electoral divisions are in a specified garda division?"
 			+ RESET;
@@ -133,7 +133,7 @@ public class OntologyConstants {
 		System.out.println(
 				GREEN_BOLD + "The crimes you can select for questions 5 and 6 (easiest to just copy+paste): " + RESET);
 		for (String crime : ALL_CRIMES) {
-			System.out.println("\t" + PURPLE + crime + RESET);
+			System.out.println("\t" + crime);
 		}
 	}
 
@@ -171,7 +171,7 @@ public class OntologyConstants {
 	public static void printAllCounties() {
 		System.out.println(GREEN_BOLD + "The counties you can select (easiest to just copy+paste): " + RESET);
 		for (String county : ALL_COUNTIES) {
-			System.out.println("\t" + PURPLE + county + RESET);
+			System.out.println("\t" + RESET + county );
 		}
 	}
 
@@ -229,7 +229,7 @@ public class OntologyConstants {
 			add("Carna");
 			add("Cliffony North");
 			add("Gunsborough");
-			add("Leitir MÃ³ir");
+			add("Leitir MÃƒÂ³ir");
 			add("Moycarky");
 			add("Castlemartyr");
 			add("Glenealy");
@@ -320,7 +320,7 @@ public class OntologyConstants {
 			add("Ballyclogh");
 			add("Seacor");
 			add("Youghalarra");
-			add("Cill MaoilchÃ©adair");
+			add("Cill MaoilchÃƒÂ©adair");
 			add("Crosagstown");
 			add("Arran Quay A");
 			add("Taghboy");
@@ -422,7 +422,7 @@ public class OntologyConstants {
 			add("Croghan");
 			add("Kilmurry");
 			add("Ballinlough A");
-			add("CrÃ³ Bheithe");
+			add("CrÃƒÂ³ Bheithe");
 			add("Drumcondra South C");
 			add("Killeagh");
 			add("Ardagh West");
@@ -514,7 +514,7 @@ public class OntologyConstants {
 			add("Cong");
 			add("Tullynaught");
 			add("Sutton");
-			add("An ClochÃ¡n");
+			add("An ClochÃƒÂ¡n");
 			add("Ballygarden");
 			add("Terryglass");
 			add("Blackrock-Monkstown");
@@ -530,7 +530,7 @@ public class OntologyConstants {
 			add("Gurranebraher A");
 			add("Carbury");
 			add("Drumahaire");
-			add("Cill ChuÃ¡in");
+			add("Cill ChuÃƒÂ¡in");
 			add("Carndonagh");
 			add("Ballymurreen");
 			add("Baldoyle");
@@ -540,7 +540,7 @@ public class OntologyConstants {
 			add("Rosbercon Rural");
 			add("Beaghmore");
 			add("Kilmacdonogh");
-			add("DÃºn Laoghaire-West Central");
+			add("DÃƒÂºn Laoghaire-West Central");
 			add("Ballymitty");
 			add("Rossinver East");
 			add("Priorswood B");
@@ -765,7 +765,7 @@ public class OntologyConstants {
 			add("Caragh");
 			add("Ballinduff");
 			add("Kilmeen");
-			add("DÃºn Laoghaire-Sandycove");
+			add("DÃƒÂºn Laoghaire-Sandycove");
 			add("Eyre Square");
 			add("Humewood");
 			add("Phoenix Park");
@@ -817,7 +817,7 @@ public class OntologyConstants {
 			add("Ros Goill");
 			add("Ballybacon");
 			add("Mahon B");
-			add("Ceanannas MÃ³r (Kells) Urban");
+			add("Ceanannas MÃƒÂ³r (Kells) Urban");
 			add("Boherquill");
 			add("Newtown");
 			add("Aille");
@@ -833,10 +833,10 @@ public class OntologyConstants {
 			add("Kilbrin");
 			add("Creevy");
 			add("Rockhill");
-			add("An Geata MÃ³r Theas");
+			add("An Geata MÃƒÂ³r Theas");
 			add("Youghal Rural");
 			add("Foxrock-Beechpark");
-			add("Na hUlÃ¡in");
+			add("Na hUlÃƒÂ¡in");
 			add("Pontoon");
 			add("Kilbrew");
 			add("Rossinver West");
@@ -988,7 +988,7 @@ public class OntologyConstants {
 			add("Aghadoe");
 			add("Crossbane");
 			add("Teerelton");
-			add("DÃºn Laoghaire-Sallynoggin South");
+			add("DÃƒÂºn Laoghaire-Sallynoggin South");
 			add("Monasterboice");
 			add("Claddagh");
 			add("Kilbride");
@@ -1052,7 +1052,7 @@ public class OntologyConstants {
 			add("Shrule");
 			add("The Glen B");
 			add("Coom");
-			add("DÃºn Laoghaire-Salthill");
+			add("DÃƒÂºn Laoghaire-Salthill");
 			add("Ballintemple");
 			add("Ballybricken West");
 			add("Ballyconnell");
@@ -1127,7 +1127,7 @@ public class OntologyConstants {
 			add("Mount Falcon");
 			add("Creggan Upper");
 			add("Ballinamuck East");
-			add("Cill ChuimÃ­n");
+			add("Cill ChuimÃƒÂ­n");
 			add("Birdhill");
 			add("Killinure");
 			add("Clonmel West Urban");
@@ -1164,7 +1164,7 @@ public class OntologyConstants {
 			add("Gilltown");
 			add("Carrig");
 			add("Ardnaree South Urban");
-			add("Ceann TrÃ¡");
+			add("Ceann TrÃƒÂ¡");
 			add("Annestown");
 			add("Cappagh");
 			add("Templeorum");
@@ -1210,7 +1210,7 @@ public class OntologyConstants {
 			add("Crumlin F");
 			add("Fair Hill B");
 			add("Ballyhoolahan");
-			add("Barr RÃºscaÃ­");
+			add("Barr RÃƒÂºscaÃƒÂ­");
 			add("Morrisson's Avenue West");
 			add("Sheskin");
 			add("Dangan");
@@ -1282,7 +1282,7 @@ public class OntologyConstants {
 			add("Magherareagh");
 			add("Killeenasteena");
 			add("Aglish");
-			add("DÃºn Laoghaire-Sallynoggin West");
+			add("DÃƒÂºn Laoghaire-Sallynoggin West");
 			add("Killashandra");
 			add("Dangan");
 			add("Modeshil");
@@ -1350,13 +1350,13 @@ public class OntologyConstants {
 			add("Moat");
 			add("The Harrow");
 			add("Springfield");
-			add("An SpidÃ©al");
+			add("An SpidÃƒÂ©al");
 			add("Cruicetown");
 			add("Ballynacourty");
 			add("Kanturk");
 			add("Ballinadee");
 			add("Luggacurren");
-			add("An Geata MÃ³r Thuaidh");
+			add("An Geata MÃƒÂ³r Thuaidh");
 			add("Letter");
 			add("Castle Talbot");
 			add("Kinvarra");
@@ -1527,7 +1527,7 @@ public class OntologyConstants {
 			add("Decies");
 			add("An Ghrafaidh");
 			add("Kilworth");
-			add("BÃ©al an Mhuirthead");
+			add("BÃƒÂ©al an Mhuirthead");
 			add("Morrisson's Road");
 			add("Glendree");
 			add("Tallaght-Kingswood");
@@ -1558,7 +1558,7 @@ public class OntologyConstants {
 			add("Manulla");
 			add("Corries");
 			add("Turners Cross D");
-			add("Cill AithnÃ­n");
+			add("Cill AithnÃƒÂ­n");
 			add("Wexford Rural");
 			add("Rathrush");
 			add("Tallanstown");
@@ -1626,7 +1626,7 @@ public class OntologyConstants {
 			add("Drumellihy");
 			add("Donore");
 			add("Cloone");
-			add("Toghroinn FhÃ­onÃ¡in");
+			add("Toghroinn FhÃƒÂ­onÃƒÂ¡in");
 			add("Fermoy Urban");
 			add("Killybegs");
 			add("Donohill");
@@ -1675,7 +1675,7 @@ public class OntologyConstants {
 			add("Carrickbyrne");
 			add("Cullahill");
 			add("Rathfarnham-Butterfield");
-			add("CeathrÃº an BhrÃºnaigh");
+			add("CeathrÃƒÂº an BhrÃƒÂºnaigh");
 			add("Ballygarrett");
 			add("Kellysgrove");
 			add("Bear");
@@ -1737,7 +1737,7 @@ public class OntologyConstants {
 			add("Monaghan Rural");
 			add("Bishopstown B");
 			add("Tallaght-Kilnamanagh");
-			add("Gleann LÃ©ithÃ­n");
+			add("Gleann LÃƒÂ©ithÃƒÂ­n");
 			add("Killaconenagh");
 			add("Morrisson's Avenue East");
 			add("Shronowen");
@@ -1767,7 +1767,7 @@ public class OntologyConstants {
 			add("Levally");
 			add("Rathornan");
 			add("Mountievers");
-			add("Ãrainn");
+			add("ÃƒÂ�rainn");
 			add("Killiskey");
 			add("Killashee");
 			add("Newtowngore");
@@ -1877,7 +1877,7 @@ public class OntologyConstants {
 			add("Denn");
 			add("Ballymurphy");
 			add("Lurraga");
-			add("Ceanannas MÃ³r (Kells) Rural");
+			add("Ceanannas MÃƒÂ³r (Kells) Rural");
 			add("Aughrim");
 			add("Muckalee");
 			add("Loughrea Rural");
@@ -1920,7 +1920,7 @@ public class OntologyConstants {
 			add("Cloontra");
 			add("Hopestown");
 			add("Corraneary");
-			add("MÃ¡rthain");
+			add("MÃƒÂ¡rthain");
 			add("Trumra");
 			add("Bourney West");
 			add("Rathaspick");
@@ -1949,7 +1949,7 @@ public class OntologyConstants {
 			add("Cummer");
 			add("Killeely B");
 			add("Nobber");
-			add("MÃ¡lainn Bhig");
+			add("MÃƒÂ¡lainn Bhig");
 			add("Dubber");
 			add("Jerpoint West");
 			add("Kilgarvan");
@@ -1976,7 +1976,7 @@ public class OntologyConstants {
 			add("Clongeen");
 			add("Tawnawully");
 			add("Rathfarnham-Hermitage");
-			add("Baile ChlÃ¡ir");
+			add("Baile ChlÃƒÂ¡ir");
 			add("Kilcorney");
 			add("Kilconnell");
 			add("Coulagh");
@@ -2053,7 +2053,7 @@ public class OntologyConstants {
 			add("Tallaght-Kiltipper");
 			add("Douce");
 			add("Graigue");
-			add("Dumha Ã‰ige");
+			add("Dumha Ãƒâ€°ige");
 			add("Rathkeale Urban");
 			add("Killadriffe");
 			add("Killeenleagh");
@@ -2137,7 +2137,7 @@ public class OntologyConstants {
 			add("Querrin");
 			add("Collinstown");
 			add("Lullymore");
-			add("An DÃºchoraidh");
+			add("An DÃƒÂºchoraidh");
 			add("Doonasleen");
 			add("Marymount");
 			add("Ballysakeery");
@@ -2167,7 +2167,7 @@ public class OntologyConstants {
 			add("Knockalla");
 			add("Ballysax West");
 			add("Coonard");
-			add("DÃºn Chaoin");
+			add("DÃƒÂºn Chaoin");
 			add("Ballyclerahan");
 			add("Killathy");
 			add("Naas Rural");
@@ -2195,7 +2195,7 @@ public class OntologyConstants {
 			add("Killinaboy");
 			add("Rathfarnham-Ballyroan");
 			add("Corravaddy");
-			add("An Carn MÃ³r");
+			add("An Carn MÃƒÂ³r");
 			add("Aglish");
 			add("Dunmain");
 			add("Rathmoylan");
@@ -2203,7 +2203,7 @@ public class OntologyConstants {
 			add("Innfield");
 			add("Bennettsbridge");
 			add("Sheepshead");
-			add("Ãrainn MhÃ³r");
+			add("ÃƒÂ�rainn MhÃƒÂ³r");
 			add("Bahaghs");
 			add("Pembroke West A");
 			add("Murragh");
@@ -2281,7 +2281,7 @@ public class OntologyConstants {
 			add("Portlaoighise (Maryborough) Rural");
 			add("Aghafin");
 			add("Ballynahinch");
-			add("CrÃ³ Chaorach");
+			add("CrÃƒÂ³ Chaorach");
 			add("Ballyglass");
 			add("Dungourney");
 			add("Cloontuskert");
@@ -2361,7 +2361,7 @@ public class OntologyConstants {
 			add("Castlefinn");
 			add("Hollywood");
 			add("Kilnaseer");
-			add("Doire FhÃ­nÃ­n");
+			add("Doire FhÃƒÂ­nÃƒÂ­n");
 			add("Beihy");
 			add("Desertegny");
 			add("Kilcolumb");
@@ -2401,7 +2401,7 @@ public class OntologyConstants {
 			add("Killererin");
 			add("Ballyhar");
 			add("Arran Quay D");
-			add("DÃºn Laoghaire-Mount Town");
+			add("DÃƒÂºn Laoghaire-Mount Town");
 			add("Dysart");
 			add("Castlehaven South");
 			add("Laragh");
@@ -2468,7 +2468,7 @@ public class OntologyConstants {
 			add("Dromard");
 			add("Clonarney");
 			add("Castlesaunderson");
-			add("DÃºn Urlann");
+			add("DÃƒÂºn Urlann");
 			add("Ballybrittas");
 			add("Newport");
 			add("Tinamuck");
@@ -2638,10 +2638,10 @@ public class OntologyConstants {
 			add("Tullowbeg");
 			add("Killeely");
 			add("Kilmacar");
-			add("BÃ©al Deirg MÃ³r");
+			add("BÃƒÂ©al Deirg MÃƒÂ³r");
 			add("Lowertown");
 			add("Carrigaline");
-			add("DÃºn Laoghaire-Glenageary");
+			add("DÃƒÂºn Laoghaire-Glenageary");
 			add("Killure");
 			add("Cape Clear");
 			add("Aghowle");
@@ -2691,7 +2691,7 @@ public class OntologyConstants {
 			add("Kilmore C");
 			add("Ballinamore");
 			add("Kilchreest");
-			add("An CorrÃ¡n");
+			add("An CorrÃƒÂ¡n");
 			add("Silverbrook");
 			add("Carrickatee");
 			add("Bilberry");
@@ -2705,11 +2705,11 @@ public class OntologyConstants {
 			add("Abbeyville");
 			add("Kilmullen");
 			add("Arran Quay E");
-			add("DÃºn Laoghaire-Sallynoggin East");
+			add("DÃƒÂºn Laoghaire-Sallynoggin East");
 			add("Glenroe/Ballyeighter");
 			add("Kilvemnon");
 			add("Stranorlar");
-			add("An ClochÃ¡n Liath");
+			add("An ClochÃƒÂ¡n Liath");
 			add("Clonskeagh-Windy Arbour");
 			add("Dock C");
 			add("Belclare");
@@ -2855,7 +2855,7 @@ public class OntologyConstants {
 			add("Ballybane");
 			add("Fairymount");
 			add("Blarney");
-			add("DÃºn Laoghaire-East Central");
+			add("DÃƒÂºn Laoghaire-East Central");
 			add("Islandikane");
 			add("Trooperstown");
 			add("Dunshaughlin");
@@ -2866,13 +2866,13 @@ public class OntologyConstants {
 			add("Tubrid");
 			add("Quinsborough");
 			add("Cloonkeen");
-			add("CÃ© BhrÃ©anainn");
+			add("CÃƒÂ© BhrÃƒÂ©anainn");
 			add("Newcastle Lower");
 			add("Aghalateeve/Aghanlish");
 			add("Killedmond");
 			add("Cahermurphy");
 			add("Grennanstown");
-			add("Cnoc na RÃ¡ithe");
+			add("Cnoc na RÃƒÂ¡ithe");
 			add("Ballintemple");
 			add("Kilmacanoge");
 			add("Ballybough A");
@@ -2924,7 +2924,7 @@ public class OntologyConstants {
 			add("Castlecuffe");
 			add("Cabra West A");
 			add("Castledockrell");
-			add("DÃºn Laoghaire-Monkstown Farm");
+			add("DÃƒÂºn Laoghaire-Monkstown Farm");
 			add("Castlehaven North");
 			add("Skreen");
 			add("Cullane");
@@ -3100,11 +3100,11 @@ public class OntologyConstants {
 			add("Kilmore");
 			add("Tehallan");
 			add("South Gate B");
-			add("An Cnoc BuÃ­");
+			add("An Cnoc BuÃƒÂ­");
 			add("Kellistown");
 			add("Lisheen");
 			add("Gallow");
-			add("Moing na BÃ³");
+			add("Moing na BÃƒÂ³");
 			add("Knockrath");
 			add("Durrus East");
 			add("Killabban");
@@ -3161,7 +3161,7 @@ public class OntologyConstants {
 			add("Ballygibbon");
 			add("Kilcronat");
 			add("Kincraigy");
-			add("DÃºn Laoghaire-Glasthule");
+			add("DÃƒÂºn Laoghaire-Glasthule");
 			add("Kilbarry");
 			add("Caheragh");
 			add("Drummullagh");
@@ -3191,7 +3191,7 @@ public class OntologyConstants {
 			add("Glenaniff");
 			add("Raheenakeeran");
 			add("Churchfield");
-			add("DÃºn LÃºiche");
+			add("DÃƒÂºn LÃƒÂºiche");
 			add("Blackrock-Stradbrook");
 			add("Mahanagh");
 			add("Ballinaclash");
@@ -3255,7 +3255,7 @@ public class OntologyConstants {
 			add("Ballyhale");
 			add("Kilgobban");
 			add("Maperath");
-			add("MÃ­n an Chladaigh");
+			add("MÃƒÂ­n an Chladaigh");
 			add("Carrickmacross Rural");
 			add("Shannonbridge");
 			add("Cartron");
@@ -3287,7 +3287,7 @@ public class OntologyConstants {
 			add("Bishopstown C");
 			add("Turmone");
 			add("Grange D");
-			add("An CrompÃ¡n");
+			add("An CrompÃƒÂ¡n");
 			add("Kilmainham A");
 			add("Ballincollig");
 			add("Ballyfermoyle");
@@ -3298,7 +3298,7 @@ public class OntologyConstants {
 			add("Tallaght-Springfield");
 			add("Sramore");
 			add("Rush");
-			add("Eanach DhÃºin");
+			add("Eanach DhÃƒÂºin");
 			add("Glanlough");
 			add("Templeboy South/Mullagheruse");
 			add("Cushkillary");
@@ -3426,7 +3426,7 @@ public class OntologyConstants {
 			add("Bramblestown");
 			add("Toberadosh");
 			add("Quin");
-			add("BÃ©al Ãtha an Ghaorthaidh (Maigh Chromtha)");
+			add("BÃƒÂ©al ÃƒÂ�tha an Ghaorthaidh (Maigh Chromtha)");
 			add("Whitechurch");
 			add("Ushers D");
 			add("Kinsale Rural");
@@ -3517,7 +3517,7 @@ public class OntologyConstants {
 			add("Ballycastle");
 			add("Portmarnock North");
 			add("Boyounagh");
-			add("Canuig/MÃ¡istir Gaoithe");
+			add("Canuig/MÃƒÂ¡istir Gaoithe");
 			add("Gaybrook");
 			add("Toomour");
 			add("Cleggan");
@@ -3724,7 +3724,7 @@ public class OntologyConstants {
 	public static void printAllLegalTownsAndCities() {
 		System.out.println(GREEN_BOLD + "The legal towns/cities you can select (easiest to just copy+paste): " + RESET);
 		for (String townOrCity : ALL_LEGAL_TOWNS_AND_CITIES) {
-			System.out.println("\t" + PURPLE + townOrCity + RESET);
+			System.out.println("\t" + townOrCity);
 		}
 	}
 
@@ -3732,14 +3732,14 @@ public class OntologyConstants {
 		System.out
 				.println(GREEN_BOLD + "The electoral divisions you can select (easiest to just copy+paste): " + RESET);
 		for (String electoralDivision : ALL_ELECTORAL_DIVISIONS) {
-			System.out.println("\t" + PURPLE + electoralDivision + RESET);
+			System.out.println("\t" + electoralDivision);
 		}
 	}
 
 	public static void printAllGardaDivisions() {
 		System.out.println(GREEN_BOLD + "The garda divisions you can select (easiest to just copy+paste): " + RESET);
 		for (String gardaDivision : ALL_DIVISIONS) {
-			System.out.println("\t" + PURPLE + gardaDivision + RESET);
+			System.out.println("\t" + gardaDivision);
 		}
 	}
 

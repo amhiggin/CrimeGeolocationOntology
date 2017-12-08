@@ -85,6 +85,7 @@ public class OntologyApplication {
 			default:
 				ResultSet results = executeQueryBasedOnUserInput(input, inputScanner);
 				if (results != null) {
+					System.out.print(OntologyConstants.PURPLE);
 					outputResultsToConsole(results);
 				} else {
 					if (running == true) {
@@ -115,8 +116,7 @@ public class OntologyApplication {
 			}
 			break;
 		case "2":
-			// "What is the most common type of crime in a specified county in a
-			// specified year: damage to the person, or damage to property?";
+			// "What is the most common type of crime in a specified county in a specified year?"
 			queryString = queriesAsStrings.get(1);
 			System.out.println("Enter the county: ");
 			county = inputScanner.nextLine();
@@ -218,6 +218,7 @@ public class OntologyApplication {
 
 	public static void outputResultsToConsole(ResultSet results) {
 		ResultSetFormatter.out(System.out, results);
+		System.out.print(OntologyConstants.RESET);
 	}
 
 	public static void printGreenText(String message) {
