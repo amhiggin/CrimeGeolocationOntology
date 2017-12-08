@@ -142,7 +142,7 @@ public class OntologyApplication {
 			}
 			break;
 		case "4":
-			// "What are the crimes of which instances in a specified county were over a specified threshold?"
+			// "For a specified county, what crimes had a number of instances over a specified threshold?"
 			queryString = queriesAsStrings.get(3);
 			System.out.println("Enter the county: ");
 			county = inputScanner.nextLine();
