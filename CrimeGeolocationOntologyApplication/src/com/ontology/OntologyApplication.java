@@ -85,7 +85,7 @@ public class OntologyApplication {
 			default:
 				ResultSet results = executeQueryBasedOnUserInput(input, inputScanner);
 				if (results != null) {
-					System.out.print(OntologyConstants.PURPLE);
+					System.out.print(OntologyConstants.CYAN_BOLD_BRIGHT);
 					outputResultsToConsole(results);
 				} else {
 					if (running == true) {

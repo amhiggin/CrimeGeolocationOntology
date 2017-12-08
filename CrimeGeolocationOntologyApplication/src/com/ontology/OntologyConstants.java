@@ -98,18 +98,18 @@ public class OntologyConstants {
 	public static String SECTION_BREAK = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
 
 	// TODO @Amber populate these when we know what the final questions are
-	public static final String FIRST_QUESTION = CYAN + "What stations are there in a specified county?" + RESET;
-	public static final String SECOND_QUESTION = CYAN
+	public static final String FIRST_QUESTION = PURPLE_BOLD_BRIGHT + "What stations are there in a specified county?" + RESET;
+	public static final String SECOND_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "What is the most common type of crime in a specified county in a specified year?"
 			+ RESET;
-	public static final String THIRD_QUESTION = CYAN + "What electoral divisions are in a specified garda division?"
+	public static final String THIRD_QUESTION = PURPLE_BOLD_BRIGHT + "What electoral divisions are in a specified garda division?"
 			+ RESET;
-	public static final String FOURTH_QUESTION = CYAN
+	public static final String FOURTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "In which year did a specified Electoral Division have its highest crime rate?" + RESET;
 	// FIXME: figure out how to do the time ranges
-	public static final String FIFTH_QUESTION = CYAN
+	public static final String FIFTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
-	public static final String SIXTH_QUESTION = CYAN
+	public static final String SIXTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "Which Electoral Division had the lowest number of a specific crime in a given year?" + RESET;
 
 	public static List<String> ALL_CRIMES = new ArrayList<String>() {
