@@ -200,7 +200,6 @@ public class OntologyApplication {
 			Query executableQuery = ReadOntologyModel.convertStringToQuery(queryString, ontologyModel);
 			QueryExecution qexec = QueryExecutionFactory.create(executableQuery, ontologyModel);
 			results = qexec.execSelect();
-			qexec.close();
 		} catch (Exception e) {
 			printRedText(String.format("Unable to execute the query: %s", queryString));
 			printRedText("Exception Message: " + e.getMessage());
