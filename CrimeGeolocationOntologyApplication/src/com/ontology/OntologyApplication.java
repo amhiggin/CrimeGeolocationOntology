@@ -101,7 +101,7 @@ public class OntologyApplication {
 
 	private static ResultSet executeQueryBasedOnUserInput(String selectedQuery, Scanner inputScanner) {
 		String queryString = null;
-		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null, gardaDivision = null;
+		String county = null, specificCrime = null, timePeriod = null, electoralDivision = null, gardaDivision = null, threshold = null;
 		switch (selectedQuery) {
 		case "1":
 			// "What stations are there in a specified county?";
@@ -142,16 +142,17 @@ public class OntologyApplication {
 			}
 			break;
 		case "4":
-			// "In which year did a specified Electoral Division have its
-			// highest crime rate?"
+			// "What are the crimes of which instances in a specified county were over a specified threshold?"
 			queryString = queriesAsStrings.get(3);
-			System.out.println("Enter the Electoral Division: ");
-			electoralDivision = inputScanner.nextLine();
-			if (OntologyConstants.ALL_ELECTORAL_DIVISIONS.contains(electoralDivision)) {
-				queryString = String.format(queryString, electoralDivision);
+			System.out.println("Enter the county: ");
+			county = inputScanner.nextLine();
+			System.out.println("Enter the threshold (an integer): ");
+			threshold = inputScanner.nextLine();
+			if ((checkValidThresholdEntered(threshold)) && OntologyConstants.ALL_COUNTIES.contains(county)) {
+				queryString = String.format(queryString, county, threshold);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s", electoralDivision));
+				printRedText(String.format("Invalid data entered: %s, %s", county, threshold));
 			}
 			break;
 		case "5":
@@ -194,7 +195,7 @@ public class OntologyApplication {
 			printRedText("Query is null: cannot execute.");
 			return null;
 		}
-		printGreenText(String.format("Query to execute is: %s", queryString));
+		//printGreenText(String.format("Query to execute is: %s", queryString));
 		ResultSet results = null;
 		try {
 			Query executableQuery = ReadOntologyModel.convertStringToQuery(queryString, ontologyModel);
@@ -214,6 +215,16 @@ public class OntologyApplication {
 		}
 		printRedText("Invalid year entered: " + Integer.toString(year));
 		return false;
+	}
+	
+	public static boolean checkValidThresholdEntered(String threshold){
+		try {
+			int thresholdInt = Integer.parseInt(threshold);
+			return true;
+		} catch (Exception e) {
+			printRedText("Invalid threshold entered: " + threshold);
+			return false;
+		}
 	}
 
 	public static void outputResultsToConsole(ResultSet results) {

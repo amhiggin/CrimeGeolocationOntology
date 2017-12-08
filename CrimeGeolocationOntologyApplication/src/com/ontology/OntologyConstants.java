@@ -105,8 +105,7 @@ public class OntologyConstants {
 	public static final String THIRD_QUESTION = PURPLE_BOLD_BRIGHT + "What electoral divisions are in a specified garda division?"
 			+ RESET;
 	public static final String FOURTH_QUESTION = PURPLE_BOLD_BRIGHT
-			+ "In which year did a specified Electoral Division have its highest crime rate?" + RESET;
-	// FIXME: figure out how to do the time ranges
+			+ "What are the crimes of which instances in a specified county were over a specified threshold?";
 	public static final String FIFTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
 	public static final String SIXTH_QUESTION = PURPLE_BOLD_BRIGHT
