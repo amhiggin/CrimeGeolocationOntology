@@ -105,7 +105,7 @@ public class OntologyConstants {
 	public static final String THIRD_QUESTION = PURPLE_BOLD_BRIGHT + "What electoral divisions are in a specified garda division?"
 			+ RESET;
 	public static final String FOURTH_QUESTION = PURPLE_BOLD_BRIGHT
-			+ "What are the crimes of which instances in a specified county were over a specified threshold?";
+			+ "For a specified county, what crimes had a number of instances over a specified threshold?";
 	public static final String FIFTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "In a specified county, which station and in what year saw the highest recorded number of occurrences of a specified crime type?" + RESET;
 	public static final String SIXTH_QUESTION = PURPLE_BOLD_BRIGHT
