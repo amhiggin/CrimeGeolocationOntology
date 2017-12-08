@@ -1,5 +1,11 @@
 # CrimeGeolocationOntology
 An OWL ontology application for querying crime geolocation information in Ireland between 2004-2016. Built using Apache Jena, OWL API and Protégé.
+
+<i>Authors: Amber Higgins, Éamon Dunne, Gemma O'Rourke, Arwa Aldakheel, Diarmuid McDonnell.
+  
+  Submitted as part of CS7IS1 Knowledge and Data Engineering module, Trinity College Dublin.</i>
+
+## Functionality
 * Ontology can be loaded from file into the framework.
 * SPARQL queries can also be loaded from file into the framework, each separated by newlines.
 * A simple CLI allows users to execute any of the loaded SPARQL queries.
@@ -16,3 +22,6 @@ An OWL ontology application for querying crime geolocation information in Irelan
 #County_and_ElectoralDivision_Application
 * A simple Java application used to extract and organise coordinate data from both datasets.
 * It is not needed for the operation of the CrimeGeolocationOntology. It is only included for illustrative purposes.
+
+
+
