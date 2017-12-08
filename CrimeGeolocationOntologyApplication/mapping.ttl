@@ -96,8 +96,18 @@
     ];
 
     rr:predicateObjectMap [
-        rr:predicate ex:hasDivision;
+        rr:predicate ex:inDivision;
         rr:objectMap [ rr:column "DIVISIONS"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasCounty;
+        rr:objectMap [ rr:column "COUNTY"]
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hasElectoralDivision;
+        rr:objectMap [ rr:column "ELECTORAL DIVISIONS"]
     ];
 
     rr:predicateObjectMap [
