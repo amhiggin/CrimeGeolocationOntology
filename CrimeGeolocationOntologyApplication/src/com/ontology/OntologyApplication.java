@@ -13,7 +13,7 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 
 public class OntologyApplication {
 
-	public static String ontologyName = "mapping.owl"; // Crime-in-Ireland-2004-2016.owl";
+	public static String ontologyName = "mapping_new.owl"; // Crime-in-Ireland-2004-2016.owl";
 	public static com.hp.hpl.jena.ontology.OntModel ontologyModel = null;
 	public static List<String> questionsToAskOntology = new ArrayList<String>();
 
