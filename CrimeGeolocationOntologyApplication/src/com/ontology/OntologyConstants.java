@@ -109,7 +109,7 @@ public class OntologyConstants {
 	public static final String FIFTH_QUESTION = PURPLE_BOLD_BRIGHT
 			+ "Which county saw the biggest rise in a specific crime over the period 2004-2016?" + RESET;
 	public static final String SIXTH_QUESTION = PURPLE_BOLD_BRIGHT
-			+ "Which Electoral Division had the lowest number of a specific crime in a given year?" + RESET;
+			+ "Which stations (and for what crimes) in a specified county, in a specified year, had fewer than a specified number of crimes?" + RESET;
 
 	public static List<String> ALL_CRIMES = new ArrayList<String>() {
 		{

@@ -159,7 +159,7 @@ public class OntologyApplication {
 			// "Which county saw the biggest rise in a specific crime type
 			// over the period 2004-2016?";
 			queryString = queriesAsStrings.get(4);
-			System.out.println("Enter the crime (e.g. burglary, fraud): ");
+			System.out.println("Enter the crime: ");
 			specificCrime = inputScanner.nextLine();
 			if (OntologyConstants.ALL_CRIMES.contains(specificCrime)) {
 				queryString = String.format(queryString, specificCrime);
@@ -169,18 +169,19 @@ public class OntologyApplication {
 			}
 			break;
 		case "6":
-			// "Which Electoral Division had the lowest number of a specific
-			// crime in a given year?";
+			// "Which stations (and for what crimes) in a specified county, in a specified year, had fewer than a specified number of crimes?"
 			queryString = queriesAsStrings.get(5);
-			System.out.println("Enter the crime (e.g. burglary, fraud): ");
-			specificCrime = inputScanner.nextLine();
+			System.out.println("Enter the county: ");
+			county = inputScanner.nextLine();
 			System.out.println("Enter the year of interest: ");
 			timePeriod = inputScanner.nextLine();
-			if ((checkValidYearEntered(timePeriod) && OntologyConstants.ALL_CRIMES.contains(specificCrime))) {
-				queryString = String.format(queryString, specificCrime, timePeriod);
+			System.out.println("Enter the threshold number of crimes:" );
+			threshold = inputScanner.nextLine();
+			if ((checkValidYearEntered(timePeriod) && OntologyConstants.ALL_COUNTIES.contains(county)) && (checkValidThresholdEntered(threshold))) {
+				queryString = String.format(queryString, county, timePeriod, threshold);
 			} else {
 				queryString = null;
-				printRedText(String.format("Invalid data entered: %s, %s", specificCrime, timePeriod));
+				printRedText(String.format("Invalid data entered: %s, %s", county, timePeriod, threshold));
 			}
 			break;
 		default:
@@ -195,7 +196,7 @@ public class OntologyApplication {
 			printRedText("Query is null: cannot execute.");
 			return null;
 		}
-		//printGreenText(String.format("Query to execute is: %s", queryString));
+		printGreenText(String.format("Query to execute is: %s", queryString));
 		ResultSet results = null;
 		try {
 			Query executableQuery = ReadOntologyModel.convertStringToQuery(queryString, ontologyModel);
