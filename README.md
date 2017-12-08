@@ -12,3 +12,7 @@ An OWL ontology application for querying crime geolocation information in Irelan
 * JRE 1.8.0_101
 * Apache Jena 2.5.4
 * ANSI Eclipse plugin: https://mihai-nita.net/2013/06/03/eclipse-plugin-ansi-in-console/
+
+#County_and_ElectoralDivision_Application
+* A simple Java application used to extract and organise coordinate data from both datasets.
+* It is not needed for the operation of the CrimeGeolocationOntology. It is only included for illustrative purposes.

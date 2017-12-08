@@ -1,0 +1,3386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://example.org/data/garda_stations_CoordinatesOnly.csv#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Abbeyfeale/1">
+    <Division>Limerick Division</Division>
+    <Position>52.38730039 -9.2900182</Position>
+    <Station>Abbeyfeale</Station>
+    <id>20441</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Abbeyleix/2">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.91273298 -7.34378663</Position>
+    <Station>Abbeyleix</Station>
+    <id>20117</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Adare/3">
+    <Division>Limerick Division</Division>
+    <Position>52.56390242 -8.79206079</Position>
+    <Station>Adare</Station>
+    <id>20424</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Aglish/4">
+    <Division>Waterford Division</Division>
+    <Position>52.07158955 -7.82204585</Position>
+    <Station>Aglish</Station>
+    <id>20217</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ahascragh/5">
+    <Division>Galway Division</Division>
+    <Position>53.39567383 -8.33063535</Position>
+    <Station>Ahascragh</Station>
+    <id>20522</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ailt_an_Chorrain/6">
+    <Division>Donegal Division</Division>
+    <Position>54.98492325 -8.43864199</Position>
+    <Station>Ailt an Chorrain</Station>
+    <id>20700</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Bun_Beag/7">
+    <Division>Donegal Division</Division>
+    <Position>55.06556516 -8.2894551</Position>
+    <Station>An Bun Beag</Station>
+    <id>20649</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Charraig/8">
+    <Division>Donegal Division</Division>
+    <Position>54.65787739 -8.63309153</Position>
+    <Station>An Charraig</Station>
+    <id>20653</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Cheathru_Rua/9">
+    <Division>Galway Division</Division>
+    <Position>53.26451013 -9.60048665</Position>
+    <Station>An Cheathru Rua</Station>
+    <id>20500</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Clochan_Liath/10">
+    <Division>Donegal Division</Division>
+    <Position>54.95156428 -8.36127328</Position>
+    <Station>An Clochan Liath</Station>
+    <id>20652</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Coirean/11">
+    <Division>Kerry Division</Division>
+    <Position>51.83108668 -10.1741668</Position>
+    <Station>An Coirean</Station>
+    <id>20393</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Craoslach/12">
+    <Division>Donegal Division</Division>
+    <Position>55.1252855 -7.91254656</Position>
+    <Station>An Craoslach</Station>
+    <id>20642</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_F_l_Carrach/13">
+    <Division>Donegal Division</Division>
+    <Position>55.13697922 -8.10202145</Position>
+    <Station>An F�l Carrach</Station>
+    <id>20643</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Maim/14">
+    <Division>Galway Division</Division>
+    <Position>53.51072837 -9.56493302</Position>
+    <Station>An Maim</Station>
+    <id>20488</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Rinn/15">
+    <Division>Waterford Division</Division>
+    <Position>52.04838283 -7.59304745</Position>
+    <Station>An Rinn</Station>
+    <id>20218</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#An_Spideal/16">
+    <Division>Galway Division</Division>
+    <Position>53.24543148 -9.30562651</Position>
+    <Station>An Spideal</Station>
+    <id>20503</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Anglesea_Street/17">
+    <Division>Cork City Division</Division>
+    <Position>51.89581995 -8.46498943</Position>
+    <Station>Anglesea Street</Station>
+    <id>20288</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Annascaul/18">
+    <Division>Kerry Division</Division>
+    <Position>52.15241809 -10.05253603</Position>
+    <Station>Annascaul</Station>
+    <id>20383</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Aran_Mor/19">
+    <Division>Galway Division</Division>
+    <Position>53.27207517 -8.93189429</Position>
+    <Station>Aran Mor</Station>
+    <id>20476</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ard_An_R_tha/20">
+    <Division>Donegal Division</Division>
+    <Position>54.76453309 -8.4094922</Position>
+    <Station>Ard An R�tha</Station>
+    <id>20648</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardee/21">
+    <Division>Louth Division</Division>
+    <Position>53.85491371 -6.54114623</Position>
+    <Station>Ardee</Station>
+    <id>2079</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardfert/22">
+    <Division>Kerry Division</Division>
+    <Position>52.32348757 -9.77888988</Position>
+    <Station>Ardfert</Station>
+    <id>20378</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardfinnan/23">
+    <Division>Tipperary Division</Division>
+    <Position>52.31183154 -7.87831126</Position>
+    <Station>Ardfinnan</Station>
+    <id>20259</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardmore/24">
+    <Division>Waterford Division</Division>
+    <Position>51.95102025 -7.72821738</Position>
+    <Station>Ardmore</Station>
+    <id>20334</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardnacrusha/25">
+    <Division>Limerick Division</Division>
+    <Position>52.70769139 -8.61314275</Position>
+    <Station>Ardnacrusha</Station>
+    <id>20414</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ardrahan/26">
+    <Division>Galway Division</Division>
+    <Position>53.15664553 -8.80645293</Position>
+    <Station>Ardrahan</Station>
+    <id>20508</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Arklow/27">
+    <Division>Wicklow Division</Division>
+    <Position>52.79628248 -6.15462926</Position>
+    <Station>Arklow</Station>
+    <id>20183</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Arles/28">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.89097601 -7.01891853</Position>
+    <Station>Arles</Station>
+    <id>20122</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Arva/29">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.9253777 -7.58375859</Position>
+    <Station>Arva</Station>
+    <id>20677</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ashbourne/30">
+    <Division>Meath Division</Division>
+    <Position>53.51137236 -6.39700116</Position>
+    <Station>Ashbourne</Station>
+    <id>2077</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ashford/31">
+    <Division>Wicklow Division</Division>
+    <Position>53.01393723 -6.10726425</Position>
+    <Station>Ashford</Station>
+    <id>20200</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Askeaton/32">
+    <Division>Limerick Division</Division>
+    <Position>52.60063281 -8.9712075</Position>
+    <Station>Askeaton</Station>
+    <id>20423</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Athea/33">
+    <Division>Limerick Division</Division>
+    <Position>52.45992484 -9.28747576</Position>
+    <Station>Athea</Station>
+    <id>20444</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Athenry/34">
+    <Division>Galway Division</Division>
+    <Position>53.29974912 -8.7496903</Position>
+    <Station>Athenry</Station>
+    <id>20480</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Athleague/35">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.5686966 -8.25236416</Position>
+    <Station>Athleague</Station>
+    <id>20515</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Athlone/36">
+    <Division>Westmeath Division</Division>
+    <Position>53.42325203 -7.94474011</Position>
+    <Station>Athlone</Station>
+    <id>2089</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Athy/37">
+    <Division>Kildare Division</Division>
+    <Position>52.99020226 -6.98824286</Position>
+    <Station>Athy</Station>
+    <id>20160</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Aughrim/38">
+    <Division>Wicklow Division</Division>
+    <Position>52.85602851 -6.32684194</Position>
+    <Station>Aughrim</Station>
+    <id>20205</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Avoca/39">
+    <Division>Wicklow Division</Division>
+    <Position>52.85878901 -6.21289829</Position>
+    <Station>Avoca</Station>
+    <id>20203</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Baile_Atha_Bui/40">
+    <Division>Meath Division</Division>
+    <Position>53.62363476 -6.91586793</Position>
+    <Station>Baile Atha Bui</Station>
+    <id>2060</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Baile_Bhuirne/42">
+    <Division>Cork West Division</Division>
+    <Position>51.94577398 -9.16919921</Position>
+    <Station>Baile Bhuirne</Station>
+    <id>20365</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Baile_an_Fheirt_araigh/41">
+    <Division>Kerry Division</Division>
+    <Position>52.16592865 -10.40619944</Position>
+    <Station>Baile an Fheirt�araigh</Station>
+    <id>20384</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bailieboro/43">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.91520783 -6.96962665</Position>
+    <Station>Bailieboro</Station>
+    <id>20682</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Balbriggan/44">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.61433362 -6.1911783</Position>
+    <Station>Balbriggan</Station>
+    <id>2072</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Balla/45">
+    <Division>Mayo Division</Division>
+    <Position>53.80186731 -9.12987496</Position>
+    <Station>Balla</Station>
+    <id>20554</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballaghderreen/46">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.89991925 -8.58458903</Position>
+    <Station>Ballaghderreen</Station>
+    <id>20538</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballina/47">
+    <Division>Mayo Division</Division>
+    <Position>54.11285759 -9.16043942</Position>
+    <Station>Ballina</Station>
+    <id>20562</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinagh/48">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.93110703 -7.40962976</Position>
+    <Station>Ballinagh</Station>
+    <id>20676</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinamore/49">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.05459763 -7.79696592</Position>
+    <Station>Ballinamore</Station>
+    <id>20695</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinasloe/50">
+    <Division>Galway Division</Division>
+    <Position>53.32842661 -8.22363038</Position>
+    <Station>Ballinasloe</Station>
+    <id>20521</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballincollig/51">
+    <Division>Cork City Division</Division>
+    <Position>51.88823925 -8.59031359</Position>
+    <Station>Ballincollig</Station>
+    <id>20304</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballindine/52">
+    <Division>Mayo Division</Division>
+    <Position>53.66964442 -8.95772401</Position>
+    <Station>Ballindine</Station>
+    <id>20574</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballineen/53">
+    <Division>Cork West Division</Division>
+    <Position>51.73591912 -8.94887021</Position>
+    <Station>Ballineen</Station>
+    <id>20338</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballingarry/54">
+    <Division>Limerick Division</Division>
+    <Position>52.47213201 -8.86284416</Position>
+    <Station>Ballingarry</Station>
+    <id>20442</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballingarry_North/55">
+    <Division>Tipperary Division</Division>
+    <Position>53.01835303 -8.03046314</Position>
+    <Station>Ballingarry North</Station>
+    <id>20266</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballingarry_South/56">
+    <Division>Tipperary Division</Division>
+    <Position>52.58595894 -7.54096423</Position>
+    <Station>Ballingarry South</Station>
+    <id>20244</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinhassig/57">
+    <Division>Cork West Division</Division>
+    <Position>51.80408931 -8.5705419</Position>
+    <Station>Ballinhassig</Station>
+    <id>20337</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinlough/58">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.74077796 -8.63581696</Position>
+    <Station>Ballinlough</Station>
+    <id>20539</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballinrobe/59">
+    <Division>Mayo Division</Division>
+    <Position>53.62460731 -9.2262203</Position>
+    <Station>Ballinrobe</Station>
+    <id>20576</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballintra/60">
+    <Division>Donegal Division</Division>
+    <Position>54.5777992 -8.12541836</Position>
+    <Station>Ballintra</Station>
+    <id>20656</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballivor/61">
+    <Division>Meath Division</Division>
+    <Position>53.53270149 -6.9671624</Position>
+    <Station>Ballivor</Station>
+    <id>2061</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballon/62">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.74322826 -6.77217466</Position>
+    <Station>Ballon</Station>
+    <id>20157</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballybay/63">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.12894066 -6.90480575</Position>
+    <Station>Ballybay</Station>
+    <id>20670</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballybofey/64">
+    <Division>Donegal Division</Division>
+    <Position>54.79964372 -7.7810478</Position>
+    <Station>Ballybofey</Station>
+    <id>20626</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballybunion/65">
+    <Division>Kerry Division</Division>
+    <Position>52.51125634 -9.67024153</Position>
+    <Station>Ballybunion</Station>
+    <id>20407</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyconnell/66">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.11899854 -7.58019738</Position>
+    <Station>Ballyconnell</Station>
+    <id>20690</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballycotton/67">
+    <Division>Cork North Division</Division>
+    <Position>51.83033028 -8.01309177</Position>
+    <Station>Ballycotton</Station>
+    <id>20333</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballycroy/68">
+    <Division>Mayo Division</Division>
+    <Position>54.02576498 -9.82585671</Position>
+    <Station>Ballycroy</Station>
+    <id>20570</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballycullane/69">
+    <Division>Wexford Division</Division>
+    <Position>52.27886846 -6.8392041</Position>
+    <Station>Ballycullane</Station>
+    <id>20193</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballydehob/70">
+    <Division>Cork West Division</Division>
+    <Position>51.55911245 -9.46078114</Position>
+    <Station>Ballydehob</Station>
+    <id>20349</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballydesmond/71">
+    <Division>Cork West Division</Division>
+    <Position>52.17823355 -9.23096739</Position>
+    <Station>Ballydesmond</Station>
+    <id>20370</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyduff/72">
+    <Division>Kerry Division</Division>
+    <Position>52.45585148 -9.66309811</Position>
+    <Station>Ballyduff</Station>
+    <id>20408</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyfermot/73">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.34475578 -6.35798817</Position>
+    <Station>Ballyfermot</Station>
+    <id>209</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballygar/74">
+    <Division>Galway Division</Division>
+    <Position>53.52186354 -8.32838974</Position>
+    <Station>Ballygar</Station>
+    <id>20520</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyhale/75">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.46832992 -7.20152066</Position>
+    <Station>Ballyhale</Station>
+    <id>20238</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyhaunis/76">
+    <Division>Mayo Division</Division>
+    <Position>53.76397009 -8.76740877</Position>
+    <Station>Ballyhaunis</Station>
+    <id>20584</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyheigue/77">
+    <Division>Kerry Division</Division>
+    <Position>52.38917403 -9.82746432</Position>
+    <Station>Ballyheigue</Station>
+    <id>20405</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyjamesduff/78">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.86310695 -7.20876929</Position>
+    <Station>Ballyjamesduff</Station>
+    <id>20689</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballylanders/79">
+    <Division>Limerick Division</Division>
+    <Position>52.37071015 -8.34547061</Position>
+    <Station>Ballylanders</Station>
+    <id>20433</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballylinan/80">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.94295168 -7.04323905</Position>
+    <Station>Ballylinan</Station>
+    <id>20121</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballymacarberry/81">
+    <Division>Waterford Division</Division>
+    <Position>52.26722571 -7.71770549</Position>
+    <Station>Ballymacarberry</Station>
+    <id>20216</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballymahon/82">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.56130979 -7.7608442</Position>
+    <Station>Ballymahon</Station>
+    <id>2095</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballymore/83">
+    <Division>Westmeath Division</Division>
+    <Position>53.49108004 -7.68173755</Position>
+    <Station>Ballymore</Station>
+    <id>2091</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballymote/84">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.08743023 -8.51522971</Position>
+    <Station>Ballymote</Station>
+    <id>20599</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballymun/85">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.39453369 -6.26370499</Position>
+    <Station>Ballymun</Station>
+    <id>2021</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballynacargy/86">
+    <Division>Westmeath Division</Division>
+    <Position>53.58631351 -7.53494651</Position>
+    <Station>Ballynacargy</Station>
+    <id>20107</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyneety/87">
+    <Division>Limerick Division</Division>
+    <Position>52.59726965 -8.5489251</Position>
+    <Station>Ballyneety</Station>
+    <id>20421</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballynoe/88">
+    <Division>Cork North Division</Division>
+    <Position>52.06020625 -8.09931108</Position>
+    <Station>Ballynoe</Station>
+    <id>20314</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyporeen/89">
+    <Division>Tipperary Division</Division>
+    <Position>52.2702014 -8.09774334</Position>
+    <Station>Ballyporeen</Station>
+    <id>20260</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyshannon/90">
+    <Division>Donegal Division</Division>
+    <Position>54.49874656 -8.20481734</Position>
+    <Station>Ballyshannon</Station>
+    <id>20655</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ballyvaughan/91">
+    <Division>Clare Division</Division>
+    <Position>53.11615725 -9.14711044</Position>
+    <Station>Ballyvaughan</Station>
+    <id>20469</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Baltimore/92">
+    <Division>Cork West Division</Division>
+    <Position>51.48348382 -9.37226138</Position>
+    <Station>Baltimore</Station>
+    <id>20357</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Baltinglass/93">
+    <Division>Wicklow Division</Division>
+    <Position>52.9389893 -6.70977434</Position>
+    <Station>Baltinglass</Station>
+    <id>20162</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Banagher/94">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.19053334 -7.98592774</Position>
+    <Station>Banagher</Station>
+    <id>20126</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bandon/95">
+    <Division>Cork West Division</Division>
+    <Position>51.74508682 -8.7398619</Position>
+    <Station>Bandon</Station>
+    <id>20335</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bangor_Erris/96">
+    <Division>Mayo Division</Division>
+    <Position>54.14397636 -9.74707911</Position>
+    <Station>Bangor Erris</Station>
+    <id>20569</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bansha/97">
+    <Division>Tipperary Division</Division>
+    <Position>52.44925212 -8.0655904</Position>
+    <Station>Bansha</Station>
+    <id>20285</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bantry/98">
+    <Division>Cork West Division</Division>
+    <Position>51.68027131 -9.45523339</Position>
+    <Station>Bantry</Station>
+    <id>20343</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Barnaderg/99">
+    <Division>Galway Division</Division>
+    <Position>53.4805453 -8.72246158</Position>
+    <Station>Barnaderg</Station>
+    <id>20550</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Barraduff/100">
+    <Division>Kerry Division</Division>
+    <Position>52.05976668 -9.34094103</Position>
+    <Station>Barraduff</Station>
+    <id>20401</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Beal_Atha_an_Ghaorthaidh/102">
+    <Division>Cork West Division</Division>
+    <Position>51.85186418 -9.22898251</Position>
+    <Station>Beal Atha an Ghaorthaidh</Station>
+    <id>20364</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Beal_an_Mhuirthead/101">
+    <Division>Mayo Division</Division>
+    <Position>54.22174896 -9.98558758</Position>
+    <Station>Beal an Mhuirthead</Station>
+    <id>20566</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Belturbet/103">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.10116336 -7.442618</Position>
+    <Station>Belturbet</Station>
+    <id>20691</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bennettsbridge/104">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.59030389 -7.18323679</Position>
+    <Station>Bennettsbridge</Station>
+    <id>20235</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Birr/105">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.09604766 -7.91151594</Position>
+    <Station>Birr</Station>
+    <id>20125</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bishopstown/106">
+    <Division>Cork City Division</Division>
+    <Position>51.8806677 -8.51461385</Position>
+    <Station>Bishopstown</Station>
+    <id>20293</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blacklion/107">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.29148162 -7.87619063</Position>
+    <Station>Blacklion</Station>
+    <id>20618</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blackrock_Co_Cork/108">
+    <Division>Cork North Division</Division>
+    <Position>51.8943268 -8.40447254</Position>
+    <Station>Blackrock Co Cork</Station>
+    <id>20291</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blackrock_Co_Dublin/109">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.29975513 -6.17750609</Position>
+    <Station>Blackrock Co Dublin</Station>
+    <id>2044</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blackrock_Co_Louth/110">
+    <Division>Louth Division</Division>
+    <Position>53.96375295 -6.36823983</Position>
+    <Station>Blackrock Co Louth</Station>
+    <id>20703</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blackwater/111">
+    <Division>Wexford Division</Division>
+    <Position>52.44540655 -6.34883221</Position>
+    <Station>Blackwater</Station>
+    <id>20186</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blanchardstown/112">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.38991904 -6.38097698</Position>
+    <Station>Blanchardstown</Station>
+    <id>2031</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blarney/113">
+    <Division>Cork City Division</Division>
+    <Position>51.93196583 -8.5676546</Position>
+    <Station>Blarney</Station>
+    <id>20303</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Blessington/114">
+    <Division>Wicklow Division</Division>
+    <Position>53.1702652 -6.5337397</Position>
+    <Station>Blessington</Station>
+    <id>20163</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Boherbue/115">
+    <Division>Cork West Division</Division>
+    <Position>52.15897298 -9.06975461</Position>
+    <Station>Boherbue</Station>
+    <id>20371</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bonniconlon/116">
+    <Division>Mayo Division</Division>
+    <Position>54.109552 -9.02895969</Position>
+    <Station>Bonniconlon</Station>
+    <id>20561</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Borris/117">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.60180461 -6.92930908</Position>
+    <Station>Borris</Station>
+    <id>20242</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Borris_In_Ossory/118">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.93929659 -7.6288093</Position>
+    <Station>Borris-In-Ossory</Station>
+    <id>20124</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Borrisokane/119">
+    <Division>Tipperary Division</Division>
+    <Position>52.9971195 -8.12701656</Position>
+    <Station>Borrisokane</Station>
+    <id>20265</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Borrisoleigh/120">
+    <Division>Tipperary Division</Division>
+    <Position>52.75149154 -7.95537178</Position>
+    <Station>Borrisoleigh</Station>
+    <id>20277</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bothar_Na_Tra/121">
+    <Division>Galway Division</Division>
+    <Position>53.25880584 -9.07974503</Position>
+    <Station>Bothar Na Tra</Station>
+    <id>20505</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Boyle/122">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.97336883 -8.30039522</Position>
+    <Station>Boyle</Station>
+    <id>20530</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bray/123">
+    <Division>Wicklow Division</Division>
+    <Position>53.19867836 -6.10059722</Position>
+    <Station>Bray</Station>
+    <id>2040</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bridewell_Cork/124">
+    <Division>Cork City Division</Division>
+    <Position>51.90047214 -8.47702317</Position>
+    <Station>Bridewell Cork</Station>
+    <id>20290</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bridewell_Dublin/125">
+    <Division>D.M.R. North Central Division</Division>
+    <Position>53.34707654 -6.27413466</Position>
+    <Station>Bridewell Dublin</Station>
+    <id>2035</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bruff/126">
+    <Division>Limerick Division</Division>
+    <Position>52.47732933 -8.54697557</Position>
+    <Station>Bruff</Station>
+    <id>20431</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bruree/127">
+    <Division>Limerick Division</Division>
+    <Position>52.42316623 -8.6503328</Position>
+    <Station>Bruree</Station>
+    <id>20435</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bunclody/128">
+    <Division>Wexford Division</Division>
+    <Position>52.6567588 -6.66247622</Position>
+    <Station>Bunclody</Station>
+    <id>20181</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Buncrana/129">
+    <Division>Donegal Division</Division>
+    <Position>55.13126244 -7.45069855</Position>
+    <Station>Buncrana</Station>
+    <id>20628</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Bundoran/130">
+    <Division>Donegal Division</Division>
+    <Position>54.4765526 -8.27933662</Position>
+    <Station>Bundoran</Station>
+    <id>20657</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Burnfoot/131">
+    <Division>Donegal Division</Division>
+    <Position>55.05467021 -7.40158328</Position>
+    <Station>Burnfoot</Station>
+    <id>20629</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Buttevant/132">
+    <Division>Cork North Division</Division>
+    <Position>52.22931434 -8.67127988</Position>
+    <Station>Buttevant</Station>
+    <id>20321</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cabinteely/133">
+    <Division>D.M.R. Eastern Division</Division>
+    <Position>53.26078999 -6.15065892</Position>
+    <Station>Cabinteely</Station>
+    <id>2039</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cabra/134">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.36498056 -6.30763372</Position>
+    <Station>Cabra</Station>
+    <id>2028</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Caherciveen/135">
+    <Division>Kerry Division</Division>
+    <Position>51.94696251 -10.2198387</Position>
+    <Station>Caherciveen</Station>
+    <id>20387</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Caherconlish/136">
+    <Division>Limerick Division</Division>
+    <Position>52.59381859 -8.46953701</Position>
+    <Station>Caherconlish</Station>
+    <id>20422</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cahir/137">
+    <Division>Tipperary Division</Division>
+    <Position>52.3759681 -7.92029139</Position>
+    <Station>Cahir</Station>
+    <id>20258</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Callan/138">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.54237309 -7.39103598</Position>
+    <Station>Callan</Station>
+    <id>20230</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Campile/139">
+    <Division>Wexford Division</Division>
+    <Position>52.28778444 -6.93962139</Position>
+    <Station>Campile</Station>
+    <id>20198</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cappamore/140">
+    <Division>Limerick Division</Division>
+    <Position>52.61467285 -8.33848456</Position>
+    <Station>Cappamore</Station>
+    <id>20438</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cappawhite/141">
+    <Division>Tipperary Division</Division>
+    <Position>52.58315858 -8.16483899</Position>
+    <Station>Cappawhite</Station>
+    <id>20284</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cappoquin/142">
+    <Division>Waterford Division</Division>
+    <Position>52.14589036 -7.84572129</Position>
+    <Station>Cappoquin</Station>
+    <id>20214</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carbury/143">
+    <Division>Kildare Division</Division>
+    <Position>53.33845988 -6.93670421</Position>
+    <Station>Carbury</Station>
+    <id>20153</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carlingford/144">
+    <Division>Louth Division</Division>
+    <Position>54.04122582 -6.18721502</Position>
+    <Station>Carlingford</Station>
+    <id>2053</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carlow/145">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.84052664 -6.92932257</Position>
+    <Station>Carlow</Station>
+    <id>20154</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carna/146">
+    <Division>Galway Division</Division>
+    <Position>53.32356545 -9.82411971</Position>
+    <Station>Carna</Station>
+    <id>20487</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carndonagh/147">
+    <Division>Donegal Division</Division>
+    <Position>55.25350732 -7.25945634</Position>
+    <Station>Carndonagh</Station>
+    <id>20630</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carnew/148">
+    <Division>Wicklow Division</Division>
+    <Position>52.71050738 -6.49176557</Position>
+    <Station>Carnew</Station>
+    <id>20184</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carraig_Airt/149">
+    <Division>Donegal Division</Division>
+    <Position>55.17512733 -7.79847989</Position>
+    <Station>Carraig Airt</Station>
+    <id>20637</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrick_On_Shannon/153">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>53.94434071 -8.09015263</Position>
+    <Station>Carrick-On-Shannon</Station>
+    <id>20605</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrick_On_Suir/154">
+    <Division>Tipperary Division</Division>
+    <Position>52.34815439 -7.40989405</Position>
+    <Station>Carrick-On-Suir</Station>
+    <id>20256</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrick_on_Bannow/152">
+    <Division>Wexford Division</Division>
+    <Position>52.23814514 -6.73401888</Position>
+    <Station>Carrick-on-Bannow</Station>
+    <id>20194</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrickbyrne/150">
+    <Division>Wexford Division</Division>
+    <Position>52.36237659 -6.75971343</Position>
+    <Station>Carrickbyrne</Station>
+    <id>20197</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrickmacross/151">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.97606318 -6.71877796</Position>
+    <Station>Carrickmacross</Station>
+    <id>20669</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrigaline/155">
+    <Division>Cork City Division</Division>
+    <Position>51.81483307 -8.39153675</Position>
+    <Station>Carrigaline</Station>
+    <id>20295</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrigallen/156">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>53.97559427 -7.64670249</Position>
+    <Station>Carrigallen</Station>
+    <id>20696</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrigans/157">
+    <Division>Donegal Division</Division>
+    <Position>54.95118529 -7.42675284</Position>
+    <Station>Carrigans</Station>
+    <id>20620</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Carrigtwohill/158">
+    <Division>Cork North Division</Division>
+    <Position>51.9094693 -8.26181229</Position>
+    <Station>Carrigtwohill</Station>
+    <id>20307</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cashel/159">
+    <Division>Tipperary Division</Division>
+    <Position>52.5163377 -7.8902971</Position>
+    <Station>Cashel</Station>
+    <id>20262</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlebar/160">
+    <Division>Mayo Division</Division>
+    <Position>53.85343297 -9.2976217</Position>
+    <Station>Castlebar</Station>
+    <id>20551</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlebellingham/161">
+    <Division>Louth Division</Division>
+    <Position>53.89926256 -6.38994046</Position>
+    <Station>Castlebellingham</Station>
+    <id>2048</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castleblayney/162">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.11785995 -6.73503685</Position>
+    <Station>Castleblayney</Station>
+    <id>20671</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlebridge/163">
+    <Division>Wexford Division</Division>
+    <Position>52.38470816 -6.45256117</Position>
+    <Station>Castlebridge</Station>
+    <id>20175</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlecomer/164">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.79926748 -7.20954236</Position>
+    <Station>Castlecomer</Station>
+    <id>20231</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castleconnell/165">
+    <Division>Limerick Division</Division>
+    <Position>52.71340457 -8.49847433</Position>
+    <Station>Castleconnell</Station>
+    <id>20416</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castledermot/166">
+    <Division>Kildare Division</Division>
+    <Position>52.90922171 -6.84917741</Position>
+    <Station>Castledermot</Station>
+    <id>20161</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlefin/167">
+    <Division>Donegal Division</Division>
+    <Position>54.80269558 -7.5952271</Position>
+    <Station>Castlefin</Station>
+    <id>20621</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlegregory/168">
+    <Division>Kerry Division</Division>
+    <Position>52.25416689 -10.02061667</Position>
+    <Station>Castlegregory</Station>
+    <id>20382</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castleisland/169">
+    <Division>Kerry Division</Division>
+    <Position>52.23037453 -9.46280058</Position>
+    <Station>Castleisland</Station>
+    <id>20399</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlemaine/170">
+    <Division>Kerry Division</Division>
+    <Position>52.17023276 -9.7005905</Position>
+    <Station>Castlemaine</Station>
+    <id>20395</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlepollard/171">
+    <Division>Westmeath Division</Division>
+    <Position>53.67848276 -7.29663265</Position>
+    <Station>Castlepollard</Station>
+    <id>20108</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castlerea/172">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.76663397 -8.48406175</Position>
+    <Station>Castlerea</Station>
+    <id>20537</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castletownbere/173">
+    <Division>Cork West Division</Division>
+    <Position>51.64948076 -9.91468044</Position>
+    <Station>Castletownbere</Station>
+    <id>20351</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Castletownroche/174">
+    <Division>Cork North Division</Division>
+    <Position>52.17073066 -8.46795122</Position>
+    <Station>Castletownroche</Station>
+    <id>20318</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cavan/175">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.99333367 -7.36087396</Position>
+    <Station>Cavan</Station>
+    <id>20675</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Celbridge/176">
+    <Division>Kildare Division</Division>
+    <Position>53.34399859 -6.54173228</Position>
+    <Station>Celbridge</Station>
+    <id>20142</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Charlestown/177">
+    <Division>Mayo Division</Division>
+    <Position>53.96274373 -8.79351104</Position>
+    <Station>Charlestown</Station>
+    <id>20582</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Charleville/178">
+    <Division>Cork North Division</Division>
+    <Position>52.35605252 -8.68256192</Position>
+    <Station>Charleville</Station>
+    <id>20322</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cill_Ronain/179">
+    <Division>Galway Division</Division>
+    <Position>53.1213073 -9.66781978</Position>
+    <Station>Cill Ronain</Station>
+    <id>20506</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clane/180">
+    <Division>Kildare Division</Division>
+    <Position>53.29365569 -6.68589487</Position>
+    <Station>Clane</Station>
+    <id>20143</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clara/181">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.34541446 -7.61410322</Position>
+    <Station>Clara</Station>
+    <id>20135</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Claremorris/182">
+    <Division>Mayo Division</Division>
+    <Position>53.72361246 -8.98506451</Position>
+    <Station>Claremorris</Station>
+    <id>20572</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clifden/183">
+    <Division>Galway Division</Division>
+    <Position>53.48818064 -10.00924276</Position>
+    <Station>Clifden</Station>
+    <id>20483</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cloch_na_Ron/184">
+    <Division>Galway Division</Division>
+    <Position>53.39357523 -9.92110362</Position>
+    <Station>Cloch na Ron</Station>
+    <id>20489</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cloghan/185">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.22484831 -7.87751752</Position>
+    <Station>Cloghan</Station>
+    <id>20127</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clogheen/186">
+    <Division>Tipperary Division</Division>
+    <Position>52.27690063 -7.99533462</Position>
+    <Station>Clogheen</Station>
+    <id>20263</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clogher/187">
+    <Division>Donegal Division</Division>
+    <Position>54.83677449 -8.42749674</Position>
+    <Station>Clogher</Station>
+    <id>20650</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clogherhead/188">
+    <Division>Louth Division</Division>
+    <Position>53.7904124 -6.24266853</Position>
+    <Station>Clogherhead</Station>
+    <id>2049</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonakilty/189">
+    <Division>Cork West Division</Division>
+    <Position>51.62494883 -8.88890895</Position>
+    <Station>Clonakilty</Station>
+    <id>20352</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonark/190">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.36839815 -8.03466103</Position>
+    <Station>Clonark</Station>
+    <id>20528</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonaslee/191">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.14861715 -7.52604694</Position>
+    <Station>Clonaslee</Station>
+    <id>20116</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonbologue/192">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.25914161 -7.08576437</Position>
+    <Station>Clonbologue</Station>
+    <id>20136</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clondalkin/193">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.32314443 -6.39495858</Position>
+    <Station>Clondalkin</Station>
+    <id>2012</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clones/194">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.17749252 -7.22815212</Position>
+    <Station>Clones</Station>
+    <id>20663</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonmany/195">
+    <Division>Donegal Division</Division>
+    <Position>55.26301007 -7.41281291</Position>
+    <Station>Clonmany</Station>
+    <id>20631</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonmel/196">
+    <Division>Tipperary Division</Division>
+    <Position>52.35409105 -7.69993718</Position>
+    <Station>Clonmel</Station>
+    <id>20251</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clonroche/197">
+    <Division>Wexford Division</Division>
+    <Position>52.45037577 -6.71586619</Position>
+    <Station>Clonroche</Station>
+    <id>20191</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Clontarf/198">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.36354575 -6.22015264</Position>
+    <Station>Clontarf</Station>
+    <id>2027</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cloughjordan/199">
+    <Division>Tipperary Division</Division>
+    <Position>52.94196424 -8.03972118</Position>
+    <Station>Cloughjordan</Station>
+    <id>20267</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cloyne/200">
+    <Division>Cork North Division</Division>
+    <Position>51.8627643 -8.12349471</Position>
+    <Station>Cloyne</Station>
+    <id>20329</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Coachford/201">
+    <Division>Cork West Division</Division>
+    <Position>51.90913393 -8.79113088</Position>
+    <Station>Coachford</Station>
+    <id>20363</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cobh/202">
+    <Division>Cork North Division</Division>
+    <Position>51.8482378 -8.30364126</Position>
+    <Station>Cobh</Station>
+    <id>20306</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Collon/203">
+    <Division>Louth Division</Division>
+    <Position>53.77785101 -6.48490178</Position>
+    <Station>Collon</Station>
+    <id>2080</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Collooney/204">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.18547788 -8.48786473</Position>
+    <Station>Collooney</Station>
+    <id>20593</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cong/205">
+    <Division>Mayo Division</Division>
+    <Position>53.54147122 -9.2865393</Position>
+    <Station>Cong</Station>
+    <id>20577</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Convoy/206">
+    <Division>Donegal Division</Division>
+    <Position>54.85932273 -7.66899789</Position>
+    <Station>Convoy</Station>
+    <id>20627</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Coolaney/207">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.17236863 -8.60338152</Position>
+    <Station>Coolaney</Station>
+    <id>20595</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Coolock/208">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.39033544 -6.20110091</Position>
+    <Station>Coolock</Station>
+    <id>2023</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Cootehill/209">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.07470463 -7.07869818</Position>
+    <Station>Cootehill</Station>
+    <id>20688</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Corofin/210">
+    <Division>Clare Division</Division>
+    <Position>52.9474875 -9.06857099</Position>
+    <Station>Corofin</Station>
+    <id>20470</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Corofin/211">
+    <Division>Galway Division</Division>
+    <Position>53.43762553 -8.86307321</Position>
+    <Station>Corofin</Station>
+    <id>20549</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Courtown_Harbour/212">
+    <Division>Wexford Division</Division>
+    <Position>52.64425497 -6.23052497</Position>
+    <Station>Courtown Harbour</Station>
+    <id>20182</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Craughwell/213">
+    <Division>Galway Division</Division>
+    <Position>53.22942919 -8.73392187</Position>
+    <Station>Craughwell</Station>
+    <id>20509</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Creggs/214">
+    <Division>Galway Division</Division>
+    <Position>53.59486094 -8.36379707</Position>
+    <Station>Creggs</Station>
+    <id>20519</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Crookstown/215">
+    <Division>Cork West Division</Division>
+    <Position>51.8586551 -8.80126241</Position>
+    <Station>Crookstown</Station>
+    <id>20366</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Croom/216">
+    <Division>Limerick Division</Division>
+    <Position>52.52199887 -8.71879388</Position>
+    <Station>Croom</Station>
+    <id>20426</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Crosshaven/217">
+    <Division>Cork City Division</Division>
+    <Position>51.80397324 -8.30444566</Position>
+    <Station>Crosshaven</Station>
+    <id>20296</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Crossmolina/218">
+    <Division>Mayo Division</Division>
+    <Position>54.09980957 -9.32269546</Position>
+    <Station>Crossmolina</Station>
+    <id>20558</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Crumlin/219">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.31957045 -6.31501462</Position>
+    <Station>Crumlin</Station>
+    <id>207</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Crusheen/220">
+    <Division>Clare Division</Division>
+    <Position>52.9384768 -8.89863913</Position>
+    <Station>Crusheen</Station>
+    <id>20448</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Daingean/221">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.29295546 -7.29356776</Position>
+    <Station>Daingean</Station>
+    <id>20137</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Delvin/222">
+    <Division>Westmeath Division</Division>
+    <Position>53.6144575 -7.09008438</Position>
+    <Station>Delvin</Station>
+    <id>2088</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dingle/223">
+    <Division>Kerry Division</Division>
+    <Position>52.13924504 -10.27049495</Position>
+    <Station>Dingle</Station>
+    <id>20381</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dolla/224">
+    <Division>Tipperary Division</Division>
+    <Position>52.79713688 -8.19210854</Position>
+    <Station>Dolla</Station>
+    <id>20268</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Donegal_Town/225">
+    <Division>Donegal Division</Division>
+    <Position>54.65242685 -8.11105315</Position>
+    <Station>Donegal Town</Station>
+    <id>20658</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Doneraile/226">
+    <Division>Cork North Division</Division>
+    <Position>52.21570692 -8.58541124</Position>
+    <Station>Doneraile</Station>
+    <id>20323</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Donnybrook/227">
+    <Division>D.M.R. South Central Division</Division>
+    <Position>53.32173338 -6.23591178</Position>
+    <Station>Donnybrook</Station>
+    <id>205</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Douglas/228">
+    <Division>Cork City Division</Division>
+    <Position>51.87509001 -8.43095864</Position>
+    <Station>Douglas</Station>
+    <id>20294</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dowra/229">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.19042475 -8.01525362</Position>
+    <Station>Dowra</Station>
+    <id>20617</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drimoleague/230">
+    <Division>Cork West Division</Division>
+    <Position>51.65902646 -9.26397963</Position>
+    <Station>Drimoleague</Station>
+    <id>20350</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drinagh/231">
+    <Division>Cork West Division</Division>
+    <Position>51.64771411 -9.15452616</Position>
+    <Station>Drinagh</Station>
+    <id>20359</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drogheda/232">
+    <Division>Louth Division</Division>
+    <Position>53.71505965 -6.35664945</Position>
+    <Station>Drogheda</Station>
+    <id>2047</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drumad/233">
+    <Division>Louth Division</Division>
+    <Position>54.09568025 -6.36082585</Position>
+    <Station>Drumad</Station>
+    <id>2055</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drumcollogher/234">
+    <Division>Limerick Division</Division>
+    <Position>52.33821773 -8.91126334</Position>
+    <Station>Drumcollogher</Station>
+    <id>20327</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drumlish/235">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.82169951 -7.76593609</Position>
+    <Station>Drumlish</Station>
+    <id>2097</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Drumshambo/236">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.04650706 -8.03997937</Position>
+    <Station>Drumshambo</Station>
+    <id>20608</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dublin_Airport/237">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.42988813 -6.24548699</Position>
+    <Station>Dublin Airport</Station>
+    <id>2022</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Duleek/238">
+    <Division>Meath Division</Division>
+    <Position>53.65386876 -6.418067</Position>
+    <Station>Duleek</Station>
+    <id>2081</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dun_Fionnachaid/239">
+    <Division>Donegal Division</Division>
+    <Position>55.18291803 -7.97443963</Position>
+    <Station>Dun Fionnachaid</Station>
+    <id>20641</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dun_Laoghaire/240">
+    <Division>D.M.R. Eastern Division</Division>
+    <Position>53.28991481 -6.13335349</Position>
+    <Station>Dun Laoghaire</Station>
+    <id>203</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunboyne/241">
+    <Division>Meath Division</Division>
+    <Position>53.42108978 -6.47714899</Position>
+    <Station>Dunboyne</Station>
+    <id>2065</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Duncannon/242">
+    <Division>Wexford Division</Division>
+    <Position>52.22139845 -6.92977466</Position>
+    <Station>Duncannon</Station>
+    <id>20195</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dundalk/243">
+    <Division>Louth Division</Division>
+    <Position>53.99950327 -6.40966521</Position>
+    <Station>Dundalk</Station>
+    <id>2052</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dundrum/244">
+    <Division>D.M.R. Eastern Division</Division>
+    <Position>53.28954423 -6.24257781</Position>
+    <Station>Dundrum</Station>
+    <id>2045</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dungarvan/245">
+    <Division>Waterford Division</Division>
+    <Position>52.08768833 -7.62447916</Position>
+    <Station>Dungarvan</Station>
+    <id>20213</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunlavin/246">
+    <Division>Wicklow Division</Division>
+    <Position>53.05877828 -6.70106604</Position>
+    <Station>Dunlavin</Station>
+    <id>20164</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunleer/247">
+    <Division>Louth Division</Division>
+    <Position>53.82852056 -6.39456991</Position>
+    <Station>Dunleer</Station>
+    <id>2050</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunmanway/248">
+    <Division>Cork West Division</Division>
+    <Position>51.72283143 -9.11014262</Position>
+    <Station>Dunmanway</Station>
+    <id>20358</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunmore/250">
+    <Division>Galway Division</Division>
+    <Position>53.61755291 -8.74063436</Position>
+    <Station>Dunmore</Station>
+    <id>20548</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunmore_East/249">
+    <Division>Waterford Division</Division>
+    <Position>52.14838576 -6.9928692</Position>
+    <Station>Dunmore East</Station>
+    <id>20207</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Dunshaughlin/251">
+    <Division>Meath Division</Division>
+    <Position>53.51076157 -6.53931168</Position>
+    <Station>Dunshaughlin</Station>
+    <id>2067</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Durrow/252">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.84425999 -7.39609602</Position>
+    <Station>Durrow</Station>
+    <id>20119</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Durrus/253">
+    <Division>Cork West Division</Division>
+    <Position>51.62054425 -9.52396119</Position>
+    <Station>Durrus</Station>
+    <id>20348</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Edenderry/254">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.33683306 -7.06081941</Position>
+    <Station>Edenderry</Station>
+    <id>20138</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Edgeworthstown/255">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.69557901 -7.60598459</Position>
+    <Station>Edgeworthstown</Station>
+    <id>20105</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Elphin/256">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.8458169 -8.19247879</Position>
+    <Station>Elphin</Station>
+    <id>20533</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Emly/257">
+    <Division>Tipperary Division</Division>
+    <Position>52.46513177 -8.35418357</Position>
+    <Station>Emly</Station>
+    <id>20282</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Emyvale/258">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.33935959 -6.95759629</Position>
+    <Station>Emyvale</Station>
+    <id>20667</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Enfield/259">
+    <Division>Meath Division</Division>
+    <Position>53.41510635 -6.83386034</Position>
+    <Station>Enfield</Station>
+    <id>2071</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ennis/260">
+    <Division>Clare Division</Division>
+    <Position>52.84692048 -8.98111378</Position>
+    <Station>Ennis</Station>
+    <id>20447</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Enniscorthy/261">
+    <Division>Wexford Division</Division>
+    <Position>52.50073571 -6.57068791</Position>
+    <Station>Enniscorthy</Station>
+    <id>20185</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Enniscrone/262">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.21384801 -9.08851015</Position>
+    <Station>Enniscrone</Station>
+    <id>20564</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Enniskerry/263">
+    <Division>Wicklow Division</Division>
+    <Position>53.19134643 -6.16952592</Position>
+    <Station>Enniskerry</Station>
+    <id>2041</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ennistymon/264">
+    <Division>Clare Division</Division>
+    <Position>52.937397 -9.28854215</Position>
+    <Station>Ennistymon</Station>
+    <id>20468</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Eyrecourt/265">
+    <Division>Galway Division</Division>
+    <Position>53.19942829 -8.13237103</Position>
+    <Station>Eyrecourt</Station>
+    <id>20495</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Farranfore/266">
+    <Division>Kerry Division</Division>
+    <Position>52.17139505 -9.54968017</Position>
+    <Station>Farranfore</Station>
+    <id>20400</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ferbane/267">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.27075448 -7.82762507</Position>
+    <Station>Ferbane</Station>
+    <id>20128</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Fermoy/268">
+    <Division>Cork North Division</Division>
+    <Position>52.13851992 -8.2741651</Position>
+    <Station>Fermoy</Station>
+    <id>20312</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ferns/269">
+    <Division>Wexford Division</Division>
+    <Position>52.5909959 -6.49776234</Position>
+    <Station>Ferns</Station>
+    <id>20187</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ferrybank/270">
+    <Division>Waterford Division</Division>
+    <Position>52.26746595 -7.10111829</Position>
+    <Station>Ferrybank</Station>
+    <id>20208</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Fethard/271">
+    <Division>Tipperary Division</Division>
+    <Position>52.46639826 -7.69442163</Position>
+    <Station>Fethard</Station>
+    <id>20255</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Finglas/272">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.38961695 -6.30676131</Position>
+    <Station>Finglas</Station>
+    <id>2030</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Fitzgibbon_Street/273">
+    <Division>D.M.R. North Central Division</Division>
+    <Position>53.35773962 -6.25536324</Position>
+    <Station>Fitzgibbon Street</Station>
+    <id>2033</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Foxford/274">
+    <Division>Mayo Division</Division>
+    <Position>53.98328879 -9.10840627</Position>
+    <Station>Foxford</Station>
+    <id>20585</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Foynes/275">
+    <Division>Limerick Division</Division>
+    <Position>52.60972942 -9.10367352</Position>
+    <Station>Foynes</Station>
+    <id>20427</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Frenchpark/276">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.86923868 -8.40560392</Position>
+    <Station>Frenchpark</Station>
+    <id>20534</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Freshford/277">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.73243917 -7.39441561</Position>
+    <Station>Freshford</Station>
+    <id>20229</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gaillimh/278">
+    <Division>Galway Division</Division>
+    <Position>53.27134116 -9.05827834</Position>
+    <Station>Gaillimh</Station>
+    <id>20475</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Garristown/279">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.56705134 -6.38390626</Position>
+    <Station>Garristown</Station>
+    <id>2076</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glanmire/280">
+    <Division>Cork City Division</Division>
+    <Position>51.91835759 -8.39684006</Position>
+    <Station>Glanmire</Station>
+    <id>20308</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glantaine/281">
+    <Division>Cork North Division</Division>
+    <Position>52.10469368 -8.74875837</Position>
+    <Station>Glantaine</Station>
+    <id>20325</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glasson/282">
+    <Division>Westmeath</Division>
+    <Position>53.47172274 -7.86352407</Position>
+    <Station>Glasson</Station>
+    <id>22222</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gleann_na_Muaidhe/283">
+    <Division>Mayo Division</Division>
+    <Position>54.24083544 -9.67876405</Position>
+    <Station>Gleann na Muaidhe</Station>
+    <id>20571</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glenamaddy/284">
+    <Division>Galway Division</Division>
+    <Position>53.60744575 -8.5601798</Position>
+    <Station>Glenamaddy</Station>
+    <id>20547</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glenbeigh/285">
+    <Division>Kerry Division</Division>
+    <Position>52.05711965 -9.93705917</Position>
+    <Station>Glenbeigh</Station>
+    <id>20390</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glengarriff/286">
+    <Division>Cork West Division</Division>
+    <Position>51.75055993 -9.55070448</Position>
+    <Station>Glengarriff</Station>
+    <id>20347</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glenmore/287">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.35384352 -7.02800947</Position>
+    <Station>Glenmore</Station>
+    <id>20211</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glin/288">
+    <Division>Limerick Division</Division>
+    <Position>52.56958754 -9.2845049</Position>
+    <Station>Glin</Station>
+    <id>20428</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Glynn/289">
+    <Division>Wexford Division</Division>
+    <Position>52.37277228 -6.58288416</Position>
+    <Station>Glynn</Station>
+    <id>20177</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gob_an_Choire/290">
+    <Division>Mayo Division</Division>
+    <Position>53.93373003 -9.91848455</Position>
+    <Station>Gob an Choire</Station>
+    <id>20588</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Golden/291">
+    <Division>Tipperary Division</Division>
+    <Position>52.49677075 -7.98469533</Position>
+    <Station>Golden</Station>
+    <id>20283</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Goresbridge/292">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.63003578 -6.99443065</Position>
+    <Station>Goresbridge</Station>
+    <id>20232</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gorey/293">
+    <Division>Wexford Division</Division>
+    <Position>52.67504318 -6.29726342</Position>
+    <Station>Gorey</Station>
+    <id>20180</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gort/294">
+    <Division>Galway Division</Division>
+    <Position>53.06743735 -8.81818235</Position>
+    <Station>Gort</Station>
+    <id>20507</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Graiguenamanagh/295">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.54246904 -6.95676887</Position>
+    <Station>Graiguenamanagh</Station>
+    <id>20236</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Granard/296">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.77855306 -7.49421728</Position>
+    <Station>Granard</Station>
+    <id>20103</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Grange/297">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.39336705 -8.52074509</Position>
+    <Station>Grange</Station>
+    <id>20598</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Greystones/298">
+    <Division>Wicklow Division</Division>
+    <Position>53.14796575 -6.06316568</Position>
+    <Station>Greystones</Station>
+    <id>2043</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gurranabraher/299">
+    <Division>Cork City Division</Division>
+    <Position>51.90343796 -8.49658172</Position>
+    <Station>Gurranabraher</Station>
+    <id>20302</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Gurteen/300">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>53.99296911 -8.51583244</Position>
+    <Station>Gurteen</Station>
+    <id>20601</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Hackballscross/301">
+    <Division>Louth Division</Division>
+    <Position>54.03163859 -6.52415734</Position>
+    <Station>Hackballscross</Station>
+    <id>2054</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Hacketstown/302">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.86434263 -6.55698265</Position>
+    <Station>Hacketstown</Station>
+    <id>20169</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Headford/303">
+    <Division>Galway Division</Division>
+    <Position>53.47031545 -9.09831209</Position>
+    <Station>Headford</Station>
+    <id>20479</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Henry_Street/304">
+    <Division>Limerick Division</Division>
+    <Position>52.66166638 -8.63160831</Position>
+    <Station>Henry Street</Station>
+    <id>20417</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Holycross/305">
+    <Division>Tipperary Division</Division>
+    <Position>52.64257563 -7.87290415</Position>
+    <Station>Holycross</Station>
+    <id>20245</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Hospital_Co_Limerick/306">
+    <Division>Limerick Division</Division>
+    <Position>52.475233 -8.43245398</Position>
+    <Station>Hospital Co Limerick</Station>
+    <id>20434</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Howth/307">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.3872913 -6.06899719</Position>
+    <Station>Howth</Station>
+    <id>2029</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Indreabhan/308">
+    <Division>Galway Division</Division>
+    <Position>53.24058634 -9.42956464</Position>
+    <Station>Indreabhan</Station>
+    <id>20502</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Innishannon/309">
+    <Division>Cork West Division</Division>
+    <Position>51.76442557 -8.65544291</Position>
+    <Station>Innishannon</Station>
+    <id>20336</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Irishtown/310">
+    <Division>D.M.R. South Central Division</Division>
+    <Position>53.33824315 -6.22333901</Position>
+    <Station>Irishtown</Station>
+    <id>206</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kanturk/311">
+    <Division>Cork West Division</Division>
+    <Position>52.17586793 -8.91257687</Position>
+    <Station>Kanturk</Station>
+    <id>20369</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Keadue/312">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>54.05064919 -8.13729853</Position>
+    <Station>Keadue</Station>
+    <id>20535</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kealkil/313">
+    <Division>Cork West Division</Division>
+    <Position>51.75504418 -9.37531716</Position>
+    <Station>Kealkil</Station>
+    <id>20345</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Keel/314">
+    <Division>Mayo Division</Division>
+    <Position>53.97537421 -10.08224714</Position>
+    <Station>Keel</Station>
+    <id>20591</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kells_Ceanannus_Mor/315">
+    <Division>Meath Division</Division>
+    <Position>53.72840438 -6.88121856</Position>
+    <Station>Kells Ceanannus Mor</Station>
+    <id>2058</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kenagh/316">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.62195359 -7.8151021</Position>
+    <Station>Kenagh</Station>
+    <id>2098</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kenmare/317">
+    <Division>Kerry Division</Division>
+    <Position>51.87849822 -9.58161839</Position>
+    <Station>Kenmare</Station>
+    <id>20398</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kerrykeel/318">
+    <Division>Donegal Division</Division>
+    <Position>55.13713768 -7.66632162</Position>
+    <Station>Kerrykeel</Station>
+    <id>20638</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kevin_Street/319">
+    <Division>D.M.R. South Central Division</Division>
+    <Position>53.33897756 -6.2702429</Position>
+    <Station>Kevin Street</Station>
+    <id>2036</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilbeggan/320">
+    <Division>Westmeath Division</Division>
+    <Position>53.36854604 -7.49918092</Position>
+    <Station>Kilbeggan</Station>
+    <id>2093</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilbrittain/321">
+    <Division>Cork West Division</Division>
+    <Position>51.6735335 -8.69011072</Position>
+    <Station>Kilbrittain</Station>
+    <id>20341</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilcock/322">
+    <Division>Kildare Division</Division>
+    <Position>53.4038423 -6.67250116</Position>
+    <Station>Kilcock</Station>
+    <id>2069</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilconnell/323">
+    <Division>Galway Division</Division>
+    <Position>53.33137501 -8.40165899</Position>
+    <Station>Kilconnell</Station>
+    <id>20523</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilcormac/324">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.17618096 -7.72883654</Position>
+    <Station>Kilcormac</Station>
+    <id>20129</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilcullen/325">
+    <Division>Kildare Division</Division>
+    <Position>53.12914134 -6.74657293</Position>
+    <Station>Kilcullen</Station>
+    <id>20148</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kildare/326">
+    <Division>Kildare Division</Division>
+    <Position>53.15603798 -6.9072699</Position>
+    <Station>Kildare</Station>
+    <id>20146</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kildorrery/327">
+    <Division>Cork North Division</Division>
+    <Position>52.24543959 -8.42961702</Position>
+    <Station>Kildorrery</Station>
+    <id>20315</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kildysart/328">
+    <Division>Clare Division</Division>
+    <Position>52.67460072 -9.10583965</Position>
+    <Station>Kildysart</Station>
+    <id>20460</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilkee/329">
+    <Division>Clare Division</Division>
+    <Position>52.6824048 -9.6447191</Position>
+    <Station>Kilkee</Station>
+    <id>20461</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilkelly/330">
+    <Division>Mayo Division</Division>
+    <Position>53.87335892 -8.84344939</Position>
+    <Station>Kilkelly</Station>
+    <id>20583</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilkenny/331">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.65244366 -7.25972851</Position>
+    <Station>Kilkenny</Station>
+    <id>20228</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kill_Co_Waterford/332">
+    <Division>Waterford Division</Division>
+    <Position>52.17732312 -7.33510427</Position>
+    <Station>Kill Co Waterford</Station>
+    <id>20221</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killala/333">
+    <Division>Mayo Division</Division>
+    <Position>54.21410179 -9.22051272</Position>
+    <Station>Killala</Station>
+    <id>20559</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killaloe/334">
+    <Division>Clare Division</Division>
+    <Position>52.80666265 -8.44366679</Position>
+    <Station>Killaloe</Station>
+    <id>20462</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killarney/335">
+    <Division>Kerry Division</Division>
+    <Position>52.06240084 -9.51238217</Position>
+    <Station>Killarney</Station>
+    <id>20396</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killeagh/336">
+    <Division>Cork North Division</Division>
+    <Position>51.93975887 -7.9949624</Position>
+    <Station>Killeagh</Station>
+    <id>20330</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killenaule/337">
+    <Division>Tipperary Division</Division>
+    <Position>52.56852336 -7.67282939</Position>
+    <Station>Killenaule</Station>
+    <id>20246</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killeshandra/338">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.01175242 -7.52593961</Position>
+    <Station>Killeshandra</Station>
+    <id>20693</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killimor/339">
+    <Division>Galway Division</Division>
+    <Position>53.16588469 -8.29419495</Position>
+    <Station>Killimor</Station>
+    <id>20492</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killorglin/340">
+    <Division>Kerry Division</Division>
+    <Position>52.10649611 -9.78714476</Position>
+    <Station>Killorglin</Station>
+    <id>20392</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Killucan/341">
+    <Division>Westmeath Division</Division>
+    <Position>53.51471392 -7.13966403</Position>
+    <Station>Killucan</Station>
+    <id>2084</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmacow/342">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.31456492 -7.17484608</Position>
+    <Station>Kilmacow</Station>
+    <id>20212</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmacrennan/343">
+    <Division>Donegal Division</Division>
+    <Position>55.02949685 -7.77851011</Position>
+    <Station>Kilmacrennan</Station>
+    <id>20640</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmacthomas/344">
+    <Division>Waterford Division</Division>
+    <Position>52.20619401 -7.42132791</Position>
+    <Station>Kilmacthomas</Station>
+    <id>20222</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmaine/345">
+    <Division>Mayo Division</Division>
+    <Position>53.5826007 -9.12379365</Position>
+    <Station>Kilmaine</Station>
+    <id>20573</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmainham/346">
+    <Division>D.M.R. South Central Division</Division>
+    <Position>53.34186549 -6.30427037</Position>
+    <Station>Kilmainham</Station>
+    <id>204</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmallock/347">
+    <Division>Limerick Division</Division>
+    <Position>52.39838143 -8.57576343</Position>
+    <Station>Kilmallock</Station>
+    <id>20436</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmeaden/348">
+    <Division>Waterford Division</Division>
+    <Position>52.24624969 -7.2450434</Position>
+    <Station>Kilmeaden</Station>
+    <id>20223</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmoganny/349">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.46091886 -7.32928155</Position>
+    <Station>Kilmoganny</Station>
+    <id>20240</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilmore_Quay/350">
+    <Division>Wexford Division</Division>
+    <Position>52.17866662 -6.58372542</Position>
+    <Station>Kilmore Quay</Station>
+    <id>20176</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilnaleck/351">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.8584675 -7.31791683</Position>
+    <Station>Kilnaleck</Station>
+    <id>20680</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilrickle/352">
+    <Division>Galway Division</Division>
+    <Position>53.23021801 -8.45244815</Position>
+    <Station>Kilrickle</Station>
+    <id>20497</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilrush/353">
+    <Division>Clare Division</Division>
+    <Position>52.64106586 -9.48107256</Position>
+    <Station>Kilrush</Station>
+    <id>20455</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilsheelan/354">
+    <Division>Tipperary Division</Division>
+    <Position>52.36152504 -7.57979973</Position>
+    <Station>Kilsheelan</Station>
+    <id>20252</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kiltimagh/355">
+    <Division>Mayo Division</Division>
+    <Position>53.84605363 -9.00576085</Position>
+    <Station>Kiltimagh</Station>
+    <id>20581</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kiltormer/356">
+    <Division>Galway Division</Division>
+    <Position>53.23757811 -8.27133719</Position>
+    <Station>Kiltormer</Station>
+    <id>20524</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kilworth/357">
+    <Division>Cork North Division</Division>
+    <Position>52.17625615 -8.24956145</Position>
+    <Station>Kilworth</Station>
+    <id>20316</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kingscourt/358">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.90431021 -6.8067595</Position>
+    <Station>Kingscourt</Station>
+    <id>20683</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kinlough/359">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.44577573 -8.28695797</Position>
+    <Station>Kinlough</Station>
+    <id>20615</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kinnegad/360">
+    <Division>Westmeath Division</Division>
+    <Position>53.455923 -7.10281229</Position>
+    <Station>Kinnegad</Station>
+    <id>2085</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kinnitty/361">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.09841546 -7.72214571</Position>
+    <Station>Kinnitty</Station>
+    <id>20130</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kinsale/362">
+    <Division>Cork West Division</Division>
+    <Position>51.70631782 -8.52547987</Position>
+    <Station>Kinsale</Station>
+    <id>20340</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Kinvara/363">
+    <Division>Galway Division</Division>
+    <Position>53.14047425 -8.93972872</Position>
+    <Station>Kinvara</Station>
+    <id>20510</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Knock/364">
+    <Division>Mayo Division</Division>
+    <Position>53.79536731 -8.9188379</Position>
+    <Station>Knock</Station>
+    <id>20575</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Knocknagoshel/365">
+    <Division>Kerry Division</Division>
+    <Position>52.33066363 -9.38530611</Position>
+    <Station>Knocknagoshel</Station>
+    <id>20410</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lanesboro/366">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.6710079 -7.98528025</Position>
+    <Station>Lanesboro</Station>
+    <id>20101</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Laytown/367">
+    <Division>Meath Division</Division>
+    <Position>53.6891994 -6.24399726</Position>
+    <Station>Laytown</Station>
+    <id>2051</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Leach_Seoirse/368">
+    <Division>Galway Division</Division>
+    <Position>53.35705462 -8.93129855</Position>
+    <Station>Leach Seoirse</Station>
+    <id>20478</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Leamybrien/369">
+    <Division>Waterford Division</Division>
+    <Position>52.16933013 -7.52163024</Position>
+    <Station>Leamybrien</Station>
+    <id>20226</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Leitir_Mor/370">
+    <Division>Galway Division</Division>
+    <Position>53.29429986 -9.65508393</Position>
+    <Station>Leitir Mor</Station>
+    <id>20504</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Leixlip/371">
+    <Division>Kildare Division</Division>
+    <Position>53.36737943 -6.49825143</Position>
+    <Station>Leixlip</Station>
+    <id>2011</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Letterfrack/372">
+    <Division>Galway Division</Division>
+    <Position>53.5542063 -9.94767533</Position>
+    <Station>Letterfrack</Station>
+    <id>20485</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Letterkenny/373">
+    <Division>Donegal Division</Division>
+    <Position>54.95469572 -7.73642147</Position>
+    <Station>Letterkenny</Station>
+    <id>20619</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lifford/374">
+    <Division>Donegal Division</Division>
+    <Position>54.83282604 -7.48026853</Position>
+    <Station>Lifford</Station>
+    <id>20625</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Liscarroll/375">
+    <Division>Cork North Division</Division>
+    <Position>52.25956434 -8.80626853</Position>
+    <Station>Liscarroll</Station>
+    <id>20326</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lisdoonvarna/376">
+    <Division>Clare Division</Division>
+    <Position>53.02862143 -9.28966445</Position>
+    <Station>Lisdoonvarna</Station>
+    <id>20473</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lismore/377">
+    <Division>Waterford Division</Division>
+    <Position>52.13667244 -7.93551376</Position>
+    <Station>Lismore</Station>
+    <id>20219</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lissycasey/378">
+    <Division>Clare Division</Division>
+    <Position>52.7460562 -9.15441233</Position>
+    <Station>Lissycasey</Station>
+    <id>20449</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Listowel/379">
+    <Division>Kerry Division</Division>
+    <Position>52.44713592 -9.48391384</Position>
+    <Station>Listowel</Station>
+    <id>20404</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Littleton/380">
+    <Division>Tipperary Division</Division>
+    <Position>52.64070258 -7.73492437</Position>
+    <Station>Littleton</Station>
+    <id>20250</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lixnaw/381">
+    <Division>Kerry Division</Division>
+    <Position>52.4040726 -9.61664103</Position>
+    <Station>Lixnaw</Station>
+    <id>20411</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Longford/382">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.7325129 -7.80137334</Position>
+    <Station>Longford</Station>
+    <id>2096</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Longwood/383">
+    <Division>Meath Division</Division>
+    <Position>53.45457124 -6.92695512</Position>
+    <Station>Longwood</Station>
+    <id>2068</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lorrha/384">
+    <Division>Tipperary Division</Division>
+    <Position>53.09365534 -8.12207582</Position>
+    <Station>Lorrha</Station>
+    <id>20133</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Loughrea/385">
+    <Division>Galway Division</Division>
+    <Position>53.19737626 -8.56994951</Position>
+    <Station>Loughrea</Station>
+    <id>20490</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Louisburgh/386">
+    <Division>Mayo Division</Division>
+    <Position>53.7646074 -9.80759064</Position>
+    <Station>Louisburgh</Station>
+    <id>20590</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Louth/387">
+    <Division>Louth Division</Division>
+    <Position>53.95239797 -6.53791121</Position>
+    <Station>Louth</Station>
+    <id>2057</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lucan/388">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.35605095 -6.45067695</Position>
+    <Station>Lucan</Station>
+    <id>2010</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Lusk/389">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.52342781 -6.16733971</Position>
+    <Station>Lusk</Station>
+    <id>2074</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Macroom/390">
+    <Division>Cork West Division</Division>
+    <Position>51.90627258 -8.96399125</Position>
+    <Station>Macroom</Station>
+    <id>20361</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Maigh_Cuilinn/391">
+    <Division>Galway Division</Division>
+    <Position>53.33831072 -9.18116654</Position>
+    <Station>Maigh Cuilinn</Station>
+    <id>20499</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Malahide/392">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.45115801 -6.15195311</Position>
+    <Station>Malahide</Station>
+    <id>2024</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mallow/393">
+    <Division>Cork North Division</Division>
+    <Position>52.13876909 -8.64593587</Position>
+    <Station>Mallow</Station>
+    <id>20320</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Manorhamilton/394">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.3043597 -8.17850775</Position>
+    <Station>Manorhamilton</Station>
+    <id>20612</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mayfield/395">
+    <Division>Cork City Division</Division>
+    <Position>51.90968921 -8.42895009</Position>
+    <Station>Mayfield</Station>
+    <id>20298</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Maynooth/396">
+    <Division>Kildare Division</Division>
+    <Position>53.38081427 -6.59269719</Position>
+    <Station>Maynooth</Station>
+    <id>20145</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mayorstone_Park/397">
+    <Division>Limerick Division</Division>
+    <Position>52.67373557 -8.64482122</Position>
+    <Station>Mayorstone Park</Station>
+    <id>20418</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Midleton/398">
+    <Division>Cork North Division</Division>
+    <Position>51.91667832 -8.1735208</Position>
+    <Station>Midleton</Station>
+    <id>20328</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Milford/400">
+    <Division>Donegal Division</Division>
+    <Position>55.08698228 -7.69816964</Position>
+    <Station>Milford</Station>
+    <id>20636</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Milford_Co_Cork/399">
+    <Division>Cork North Division</Division>
+    <Position>52.34246534 -8.85640083</Position>
+    <Station>Milford Co Cork</Station>
+    <id>20324</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Millstreet_Co_Cork/401">
+    <Division>Cork West Division</Division>
+    <Position>52.06007088 -9.0615297</Position>
+    <Station>Millstreet Co. Cork</Station>
+    <id>20374</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Milltown/402">
+    <Division>Galway Division</Division>
+    <Position>53.61160148 -8.89745394</Position>
+    <Station>Milltown</Station>
+    <id>20545</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Miltown_Malbay/403">
+    <Division>Clare Division</Division>
+    <Position>52.85745347 -9.40059569</Position>
+    <Station>Miltown Malbay</Station>
+    <id>20474</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mitchelstown/404">
+    <Division>Cork North Division</Division>
+    <Position>52.26358765 -8.27057086</Position>
+    <Station>Mitchelstown</Station>
+    <id>20317</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Moate/405">
+    <Division>Westmeath Division</Division>
+    <Position>53.39573586 -7.73452155</Position>
+    <Station>Moate</Station>
+    <id>2094</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mohill/406">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>53.92083474 -7.86807112</Position>
+    <Station>Mohill</Station>
+    <id>20610</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Monaghan/407">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.25136553 -6.96751983</Position>
+    <Station>Monaghan</Station>
+    <id>20662</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Monasterevin/408">
+    <Division>Kildare Division</Division>
+    <Position>53.13819654 -7.05471443</Position>
+    <Station>Monasterevin</Station>
+    <id>20149</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Moneygall/409">
+    <Division>Tipperary Division</Division>
+    <Position>52.88129048 -7.95344086</Position>
+    <Station>Moneygall</Station>
+    <id>20279</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Monivea/410">
+    <Division>Galway Division</Division>
+    <Position>53.37398548 -8.70232747</Position>
+    <Station>Monivea</Station>
+    <id>20481</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mooncoin/411">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.29197363 -7.25158259</Position>
+    <Station>Mooncoin</Station>
+    <id>20210</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mountbellew/412">
+    <Division>Galway Division</Division>
+    <Position>53.47116054 -8.50010647</Position>
+    <Station>Mountbellew</Station>
+    <id>20526</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mountcharles/413">
+    <Division>Donegal Division</Division>
+    <Position>54.64588823 -8.19567164</Position>
+    <Station>Mountcharles</Station>
+    <id>20697</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mountjoy/414">
+    <Division>D.M.R. North Central Division</Division>
+    <Position>53.36048561 -6.26681775</Position>
+    <Station>Mountjoy</Station>
+    <id>2034</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mountmellick/415">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.11877966 -7.33514085</Position>
+    <Station>Mountmellick</Station>
+    <id>20112</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mountrath/416">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.99815195 -7.47807086</Position>
+    <Station>Mountrath</Station>
+    <id>20113</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Moville/417">
+    <Division>Donegal Division</Division>
+    <Position>55.19163155 -7.02857084</Position>
+    <Station>Moville</Station>
+    <id>20634</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Moylough/418">
+    <Division>Galway Division</Division>
+    <Position>53.48769075 -8.56702281</Position>
+    <Station>Moylough</Station>
+    <id>20529</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Moyne/419">
+    <Division>Tipperary Division</Division>
+    <Position>52.73427035 -7.71410561</Position>
+    <Station>Moyne</Station>
+    <id>20275</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Muff/420">
+    <Division>Donegal Division</Division>
+    <Position>55.06858607 -7.26876362</Position>
+    <Station>Muff</Station>
+    <id>20635</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Muine_Bheag/421">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.70130089 -6.95736401</Position>
+    <Station>Muine Bheag</Station>
+    <id>20159</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mullagh/422">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.81114218 -6.94318618</Position>
+    <Station>Mullagh</Station>
+    <id>20684</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mullinahone/423">
+    <Division>Tipperary Division</Division>
+    <Position>52.51015203 -7.50558182</Position>
+    <Station>Mullinahone</Station>
+    <id>20253</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mullinavat/424">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.3663815 -7.17214879</Position>
+    <Station>Mullinavat</Station>
+    <id>20241</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Mullingar/425">
+    <Division>Westmeath Division</Division>
+    <Position>53.52569784 -7.34595636</Position>
+    <Station>Mullingar</Station>
+    <id>2083</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Multyfarnham/426">
+    <Division>Westmeath Division</Division>
+    <Position>53.62422726 -7.39232752</Position>
+    <Station>Multyfarnham</Station>
+    <id>20109</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Murroe/427">
+    <Division>Limerick Division</Division>
+    <Position>52.64968265 -8.39918481</Position>
+    <Station>Murroe</Station>
+    <id>20439</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Myshall/428">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.68752309 -6.77844087</Position>
+    <Station>Myshall</Station>
+    <id>20158</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Na_Cealla_Beaga/429">
+    <Division>Donegal Division</Division>
+    <Position>54.63659931 -8.44439945</Position>
+    <Station>Na Cealla Beaga</Station>
+    <id>20661</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Na_Gleannta/430">
+    <Division>Donegal Division</Division>
+    <Position>54.79554791 -8.28098241</Position>
+    <Station>Na Gleannta</Station>
+    <id>20646</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Naas/431">
+    <Division>Kildare Division</Division>
+    <Position>53.21072052 -6.66601245</Position>
+    <Station>Naas</Station>
+    <id>20141</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Navan/432">
+    <Division>Meath Division</Division>
+    <Position>53.65451708 -6.690423</Position>
+    <Station>Navan</Station>
+    <id>2078</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Nenagh/433">
+    <Division>Tipperary Division</Division>
+    <Position>52.86427531 -8.19957615</Position>
+    <Station>Nenagh</Station>
+    <id>20264</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#New_Ross/434">
+    <Division>Wexford Division</Division>
+    <Position>52.38756671 -6.95080389</Position>
+    <Station>New Ross</Station>
+    <id>20192</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newbridge/435">
+    <Division>Kildare Division</Division>
+    <Position>53.18143213 -6.79553175</Position>
+    <Station>Newbridge</Station>
+    <id>20150</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newcastle_West/436">
+    <Division>Limerick Division</Division>
+    <Position>52.45374851 -9.06239228</Position>
+    <Station>Newcastle West</Station>
+    <id>20440</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newmarket/437">
+    <Division>Cork West Division</Division>
+    <Position>52.21457529 -8.99698435</Position>
+    <Station>Newmarket</Station>
+    <id>20373</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newmarket_on_Fergus/438">
+    <Division>Clare Division</Division>
+    <Position>52.76317352 -8.89911552</Position>
+    <Station>Newmarket on Fergus</Station>
+    <id>20450</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newport_Co_Mayo/439">
+    <Division>Mayo Division</Division>
+    <Position>53.89016917 -9.54668972</Position>
+    <Station>Newport Co Mayo</Station>
+    <id>20587</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newport_Co_Tipperary/440">
+    <Division>Tipperary Division</Division>
+    <Position>52.71068795 -8.40628361</Position>
+    <Station>Newport Co Tipperary</Station>
+    <id>20702</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newtowncunningham/441">
+    <Division>Donegal Division</Division>
+    <Position>54.99759493 -7.50779468</Position>
+    <Station>Newtowncunningham</Station>
+    <id>20623</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Newtownmountkennedy/442">
+    <Division>Wicklow Division</Division>
+    <Position>53.09689269 -6.1094458</Position>
+    <Station>Newtownmountkennedy</Station>
+    <id>20202</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Nobber/443">
+    <Division>Meath Division</Division>
+    <Position>53.82095589 -6.74664422</Position>
+    <Station>Nobber</Station>
+    <id>2063</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Oldcastle/444">
+    <Division>Meath Division</Division>
+    <Position>53.76927743 -7.16192981</Position>
+    <Station>Oldcastle</Station>
+    <id>2062</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Omeath/445">
+    <Division>Louth Division</Division>
+    <Position>54.08653598 -6.25630574</Position>
+    <Station>Omeath</Station>
+    <id>2056</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Oola/446">
+    <Division>Limerick Division</Division>
+    <Position>52.52998818 -8.25967971</Position>
+    <Station>Oola</Station>
+    <id>20286</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Oughterard/447">
+    <Division>Galway Division</Division>
+    <Position>53.42735409 -9.32453867</Position>
+    <Station>Oughterard</Station>
+    <id>20498</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Oulart/448">
+    <Division>Wexford Division</Division>
+    <Position>52.50333958 -6.39132982</Position>
+    <Station>Oulart</Station>
+    <id>20190</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Oylegate/449">
+    <Division>Wexford Division</Division>
+    <Position>52.42408499 -6.52961073</Position>
+    <Station>Oylegate</Station>
+    <id>20189</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Pallasgreen/450">
+    <Division>Limerick Division</Division>
+    <Position>52.56874544 -8.33817527</Position>
+    <Station>Pallasgreen</Station>
+    <id>20437</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Pallaskenry/451">
+    <Division>Limerick Division</Division>
+    <Position>52.64054705 -8.86653771</Position>
+    <Station>Pallaskenry</Station>
+    <id>20425</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Partry/452">
+    <Division>Mayo Division</Division>
+    <Position>53.69867976 -9.27959393</Position>
+    <Station>Partry</Station>
+    <id>20555</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Passage_East/453">
+    <Division>Waterford Division</Division>
+    <Position>52.23917975 -6.97280987</Position>
+    <Station>Passage East</Station>
+    <id>20209</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Passage_West/454">
+    <Division>Cork City Division</Division>
+    <Position>51.86518385 -8.33174357</Position>
+    <Station>Passage West</Station>
+    <id>20297</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Patrickswell/455">
+    <Division>Limerick Division</Division>
+    <Position>52.59574933 -8.71294599</Position>
+    <Station>Patrickswell</Station>
+    <id>20420</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Pearse_Street/456">
+    <Division>D.M.R. South Central Division</Division>
+    <Position>53.34570251 -6.25627546</Position>
+    <Station>Pearse Street</Station>
+    <id>201</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Pettigo/457">
+    <Division>Donegal Division</Division>
+    <Position>54.54823145 -7.83487803</Position>
+    <Station>Pettigo</Station>
+    <id>20659</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Piltown/458">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.34982337 -7.32547567</Position>
+    <Station>Piltown</Station>
+    <id>20257</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portarlington/459">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.15916285 -7.18780055</Position>
+    <Station>Portarlington</Station>
+    <id>20114</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portlaoise/460">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.0316518 -7.30307897</Position>
+    <Station>Portlaoise</Station>
+    <id>20111</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portlaw/461">
+    <Division>Waterford Division</Division>
+    <Position>52.28626025 -7.31760481</Position>
+    <Station>Portlaw</Station>
+    <id>20224</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portmagee/462">
+    <Division>Kerry Division</Division>
+    <Position>51.88515908 -10.36177287</Position>
+    <Station>Portmagee</Station>
+    <id>20391</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portroe/463">
+    <Division>Tipperary Division</Division>
+    <Position>52.88190621 -8.35367667</Position>
+    <Station>Portroe</Station>
+    <id>20269</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Portumna/464">
+    <Division>Galway Division</Division>
+    <Position>53.09000981 -8.22042379</Position>
+    <Station>Portumna</Station>
+    <id>20496</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Raheny/465">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.37898567 -6.17798495</Position>
+    <Station>Raheny</Station>
+    <id>2026</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ramelton/466">
+    <Division>Donegal Division</Division>
+    <Position>55.03665206 -7.65072118</Position>
+    <Station>Ramelton</Station>
+    <id>20644</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Raphoe/467">
+    <Division>Donegal Division</Division>
+    <Position>54.87440272 -7.59436744</Position>
+    <Station>Raphoe</Station>
+    <id>20624</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathangan/468">
+    <Division>Kildare Division</Division>
+    <Position>53.22212171 -6.99754565</Position>
+    <Station>Rathangan</Station>
+    <id>20151</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathcoole/469">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.28179292 -6.46471582</Position>
+    <Station>Rathcoole</Station>
+    <id>2014</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathcormac_Co_Cork/470">
+    <Division>Cork North Division</Division>
+    <Position>52.076082 -8.28432755</Position>
+    <Station>Rathcormac Co Cork</Station>
+    <id>20313</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathdowney/471">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.85671581 -7.59783474</Position>
+    <Station>Rathdowney</Station>
+    <id>20120</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathdrum/472">
+    <Division>Wicklow Division</Division>
+    <Position>52.93099547 -6.22650686</Position>
+    <Station>Rathdrum</Station>
+    <id>20201</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathfarnham/473">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.29738741 -6.28815433</Position>
+    <Station>Rathfarnham</Station>
+    <id>2015</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathgormack/474">
+    <Division>Waterford Division</Division>
+    <Position>52.30745435 -7.50376703</Position>
+    <Station>Rathgormack</Station>
+    <id>20225</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathkeale/475">
+    <Division>Limerick Division</Division>
+    <Position>52.52336863 -8.93903035</Position>
+    <Station>Rathkeale</Station>
+    <id>20430</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathmines/476">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.32131773 -6.2670105</Position>
+    <Station>Rathmines</Station>
+    <id>2017</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathmore_Co_Kerry/477">
+    <Division>Kerry Division</Division>
+    <Position>52.08427376 -9.21423042</Position>
+    <Station>Rathmore Co Kerry</Station>
+    <id>20376</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathmullen/478">
+    <Division>Donegal Division</Division>
+    <Position>55.09580023 -7.53255706</Position>
+    <Station>Rathmullen</Station>
+    <id>20645</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rathvilly/479">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.88043014 -6.69536716</Position>
+    <Station>Rathvilly</Station>
+    <id>20170</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rhode/480">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.35109318 -7.19483213</Position>
+    <Station>Rhode</Station>
+    <id>20139</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Riverstown/481">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.1295714 -8.40000196</Position>
+    <Station>Riverstown</Station>
+    <id>20602</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Robertstown/482">
+    <Division>Kildare Division</Division>
+    <Position>53.2702223 -6.81638937</Position>
+    <Station>Robertstown</Station>
+    <id>20147</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rochfortbridge/483">
+    <Division>Westmeath Division</Division>
+    <Position>53.41327954 -7.30183072</Position>
+    <Station>Rochfortbridge</Station>
+    <id>2086</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rockcorry/484">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.12016197 -7.00937231</Position>
+    <Station>Rockcorry</Station>
+    <id>20674</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ronanstown/485">
+    <Division>D.M.R. Western Division</Division>
+    <Position>53.3378951 -6.40602491</Position>
+    <Station>Ronanstown</Station>
+    <id>2013</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Roosky/486">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.8328644 -7.92282881</Position>
+    <Station>Roosky</Station>
+    <id>20611</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Ros_Muc/487">
+    <Division>Galway Division</Division>
+    <Position>53.38636883 -9.6099089</Position>
+    <Station>Ros Muc</Station>
+    <id>20501</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Roscommon/488">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.62983856 -8.19358244</Position>
+    <Station>Roscommon</Station>
+    <id>20514</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Roscrea/489">
+    <Division>Tipperary Division</Division>
+    <Position>52.95615895 -7.7987797</Position>
+    <Station>Roscrea</Station>
+    <id>20274</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rosscarbery/490">
+    <Division>Cork West Division</Division>
+    <Position>51.57756682 -9.03150268</Position>
+    <Station>Rosscarbery</Station>
+    <id>20354</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rosses_Point/491">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.30536627 -8.54654882</Position>
+    <Station>Rosses Point</Station>
+    <id>20597</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rosslare_Harbour/492">
+    <Division>Wexford Division</Division>
+    <Position>52.24875319 -6.33410666</Position>
+    <Station>Rosslare Harbour</Station>
+    <id>20179</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Rosslare_Strand/493">
+    <Division>Wexford Division</Division>
+    <Position>52.26965328 -6.38484633</Position>
+    <Station>Rosslare Strand</Station>
+    <id>20178</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Roundwood/494">
+    <Division>Wicklow Division</Division>
+    <Position>53.06304538 -6.2246801</Position>
+    <Station>Roundwood</Station>
+    <id>20204</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Roxboro_Road/495">
+    <Division>Limerick Division</Division>
+    <Position>52.6507817 -8.6149767</Position>
+    <Station>Roxboro Road</Station>
+    <id>20419</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Santry/496">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.38972961 -6.25163445</Position>
+    <Station>Santry</Station>
+    <id>2019</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Scariff/497">
+    <Division>Clare Division</Division>
+    <Position>52.90682988 -8.53477049</Position>
+    <Station>Scariff</Station>
+    <id>20464</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Schull/498">
+    <Division>Cork West Division</Division>
+    <Position>51.52871616 -9.54135767</Position>
+    <Station>Schull</Station>
+    <id>20344</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Scotstown/499">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.28027061 -7.06362846</Position>
+    <Station>Scotstown</Station>
+    <id>20666</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shankill/500">
+    <Division>D.M.R. Eastern Division</Division>
+    <Position>53.23352847 -6.12101107</Position>
+    <Station>Shankill</Station>
+    <id>2042</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shannon/501">
+    <Division>Clare Division</Division>
+    <Position>52.70789255 -8.87722145</Position>
+    <Station>Shannon</Station>
+    <id>20452</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shercock/502">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.99219702 -6.90079134</Position>
+    <Station>Shercock</Station>
+    <id>20685</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shevry/503">
+    <Division>Tipperary Division</Division>
+    <Position>52.68693583 -8.04713554</Position>
+    <Station>Shevry</Station>
+    <id>20278</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shillelagh/504">
+    <Division>Wicklow Division</Division>
+    <Position>52.7545671 -6.53750799</Position>
+    <Station>Shillelagh</Station>
+    <id>20167</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shinrone/505">
+    <Division>Laois/Offaly Division</Division>
+    <Position>52.98467874 -7.93413735</Position>
+    <Station>Shinrone</Station>
+    <id>20131</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Shrule/506">
+    <Division>Mayo Division</Division>
+    <Position>53.51985003 -9.08762162</Position>
+    <Station>Shrule</Station>
+    <id>20578</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Sixmilebridge/507">
+    <Division>Clare Division</Division>
+    <Position>52.74009966 -8.7779423</Position>
+    <Station>Sixmilebridge</Station>
+    <id>20454</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Skerries/508">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.57959331 -6.10695694</Position>
+    <Station>Skerries</Station>
+    <id>2073</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Skibbereen/509">
+    <Division>Cork West Division</Division>
+    <Position>51.54858782 -9.26413329</Position>
+    <Station>Skibbereen</Station>
+    <id>20355</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Skreen/510">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.24460363 -8.72040004</Position>
+    <Station>Skreen</Station>
+    <id>20594</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Slane/511">
+    <Division>Meath Division</Division>
+    <Position>53.70968231 -6.54751101</Position>
+    <Station>Slane</Station>
+    <id>2082</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Sligo/512">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.26925474 -8.4712633</Position>
+    <Station>Sligo</Station>
+    <id>20592</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Smear/513">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.86056338 -7.60168345</Position>
+    <Station>Smear</Station>
+    <id>20106</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Sneem/514">
+    <Division>Kerry Division</Division>
+    <Position>51.8389103 -9.90395699</Position>
+    <Station>Sneem</Station>
+    <id>20394</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Sraith_Salach/515">
+    <Division>Galway Division</Division>
+    <Position>53.46531899 -9.72143737</Position>
+    <Station>Sraith Salach</Station>
+    <id>20484</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Stoneyford/516">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.53638426 -7.22858224</Position>
+    <Station>Stoneyford</Station>
+    <id>20237</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Store_Street/517">
+    <Division>D.M.R. North Central Division</Division>
+    <Position>53.35045123 -6.2522519</Position>
+    <Station>Store Street</Station>
+    <id>2032</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Stradbally_Co_Laois/518">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.01767407 -7.1515997</Position>
+    <Station>Stradbally Co Laois</Station>
+    <id>20115</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Strokestown/519">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.78076292 -8.10381987</Position>
+    <Station>Strokestown</Station>
+    <id>20517</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Stuake/520">
+    <Division>Cork West Division</Division>
+    <Position>51.99050978 -8.76036245</Position>
+    <Station>Stuake</Station>
+    <id>20362</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Summerhill/521">
+    <Division>Meath Division</Division>
+    <Position>53.48195919 -6.73343559</Position>
+    <Station>Summerhill</Station>
+    <id>2070</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Sundrive_Road/522">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.33019448 -6.29872913</Position>
+    <Station>Sundrive Road</Station>
+    <id>208</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Swanlinbar/523">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>54.19610647 -7.70383867</Position>
+    <Station>Swanlinbar</Station>
+    <id>20692</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Swinford/524">
+    <Division>Mayo Division</Division>
+    <Position>53.94063956 -8.9522079</Position>
+    <Station>Swinford</Station>
+    <id>20580</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Swords/525">
+    <Division>D.M.R. Northern Division</Division>
+    <Position>53.45601851 -6.22111842</Position>
+    <Station>Swords</Station>
+    <id>2025</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Taghmon/526">
+    <Division>Wexford Division</Division>
+    <Position>52.32202784 -6.65172313</Position>
+    <Station>Taghmon</Station>
+    <id>20173</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tallaght/527">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.28680514 -6.36784493</Position>
+    <Station>Tallaght</Station>
+    <id>2016</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tallow/528">
+    <Division>Waterford Division</Division>
+    <Position>52.09370591 -8.00730354</Position>
+    <Station>Tallow</Station>
+    <id>20215</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tarbert/529">
+    <Division>Kerry Division</Division>
+    <Position>52.57273636 -9.37542841</Position>
+    <Station>Tarbert</Station>
+    <id>20413</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tarelton/530">
+    <Division>Cork West Division</Division>
+    <Position>51.83852736 -8.99285284</Position>
+    <Station>Tarelton</Station>
+    <id>20368</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Taughmaconnell/531">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.40321768 -8.14104493</Position>
+    <Station>Taughmaconnell</Station>
+    <id>20527</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Templederry/532">
+    <Division>Tipperary Division</Division>
+    <Position>52.77414783 -8.07501146</Position>
+    <Station>Templederry</Station>
+    <id>20276</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Templemore/533">
+    <Division>Tipperary Division</Division>
+    <Position>52.79662883 -7.83508192</Position>
+    <Station>Templemore</Station>
+    <id>20272</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Templetuohy/534">
+    <Division>Tipperary Division</Division>
+    <Position>52.79029373 -7.72009724</Position>
+    <Station>Templetuohy</Station>
+    <id>20273</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Terenure/535">
+    <Division>D.M.R. Southern Division</Division>
+    <Position>53.30981355 -6.28803206</Position>
+    <Station>Terenure</Station>
+    <id>2018</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Thomastown/536">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.52895322 -7.14003832</Position>
+    <Station>Thomastown</Station>
+    <id>20234</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Thurles/537">
+    <Division>Tipperary Division</Division>
+    <Position>52.67571574 -7.81189868</Position>
+    <Station>Thurles</Station>
+    <id>20243</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Timoleague/538">
+    <Division>Cork West Division</Division>
+    <Position>51.64266521 -8.76624842</Position>
+    <Station>Timoleague</Station>
+    <id>20342</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tinahely/539">
+    <Division>Wicklow Division</Division>
+    <Position>52.79672529 -6.46928739</Position>
+    <Station>Tinahely</Station>
+    <id>20168</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tipperary/540">
+    <Division>Tipperary Division</Division>
+    <Position>52.47605442 -8.16289352</Position>
+    <Station>Tipperary</Station>
+    <id>20280</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Togher/541">
+    <Division>Cork City Division</Division>
+    <Position>51.87642925 -8.48629421</Position>
+    <Station>Togher</Station>
+    <id>20292</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Toomevara/542">
+    <Division>Tipperary Division</Division>
+    <Position>52.84968245 -8.03650547</Position>
+    <Station>Toomevara</Station>
+    <id>20270</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tralee/543">
+    <Division>Kerry Division</Division>
+    <Position>52.26949061 -9.70883969</Position>
+    <Station>Tralee</Station>
+    <id>20379</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tramore/544">
+    <Division>Waterford Division</Division>
+    <Position>52.16147427 -7.15340724</Position>
+    <Station>Tramore</Station>
+    <id>20220</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Trim/545">
+    <Division>Meath Division</Division>
+    <Position>53.55311799 -6.78929711</Position>
+    <Station>Trim</Station>
+    <id>2064</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tuam/546">
+    <Division>Galway Division</Division>
+    <Position>53.51565887 -8.85588401</Position>
+    <Station>Tuam</Station>
+    <id>20543</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tubbercurry/547">
+    <Division>Sligo/Leitrim Division</Division>
+    <Position>54.05157 -8.73426603</Position>
+    <Station>Tubbercurry</Station>
+    <id>20600</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tulla/548">
+    <Division>Clare Division</Division>
+    <Position>52.86538871 -8.75477505</Position>
+    <Station>Tulla</Station>
+    <id>20466</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tullamore/549">
+    <Division>Laois/Offaly Division</Division>
+    <Position>53.27605318 -7.49491192</Position>
+    <Station>Tullamore</Station>
+    <id>20134</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tullow/550">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.80382917 -6.73339763</Position>
+    <Station>Tullow</Station>
+    <id>20156</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Tulsk/551">
+    <Division>Roscommon/Longford Division</Division>
+    <Position>53.77744435 -8.25182309</Position>
+    <Station>Tulsk</Station>
+    <id>20536</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Urlingford/552">
+    <Division>Kilkenny/Carlow Division</Division>
+    <Position>52.72205385 -7.57983557</Position>
+    <Station>Urlingford</Station>
+    <id>20249</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Virginia/553">
+    <Division>Cavan/Monaghan Division</Division>
+    <Position>53.8344409 -7.08193254</Position>
+    <Station>Virginia</Station>
+    <id>20687</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Watercourse_Road/554">
+    <Division>Cork City Division</Division>
+    <Position>51.90713286 -8.47450731</Position>
+    <Station>Watercourse Road</Station>
+    <id>20300</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Waterford/555">
+    <Division>Waterford Division</Division>
+    <Position>52.26018787 -7.11367351</Position>
+    <Station>Waterford</Station>
+    <id>20206</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Watergrasshill/556">
+    <Division>Cork North Division</Division>
+    <Position>52.0134423 -8.34202882</Position>
+    <Station>Watergrasshill</Station>
+    <id>20311</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Westport/557">
+    <Division>Mayo Division</Division>
+    <Position>53.79906589 -9.51943053</Position>
+    <Station>Westport</Station>
+    <id>20586</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Wexford/558">
+    <Division>Wexford Division</Division>
+    <Position>52.3355452 -6.46199502</Position>
+    <Station>Wexford</Station>
+    <id>20172</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Whitegate/559">
+    <Division>Cork North Division</Division>
+    <Position>51.82707313 -8.22781463</Position>
+    <Station>Whitegate</Station>
+    <id>20331</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Wicklow/560">
+    <Division>Wicklow Division</Division>
+    <Position>52.98143612 -6.04263288</Position>
+    <Station>Wicklow</Station>
+    <id>20199</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Williamstown/561">
+    <Division>Galway Division</Division>
+    <Position>53.67714316 -8.57841498</Position>
+    <Station>Williamstown</Station>
+    <id>20544</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Woodford/562">
+    <Division>Galway Division</Division>
+    <Position>53.04760662 -8.40013594</Position>
+    <Station>Woodford</Station>
+    <id>20493</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/data/garda_stations_CoordinatesOnly.csv#Youghal/563">
+    <Division>Cork North Division</Division>
+    <Position>51.94806563 -7.84275015</Position>
+    <Station>Youghal</Station>
+    <id>20332</id>
+  </rdf:Description>
+</rdf:RDF>
